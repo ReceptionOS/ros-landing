@@ -1,0 +1,59 @@
+{
+  "home.seo.title": "ReceptionOS | Your Dental Clinic on Autopilot",
+  "home.seo.description": "Handle patient communication 24/7, schedule appointments, take prepayments and manage cancellations — fewer no-shows and smoother front-desk.",
+
+  "home.Menu.order-button": "Order audit",
+
+  "home.Autopilot.title": "<span>Your Clinic.</span> On Autopilot.",
+  "home.Autopilot.description": "Automate routine admin, eliminate lost appointments, and keep your chairs full — so your team can focus on what really matters: patient care.",
+  "home.Autopilot.data": "Book a Free Audit – Find out exactly where you’re losing patients (and how to stop it).",
+  "home.Autopilot.button": "Talk to AI",
+
+  "home.AIWave.ai-wave": "receptionOS",
+  "home.AIWave.title": "",
+  "home.AIWave.description": "",
+  "home.AIWave.tile-title-1": "",
+  "home.AIWave.tile-description-1": "",
+  "home.AIWave.tile-title-2": "",
+  "home.AIWave.tile-description-2": "",
+  "home.AIWave.tile-title-3": "",
+  "home.AIWave.tile-description-3": "",
+  "home.AIWave.tile-title-4": "",
+  "home.AIWave.tile-description-4": "",
+
+  "home.HowItWorks.how-it-works": "Step by step",
+  "home.HowItWorks.title": "How It Works — In 3 Simple Steps",
+  "home.HowItWorks.video1-title": "Audit Your Reception",
+  "home.HowItWorks.video1-description": " We step into your patients’ shoes, testing your reception with real-world scenarios. You’ll see exactly where inquiries slip through the cracks and where you can improve.",
+  "home.HowItWorks.video2-title": "Results & Insights",
+  "home.HowItWorks.video2-description": "You’ll get a clear, actionable report — plus an optional call to walk you through it. If we don’t find meaningful improvements, you get your money back.",
+  "home.HowItWorks.video3-title": "Your Tailored Solution",
+  "home.HowItWorks.video3-description": "If it’s a fit and you’re ready for cutting-edge innovation, you’ll receive a ReceptionOS setup fully tailored to your clinic — so you can start seeing results from day one.",
+
+  "home.Analysis.case-study": "Order Analysis",
+  "home.Analysis.title": "Discover exactly where your clinic is losing patients.",
+  "home.Analysis.in-it": "Includes:",
+  "home.Analysis.inner-text1": "Mystery Patient Audit — we test your booking process with real-world scenarios.",
+  "home.Analysis.inner-text2": "Full Reception Stress Test — measure speed, accuracy, and service quality.",
+  "home.Analysis.inner-text3": "Action Plan — prioritized fixes to boost conversion.",
+
+  "home.CaseStudy.modal.button": "Order Analysis",
+
+  "home.AboutUs.about-us": "About us",
+  "home.AboutUs.title": "Why Clinics Trust ReceptionOS",
+  "home.AboutUs.description": "We’ve lived your challenges. Dentistry runs in our blood — our family clinic has <span>over 35 years of implantology experience.</span> We built ReceptionOS to solve the very problems we faced every day.",
+
+  "home.WriteUs.title": "Ready to join the top 1% of clinics?",
+  "home.WriteUs.description": "Book Your Audit Today — we’ll get back to you immediately.",
+  "home.WriteUs.button": "Order Analysis",
+
+  "home.Footer.contact": "contact us",
+  "home.Footer.media": "social media",
+  "home.Footer.resources": "resources",
+  "home.Footer.policy": "Privacy Policy",
+  "home.Footer.terms": "Terms & Conditions",
+  "home.Footer.place": "Warsaw, Poland c 2025",
+  "home.Footer.change-language": "Change language",
+  "home.Footer.polish": "Polish",
+  "home.Footer.english": "English"
+}

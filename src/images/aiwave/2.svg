@@ -1,0 +1,18 @@
+<svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.13 34.8143C12.044 34.8143 5.48896 28.2593 5.48896 20.1732C5.48896 12.0872 12.044 5.53223 20.13 5.53223C28.216 5.53223 34.771 12.0872 34.771 20.1732C34.771 28.2593 28.216 34.8143 20.13 34.8143Z" fill="url(#paint0_linear_206_3472)" fillOpacity="0.24"/>
+<path d="M17.0005 22H20.0005" stroke="#FF8637" strokeLinecap="round"/>
+<path d="M17.0005 19.5H22.0005" stroke="#FF8637" strokeLinecap="round"/>
+<path d="M17.0005 17L23.0005 17" stroke="#FF8637" strokeLinecap="round"/>
+<rect x="14.5005" y="12.5" width="11" height="14" rx="2.5" stroke="#FF8637"/>
+<path d="M33.9006 15.4467C32.773 12.0364 30.4311 9.15965 27.3204 7.36371C27.3204 7.36371 25.0005 5.47463 20.9246 5.43142C16.8487 5.38821 13.7969 6.30335 10.9696 8.51875C8.14232 10.7342 6.22806 13.9116 5.59101 17.4465C4.95396 20.9814 5.63858 24.6272 7.51462 27.6902C9.39066 30.7532 12.3272 33.0197 15.7656 34.0585C19.204 35.0973 22.9042 34.8359 26.1624 33.3241C29.4206 31.8122 32.0094 29.1554 33.4362 25.8591C34.863 22.5628 35.0283 18.8569 33.9006 15.4467Z" stroke="#FFF2E9" strokeLinecap="round" strokeLinejoin="round"/>
+<circle cx="2.09157" cy="2.09157" r="2.09157" transform="matrix(-1 0 0 1 22.2214 3.44067)" fill="#0A0A0A" stroke="#FFF2E9" strokeLinecap="round" strokeLinejoin="round"/>
+<circle cx="2.09157" cy="2.09157" r="2.09157" transform="matrix(-1 0 0 1 22.2214 32.7227)" fill="#0A0A0A" stroke="#FFF2E9" strokeLinecap="round" strokeLinejoin="round"/>
+<circle cx="2.09157" cy="2.09157" r="2.09157" transform="matrix(4.37114e-08 1 1 -4.37114e-08 3.39746 18.0817)" fill="#0A0A0A" stroke="#FFF2E9" strokeLinecap="round" strokeLinejoin="round"/>
+<circle cx="2.09157" cy="2.09157" r="2.09157" transform="matrix(4.37114e-08 1 1 -4.37114e-08 32.6794 18.0817)" fill="#0A0A0A" stroke="#FFF2E9" strokeLinecap="round" strokeLinejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear_206_3472" x1="20.13" y1="5.53223" x2="20.13" y2="34.8143" gradientUnits="userSpaceOnUse">
+<stop stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="#FF3610"/>
+</linearGradient>
+</defs>
+</svg>
