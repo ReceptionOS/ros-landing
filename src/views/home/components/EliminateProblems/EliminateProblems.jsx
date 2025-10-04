@@ -80,15 +80,15 @@ const EliminateProblems = ({ t }) => {
             {[
               {
                 id: 1,
-                link: 'https://8attk966a4.ufs.sh/f/otwLApjIvmMnrNwCSv920sQtuNYePTwnmpXV9Fgz6rjiqK53'
+                link: 'https://player.vimeo.com/video/1123505527?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=0&playsinline=1'
               },
               {
                 id: 2,
-                link: 'https://8attk966a4.ufs.sh/f/otwLApjIvmMnX3fKyxwSot7NABhqO0wvmrDz1gTpdn5ZV3Ie'
+                link: 'https://player.vimeo.com/video/1123505965?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=0&playsinline=1'
               },
               {
                 id: 3,
-                link: 'https://8attk966a4.ufs.sh/f/otwLApjIvmMnjsi8lHGbCe3thDaJKnuPgpw5UONi4TZmWV8G'
+                link: 'https://player.vimeo.com/video/1123505685?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=0&playsinline=1'
               },
             ]
               .map(item => (

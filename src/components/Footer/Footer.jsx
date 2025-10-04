@@ -109,14 +109,16 @@ const Footer = ({ t }) => {
                   </svg>
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  {languages.map(lang => (
-                    <Dropdown.Item
-                      key={lang}
-                      onClick={() => handleUserLanguagePick(lang)}
-                    >
-                      {lang.includes("pl") ? t(`home.Footer.polish`) : t(`home.Footer.english`)}
-                    </Dropdown.Item>
-                  ))}
+                  {languages
+                    .filter(lang => lang !== language)
+                    .map(lang => (
+                      <Dropdown.Item
+                        key={lang}
+                        onClick={() => handleUserLanguagePick(lang)}
+                      >
+                        {lang.includes("pl") ? t(`home.Footer.polish`) : t(`home.Footer.english`)}
+                      </Dropdown.Item>
+                    ))}
                 </Dropdown.Menu>
               </Dropdown>
             </div>
