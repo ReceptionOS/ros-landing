@@ -70,7 +70,21 @@ const AIWave = ({ t }) => {
                 </div>
               </div>
             </BorderContainerRowsVerticalSides>
-            <BorderContainerRowsVerticalSides className="ai-wave-tile ai-wave-empty no-left" />
+            <BorderContainerRowsVerticalSides className="ai-wave-tile no-left">
+              <div className="tile-content">
+                <StaticImage
+                  className="image"
+                  src="../../../../images/aiwave/4.svg"
+                  alt="image"
+                  placeholder="image"
+                  loading="lazy"
+                />
+                <div className="text-tile">
+                  <p className="p-new-model-18">{t(`home.AIWave.tile-title-5`)}</p>
+                  <p className="p-new-model-16">{t(`home.AIWave.tile-description-5`)}</p>
+                </div>
+              </div>
+            </BorderContainerRowsVerticalSides>
             <BorderContainerRowsVerticalSides className="ai-wave-tile ai-wave-empty" />
             <BorderContainerRowsVerticalSides className="ai-wave-tile no-left">
               <div className="tile-content">
