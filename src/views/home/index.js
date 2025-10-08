@@ -16,6 +16,7 @@ import EliminateProblems from "./components/EliminateProblems/EliminateProblems"
 import HowItWorks from "./components/HowItWorks/HowItWorks"
 import OurPartners from "./components/OurPartners/OurPartners"
 import ElevenWidget from "../../components/ElevenWidget/ElevenWidget"
+import CookieBanner from "../../components/CookieBanner/CookieBanner"
 import { agentId } from "../../config/externalResources"
 
 const Home = () => {
@@ -51,6 +52,7 @@ const Home = () => {
       <PriceList t={t} />
       <WriteUs t={t} />
       <Footer t={t} />
+      <CookieBanner />
       <ElevenWidget agentId={agent} />
     </>
   )
