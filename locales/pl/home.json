@@ -130,6 +130,10 @@
   "home.WriteUs.description": "Umów audyt już dziś — odezwiemy się natychmiast.",
   "home.WriteUs.button": "Zamów Analizę",
 
+  "home.CookieBanner.message": "Używamy plików cookie, aby ulepszać działanie strony i analizować ruch. Kontynuując korzystanie z serwisu, wyrażasz zgodę na ich użycie.",
+  "home.CookieBanner.accept": "Akceptuję",
+  "home.CookieBanner.ariaLabel": "Powiadomienie o wykorzystaniu plików cookie",
+
   "home.Footer.contact": "Skontaktuj się z nami",
   "home.Footer.media": "social media",
   "home.Footer.resources": "zasoby",
