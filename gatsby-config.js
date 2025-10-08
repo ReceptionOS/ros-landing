@@ -14,16 +14,9 @@ module.exports = {
       summary: `ReceptionOS`,
     },
     description: `ReceptionOS`,
-    siteUrl: `http://ReceptionOS.pl`,
+    siteUrl: `https://receptionos.com/`,
   },
   plugins: [
-    // {
-    //   resolve: `gatsby-source-contentful`,
-    //   options: {
-    //     spaceId: process.env.SPACE_ID,
-    //     accessToken: process.env.ACCESS_TOKEN,
-    //   },
-    // },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -45,7 +38,7 @@ module.exports = {
         localeJsonSourceName: `locales`,
         languages: [`pl`, `en`],
         defaultLanguage: `pl`,
-        siteUrl: `http://ReceptionOS.pl`,
+        siteUrl: `https://receptionos.com/`,
         redirect: false,
         pages: [
           {
@@ -81,7 +74,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `ReceptionOS`,
-        short_name: `ReceptionOS`,
+        short_name: `ros`,
         start_url: `/`,
         background_color: `#faf0f9`,
         display: `standalone`,
