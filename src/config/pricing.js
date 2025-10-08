@@ -1,5 +1,5 @@
-export const starterPacketPrice = 1100
-export const optimumPacketPrice = 2100
-export const elitePacketPrice = 3100
+export const starterPacketPrice = 1300
+export const optimumPacketPrice = 2300
+export const elitePacketPrice = 3300
 export const incrementPacket = 200
-export const analysisPrice = 69
+export const analysisPrice = 2900
