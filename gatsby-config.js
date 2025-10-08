@@ -14,16 +14,32 @@ module.exports = {
       summary: `ReceptionOS`,
     },
     description: `ReceptionOS`,
-    siteUrl: `http://ReceptionOS.pl`,
+    siteUrl: `https://receptionos.com/`,
   },
   plugins: [
-    // {
-    //   resolve: `gatsby-source-contentful`,
-    //   options: {
-    //     spaceId: process.env.SPACE_ID,
-    //     accessToken: process.env.ACCESS_TOKEN,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+        head: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-posthog`,
+      options: {
+        apiKey: process.env.POSTHOG_API_KEY,
+        apiHost: "https://eu.i.posthog.com",
+        head: true,
+        isEnabledDevMode: true,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: process.env.TAG_MANAGER_ID,
+        enableWebVitalsTracking: true,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -45,7 +61,7 @@ module.exports = {
         localeJsonSourceName: `locales`,
         languages: [`pl`, `en`],
         defaultLanguage: `pl`,
-        siteUrl: `http://ReceptionOS.pl`,
+        siteUrl: `https://receptionos.com/`,
         redirect: false,
         pages: [
           {
@@ -81,7 +97,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `ReceptionOS`,
-        short_name: `ReceptionOS`,
+        short_name: `ros`,
         start_url: `/`,
         background_color: `#faf0f9`,
         display: `standalone`,
