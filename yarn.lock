@@ -5726,6 +5726,15 @@ gatsby-plugin-feed@^5.13.1:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
+gatsby-plugin-google-analytics@^5.15.0:
+  version "5.15.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-5.15.0.tgz#eb306d9bfbf2aafed86b5816ccf36b7b5a68dd44"
+  integrity sha512-OSd6l2v3LLVap+h7td3TNhTNFM0JHzztSHcw8lM0YCKzmKur30vZG2qyqbZb7XlTHgcAfXvViGwzB9P2SaqH2A==
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+    minimatch "^3.1.2"
+    web-vitals "^1.1.2"
+
 gatsby-plugin-google-tagmanager@^5.15.0:
   version "5.15.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-5.15.0.tgz#fc5f4fc2a7e2d4ccff7b1e2d42622d211419d4f2"
