@@ -26,6 +26,13 @@ module.exports = {
         isEnabledDevMode: true,
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: process.env.TAG_MANAGER_ID,
+        enableWebVitalsTracking: true,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
