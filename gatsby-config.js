@@ -17,6 +17,15 @@ module.exports = {
     siteUrl: `https://receptionos.com/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-posthog`,
+      options: {
+        apiKey: process.env.POSTHOG_API_KEY,
+        apiHost: "https://eu.i.posthog.com",
+        head: true,
+        isEnabledDevMode: true,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
