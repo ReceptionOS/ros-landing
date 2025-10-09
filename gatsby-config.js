@@ -7,14 +7,13 @@ require("dotenv").config({
  */
 module.exports = {
   siteMetadata: {
-    title: `ReceptionOS`,
-    author: "ReceptionOS",
+    title: `receptionOS`,
     author: {
-      name: `ReceptionOS`,
-      summary: `ReceptionOS`,
+      name: `receptionOS`,
+      summary: `receptionOS`,
     },
-    description: `ReceptionOS`,
-    siteUrl: `https://receptionos.com/`,
+    description: `Autopilot dla Twojej kliniki stomatologicznej`,
+    siteUrl: `https://receptionos.com`,
   },
   plugins: [
     {
