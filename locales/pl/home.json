@@ -144,5 +144,13 @@
   "home.Footer.place": "receptionOS © 2025",
   "home.Footer.change-language": "Zmień język",
   "home.Footer.polish": "Polski",
-  "home.Footer.english": "Angielski"
+  "home.Footer.english": "Angielski",
+
+  "home.CookieBanner.header": "Strona korzysta z plików cookie",
+  "home.CookieBanner.description": "Wykorzystujemy pliki cookie do spersonalizowania treści i reklam, aby  oferować funkcje społecznościowe i analizować ruch w naszej witrynie.  Informacje o tym, jak korzystasz z naszej witryny, udostępniamy  partnerom społecznościowym, reklamowym i analitycznym. Partnerzy mogą  połączyć te informacje z innymi danymi otrzymanymi od Ciebie lub  uzyskanymi podczas korzystania z ich usług.",
+  "home.CookieBanner.decline": "Odrzuć",
+  "home.CookieBanner.edit-cookies": "Zarządzaj",
+  "home.CookieBanner.accept-all": "Akceptuj wszystkie",
+  "home.CookieBanner.save": "Akcjeptuj wybrane",
+  "home.CookieBanner.edit-header": "Zarządzaj zgodami"
 }

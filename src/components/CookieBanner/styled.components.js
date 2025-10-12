@@ -1,40 +1,126 @@
 import styled from "styled-components"
 
-export const BannerWrapper = styled.div`
-  position: fixed;
-  z-index: 1000;
-  left: 50%;
-  bottom: 24px;
-  transform: translateX(-50%);
-  width: min(90%, 720px);
-  pointer-events: none;
-`
-
-export const BannerContent = styled.div`
+export const CookieBannerContainer = styled.div`
   display: flex;
+  width: 460px;
+  box-sizing: border-box;
   flex-direction: column;
-  gap: 16px;
-  padding: 24px;
-  border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(15, 12, 10, 0.92);
-  box-shadow: 0px 24px 48px rgba(13, 7, 2, 0.45);
-  backdrop-filter: blur(12px);
-  pointer-events: auto;
+  align-items: flex-start;
+  border-radius: 16px 16px 0px 0px;
+  background: rgba(10, 10, 10, 0.95);
+  box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+    0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  z-index: 10;
 
-  p {
-    margin: 0;
-    color: #ffe8d9;
-    line-height: 1.5;
+  .header-con {
+    display: flex;
+    padding: 24px;
+    padding-bottom: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
   }
-`
 
-export const BannerActions = styled.div`
-  display: flex;
-  justify-content: flex-end;
+  .header-con .p-head {
+    color: var(--Font, #ffe8d9);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
 
-  @media only screen and (max-width: 640px) {
-    button {
+  .p-description {
+    color: rgba(255, 232, 217, 0.64);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    align-self: stretch;
+  }
+
+  .agrees-con {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+  }
+
+  .agrees-con .agree-con {
+    display: flex;
+    padding: 8px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+  }
+
+  .agrees-con .agree-con .check-con {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+  }
+
+  .agrees-con .agree-con .check-con svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+  }
+
+  .agrees-con .agree-con .check-con svg:hover {
+    transform: scale(1.1);
+  }
+
+  .agrees-con .agree-con .check-con label {
+    color: var(--Font, #ffe8d9);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    user-select: none;
+  }
+
+  .footer-con {
+    display: flex;
+    padding: 16px 24px 24px 24px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .cookie-button {
+    height: 36px;
+    padding: 0 16px;
+
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin: 0;
+
+    .footer-con {
+      flex-direction: column;
+    }
+    .footer-con button {
       width: 100%;
     }
   }
