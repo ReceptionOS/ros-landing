@@ -3,7 +3,6 @@ import { useTranslation } from "gatsby-plugin-react-i18next"
 import { CookieBannerContainer } from "./styled.components"
 import { RoundedButtonDark, RoundedButtonOrange } from "../../styled.components"
 
-// Custom SVG Checkbox Component
 const CustomCheckbox = ({ checked, onChange, disabled = false }) => {
   if (checked) {
     return (
