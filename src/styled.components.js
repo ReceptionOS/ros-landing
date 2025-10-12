@@ -122,20 +122,6 @@ export const RoundedButtonOrange = styled.button`
 
   &:hover {
     background-color: rgba(230, 105, 40, 0.1);
-    /* background: linear-gradient(
-        129deg,
-        rgba(231, 98, 32, 0) 35.85%,
-        rgba(231, 98, 32, 0.33) 72.26%
-      ),
-      linear-gradient(
-        0deg,
-        rgba(230, 105, 40, 0.2) 0%,
-        rgba(230, 105, 40, 0.2) 100%
-      ),
-      linear-gradient(180deg, rgba(13, 7, 2, 0) 0%, rgba(115, 59, 21, 0.2) 100%);
-    background-blend-mode: color-dodge, normal, normal;
-    box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
-      0 0 3px -1px rgba(255, 255, 255, 0.54) inset; */
   }
 
   @media only screen and (max-width: 1130px) {
@@ -156,6 +142,28 @@ export const RoundedButtonOrange = styled.button`
           rgba(115, 59, 21, 0.2) 100%
         );
       background-blend-mode: color-dodge, normal, normal;
+      box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+        0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
+    }
+  }
+`
+
+export const RoundedButtonDark = styled(RoundedButtonOrange)`
+  background: linear-gradient(
+    180deg,
+    rgba(13, 7, 2, 0) 0%,
+    rgba(115, 59, 21, 0.2) 100%
+  );
+  box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+    0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
+
+  @media only screen and (max-width: 1130px) {
+    &:hover {
+      background: linear-gradient(
+        180deg,
+        rgba(13, 7, 2, 0) 0%,
+        rgba(115, 59, 21, 0.2) 100%
+      );
       box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
         0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
     }

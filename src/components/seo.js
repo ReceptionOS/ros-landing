@@ -4,8 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { useI18next } from "gatsby-plugin-react-i18next"
 
 const APP_NAME = "receptionOS"
-const DEFAULT_OG_IMAGE =
-  "https://opengraph.b-cdn.net/production/images/6e925a8b-2568-4b15-af35-3b62bed3c521.jpg?token=sJk58eLcQhsid3fauZXkZtg-ohS-DHg4WedM3SjzN8Y&height=527&width=1200&expires=33296016216"
+const DEFAULT_OG_IMAGE = "/og-image.jpg"
 
 function Seo({ description, meta = [], title, ogImage }) {
   const { site } = useStaticQuery(
@@ -43,7 +42,9 @@ function Seo({ description, meta = [], title, ogImage }) {
       }}
       title={metaTitle}
       titleTemplate={
-        defaultTitle && metaTitle !== defaultTitle ? `%s | ${defaultTitle}` : undefined
+        defaultTitle && metaTitle !== defaultTitle
+          ? `%s | ${defaultTitle}`
+          : undefined
       }
       meta={[
         {
@@ -124,6 +125,21 @@ function Seo({ description, meta = [], title, ogImage }) {
         },
       ].concat(meta)}
     >
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon-16x16.png"
+      />
+      <link rel="shortcut icon" href="/ros-icon.png" />
+      <link rel="apple-touch-icon" href="/ros-icon.png" />
+
       <script type="application/ld+json">
         {`
       {
