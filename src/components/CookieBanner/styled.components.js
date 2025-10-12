@@ -55,7 +55,7 @@ export const CookieBannerContainer = styled.div`
 
   .agrees-con .agree-con {
     display: flex;
-    padding: 8px 16px;
+    padding: 8px 24px;
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;

@@ -152,5 +152,11 @@
   "home.CookieBanner.edit-cookies": "Zarządzaj",
   "home.CookieBanner.accept-all": "Akceptuj wszystkie",
   "home.CookieBanner.save": "Akcjeptuj wybrane",
-  "home.CookieBanner.edit-header": "Zarządzaj zgodami"
+  "home.CookieBanner.edit-header": "Zarządzaj zgodami",
+  "home.CookieBanner.necessary": "Niezbędne",
+  "home.CookieBanner.necessary-description": "Niezbędne pliki cookie przyczyniają się do użyteczności strony poprzez umożliwianie podstawowych funkcji takich jak nawigacja na stronie internetowej i dostęp do baz danych.",
+  "home.CookieBanner.preferences": "Preferencje",
+  "home.CookieBanner.preferences-description": "Preferencyjne pliki cookie umożliwiają witrynie zapamiętanie informacji, które zmieniają sposób zachowania lub wygląd witryny, takie jak Twoje preferencje językowe lub region.",
+  "home.CookieBanner.statistics": "Analityczne",
+  "home.CookieBanner.statistics-description": "Pliki cookie analityczne pomagają właścicielom witryn zrozumieć, w jaki sposób odwiedzający komunikują się z witrynami, zbierając i raportując informacje."
 }

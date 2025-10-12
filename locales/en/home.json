@@ -144,5 +144,19 @@
   "home.Footer.place": "Warsaw, Poland c 2025",
   "home.Footer.change-language": "Change language",
   "home.Footer.polish": "Polish",
-  "home.Footer.english": "English"
+  "home.Footer.english": "English",
+
+  "home.CookieBanner.header": "This website uses cookies",
+  "home.CookieBanner.description": "We use cookies to personalize content and ads, to provide social media features and to analyze our traffic. We share information about your use of our site with our social media, advertising and analytics partners. Partners may combine this information with other data received from you or obtained during your use of their services.",
+  "home.CookieBanner.decline": "Decline",
+  "home.CookieBanner.edit-cookies": "Manage",
+  "home.CookieBanner.accept-all": "Accept all",
+  "home.CookieBanner.save": "Accept selected",
+  "home.CookieBanner.edit-header": "Manage consents",
+  "home.CookieBanner.necessary": "Necessary",
+  "home.CookieBanner.necessary-description": "Necessary cookies help make a website usable by enabling basic functions like site navigation and access to secure areas of the website.",
+  "home.CookieBanner.preferences": "Preferences",
+  "home.CookieBanner.preferences-description": "Preference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region you are in.",
+  "home.CookieBanner.statistics": "Analytics",
+  "home.CookieBanner.statistics-description": "Analytics cookies help website owners understand how visitors interact with websites by collecting and reporting information anonymously."
 }
