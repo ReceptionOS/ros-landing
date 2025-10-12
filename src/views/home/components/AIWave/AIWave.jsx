@@ -146,7 +146,7 @@ const AIWave = ({ t }) => {
             ))}
           </div>
           <div className="mobile">
-            <SliderComponent t={t} />
+            <SliderComponent t={t} items={tilesData} />
           </div>
         </AIWaveContainer>
       </div>

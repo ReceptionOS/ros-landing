@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { StaticImage } from 'gatsby-plugin-image';
 import { BorderContainerRowsVerticalSides } from '../../../../../components/BorderContainer/BorderContainerRowsVerticalSides';
 
-const SliderComponent = ({ t }) => {
+const SliderComponent = ({ t, items }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -21,57 +21,6 @@ const SliderComponent = ({ t }) => {
     centerPadding: "55px",
     variableWidth: true
   };
-
-  const items = [
-    {
-      id: 1,
-      image: (
-        <StaticImage
-          className="image"
-          src="../../../../../images/aiwave/1.svg"
-          alt="image"
-          placeholder="image"
-          loading="lazy"
-        />
-      )
-    },
-    {
-      id: 2,
-      image: (
-        <StaticImage
-          className="image"
-          src="../../../../../images/aiwave/2.svg"
-          alt="image"
-          placeholder="image"
-          loading="lazy"
-        />
-      )
-    },
-    {
-      id: 3,
-      image: (
-        <StaticImage
-          className="image"
-          src="../../../../../images/aiwave/3.svg"
-          alt="image"
-          placeholder="image"
-          loading="lazy"
-        />
-      )
-    },
-    {
-      id: 4,
-      image: (
-        <StaticImage
-          className="image"
-          src="../../../../../images/aiwave/4.svg"
-          alt="image"
-          placeholder="image"
-          loading="lazy"
-        />
-      )
-    },
-  ]
 
   const renderItems = items?.map((item) => {
     return (
