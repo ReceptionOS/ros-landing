@@ -1,12 +1,25 @@
 import React from 'react';
 import { LocalVideoSection } from './styled.components';
+import { useVideoAutoplay } from '../../hooks/useVideoAutoplay';
+import PlayButton from '../PlayButton/PlayButton';
 
-const LocalVideo = ({ src, className }) => (
-  <LocalVideoSection className={className}>
-    <video muted playsInline>
-      <source src={src} type="video/webm" />
-    </video>
-  </LocalVideoSection>
-);
+const LocalVideo = ({ src, className }) => {
+  const { ref, videoRef, load, showPlayButton, handlePlayClick } = useVideoAutoplay();
+
+  return (
+    <LocalVideoSection ref={ref} className={className} style={{ position: 'relative' }}>
+      {load ? (
+        <>
+          <video ref={videoRef} muted playsInline style={{ width: '100%', height: '100%' }}>
+            <source src={src} type="video/webm" />
+          </video>
+          {showPlayButton && <PlayButton onClick={handlePlayClick} />}
+        </>
+      ) : (
+        <div style={{ width: '100%', height: '100%', backgroundColor: '#f0f0f0' }} />
+      )}
+    </LocalVideoSection>
+  );
+};
 
 export default LocalVideo;
