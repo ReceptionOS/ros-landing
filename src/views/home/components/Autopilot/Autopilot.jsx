@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react"
+import React from "react"
 import { AutopilotComponent } from "./styled.components"
 import { Trans } from 'react-i18next';
 import '../../../../images/autopilot/phone_circle.webp'
@@ -6,50 +6,13 @@ import BlobAnimation from '../../../../assets/videos/how/Blob_Animation.mp4';
 import { RoundedButtonOrange } from "../../../../styled.components";
 
 const Autopilot = ({ t, handleClick }) => {
-  const videoRef = useRef();
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      const video = videoRef.current;
-
-      // Try to play the video
-      const playPromise = video.play();
-
-      if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            setIsVideoPlaying(true);
-          })
-          .catch((error) => {
-            console.log('Background video autoplay prevented:', error);
-            // For background videos, we can try to play on user interaction
-            const handleUserInteraction = () => {
-              video.play().then(() => {
-                setIsVideoPlaying(true);
-                // Remove listeners after successful play
-                document.removeEventListener('click', handleUserInteraction);
-                document.removeEventListener('scroll', handleUserInteraction);
-                document.removeEventListener('touchstart', handleUserInteraction);
-              }).catch(() => {
-                // Still failed, keep trying on next interaction
-              });
-            };
-
-            document.addEventListener('click', handleUserInteraction);
-            document.addEventListener('scroll', handleUserInteraction);
-            document.addEventListener('touchstart', handleUserInteraction);
-          });
-      }
-    }
-  }, []);
 
   return (
     <>
       <AutopilotComponent>
         <video
-          ref={videoRef}
           className="bg-video"
+          autoPlay
           loop
           muted
           playsInline
