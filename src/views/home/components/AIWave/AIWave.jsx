@@ -5,7 +5,100 @@ import { StaticImage } from "gatsby-plugin-image"
 import { BorderContainerRowsVerticalSides } from "../../../../components/BorderContainer/BorderContainerRowsVerticalSides"
 import '../../../../images/aiwave/middle-empty.webp'
 import SliderComponent from "./Slider"
+
 const AIWave = ({ t }) => {
+  const tilesData = [
+    {
+      id: 1,
+      image: (
+        <StaticImage
+          className="image"
+          src="../../../../images/aiwave/1.svg"
+          alt="image"
+          placeholder="image"
+          loading="lazy"
+        />
+      ),
+      titleKey: "home.AIWave.tile-title-1",
+      descriptionKey: "home.AIWave.tile-description-1",
+      className: "ai-wave-tile"
+    },
+    {
+      id: 2,
+      image: (
+        <StaticImage
+          className="image"
+          src="../../../../images/aiwave/2.svg"
+          alt="image"
+          placeholder="image"
+          loading="lazy"
+        />
+      ),
+      titleKey: "home.AIWave.tile-title-2",
+      descriptionKey: "home.AIWave.tile-description-2",
+      className: "ai-wave-tile no-left"
+    },
+    {
+      id: 3,
+      image: (
+        <StaticImage
+          className="image"
+          src="../../../../images/aiwave/6.svg"
+          alt="image"
+          placeholder="image"
+          loading="lazy"
+        />
+      ),
+      titleKey: "home.AIWave.tile-title-3",
+      descriptionKey: "home.AIWave.tile-description-3",
+      className: "ai-wave-tile no-left"
+    },
+    {
+      id: 4,
+      image: (
+        <StaticImage
+          className="image"
+          src="../../../../images/aiwave/6.svg"
+          alt="image"
+          placeholder="image"
+          loading="lazy"
+        />
+      ),
+      titleKey: "home.AIWave.tile-title-4",
+      descriptionKey: "home.AIWave.tile-description-4",
+      className: "ai-wave-tile"
+    },
+    {
+      id: 5,
+      image: (
+        <StaticImage
+          className="image"
+          src="../../../../images/aiwave/5.svg"
+          alt="image"
+          placeholder="image"
+          loading="lazy"
+        />
+      ),
+      titleKey: "home.AIWave.tile-title-5",
+      descriptionKey: "home.AIWave.tile-description-5",
+      className: "ai-wave-tile no-left"
+    },
+    {
+      id: 6,
+      image: (
+        <StaticImage
+          className="image"
+          src="../../../../images/aiwave/6.svg"
+          alt="image"
+          placeholder="image"
+          loading="lazy"
+        />
+      ),
+      titleKey: "home.AIWave.tile-title-6",
+      descriptionKey: "home.AIWave.tile-description-6",
+      className: "ai-wave-tile no-left"
+    }
+  ]
 
   return (
     <>
@@ -40,82 +133,17 @@ const AIWave = ({ t }) => {
               placeholder="middle-empty"
               loading="lazy"
             />
-            <BorderContainerRowsVerticalSides className="ai-wave-tile">
-              <div className="tile-content">
-                <StaticImage
-                  className="image"
-                  src="../../../../images/aiwave/1.svg"
-                  alt="image"
-                  placeholder="image"
-                  loading="lazy"
-                />
-                <div className="text-tile">
-                  <p className="p-new-model-18">{t(`home.AIWave.tile-title-1`)}</p>
-                  <p className="p-new-model-16">{t(`home.AIWave.tile-description-1`)}</p>
+            {tilesData.map((tile) => (
+              <BorderContainerRowsVerticalSides key={tile.id} className={tile.className}>
+                <div className="tile-content">
+                  {tile.image}
+                  <div className="text-tile">
+                    <p className="p-new-model-18">{t(tile.titleKey)}</p>
+                    <p className="p-new-model-16">{t(tile.descriptionKey)}</p>
+                  </div>
                 </div>
-              </div>
-            </BorderContainerRowsVerticalSides>
-            <BorderContainerRowsVerticalSides className="ai-wave-tile no-left">
-              <div className="tile-content">
-                <StaticImage
-                  className="image"
-                  src="../../../../images/aiwave/2.svg"
-                  alt="image"
-                  placeholder="image"
-                  loading="lazy"
-                />
-                <div className="text-tile">
-                  <p className="p-new-model-18">{t(`home.AIWave.tile-title-2`)}</p>
-                  <p className="p-new-model-16">{t(`home.AIWave.tile-description-2`)}</p>
-                </div>
-              </div>
-            </BorderContainerRowsVerticalSides>
-            <BorderContainerRowsVerticalSides className="ai-wave-tile no-left">
-              <div className="tile-content">
-                <StaticImage
-                  className="image"
-                  src="../../../../images/aiwave/4.svg"
-                  alt="image"
-                  placeholder="image"
-                  loading="lazy"
-                />
-                <div className="text-tile">
-                  <p className="p-new-model-18">{t(`home.AIWave.tile-title-5`)}</p>
-                  <p className="p-new-model-16">{t(`home.AIWave.tile-description-5`)}</p>
-                </div>
-              </div>
-            </BorderContainerRowsVerticalSides>
-            <BorderContainerRowsVerticalSides className="ai-wave-tile ai-wave-empty" />
-            <BorderContainerRowsVerticalSides className="ai-wave-tile no-left">
-              <div className="tile-content">
-                <StaticImage
-                  className="image"
-                  src="../../../../images/aiwave/3.svg"
-                  alt="image"
-                  placeholder="image"
-                  loading="lazy"
-                />
-                <div className="text-tile">
-                  <p className="p-new-model-18">{t(`home.AIWave.tile-title-3`)}</p>
-                  <p className="p-new-model-16">{t(`home.AIWave.tile-description-3`)}</p>
-                </div>
-              </div>
-            </BorderContainerRowsVerticalSides>
-            <BorderContainerRowsVerticalSides className="ai-wave-tile no-left">
-              <div className="tile-content">
-                <StaticImage
-                  className="image"
-                  src="../../../../images/aiwave/4.svg"
-                  alt="image"
-                  placeholder="image"
-                  loading="lazy"
-                />
-                <div className="text-tile">
-                  <p className="p-new-model-18">{t(`home.AIWave.tile-title-4`)}</p>
-                  <p className="p-new-model-16">{t(`home.AIWave.tile-description-4`)}</p>
-                </div>
-              </div>
-            </BorderContainerRowsVerticalSides>
+              </BorderContainerRowsVerticalSides>
+            ))}
           </div>
           <div className="mobile">
             <SliderComponent t={t} />
