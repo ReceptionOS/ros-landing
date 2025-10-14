@@ -29,7 +29,12 @@ function Seo({ description, meta = [], title, ogImage }) {
   const defaultTitle = site.siteMetadata?.title
   const siteUrl = site.siteMetadata?.siteUrl
 
-  const metaOgImage = ogImage === undefined ? DEFAULT_OG_IMAGE : ogImage
+  const metaOgImage =
+    ogImage === undefined
+      ? `${siteUrl}${DEFAULT_OG_IMAGE}`
+      : ogImage.startsWith("http")
+      ? ogImage
+      : `${siteUrl}${ogImage}`
   const metaTitle = title || defaultTitle || APP_NAME
   const twitterDomain = siteUrl
     ? siteUrl.replace(/^https?:\/\//, "").replace(/\/$/, "")
@@ -64,6 +69,14 @@ function Seo({ description, meta = [], title, ogImage }) {
           content: `website`,
         },
         {
+          property: `og:site_name`,
+          content: APP_NAME,
+        },
+        {
+          property: `og:locale`,
+          content: language === "pl" ? "pl_PL" : "en_US",
+        },
+        {
           property: `og:title`,
           content: metaTitle,
         },
@@ -82,6 +95,13 @@ function Seo({ description, meta = [], title, ogImage }) {
         {
           property: `og:image:height`,
           content: `527`,
+        },
+        {
+          property: `og:image:alt`,
+          content:
+            language === "pl"
+              ? `ReceptionOS - Autopilot dla Twojej kliniki stomatologicznej`
+              : `ReceptionOS - Your Dental Clinic on Autopilot`,
         },
         {
           property: `al:ios:url`,
@@ -147,6 +167,13 @@ function Seo({ description, meta = [], title, ogImage }) {
         "@type": "Organization",
         "url": "https://receptionos.com/",
         "name": "ReceptionOS sp. z o.o.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://receptionos.com/og-image.jpg",
+          "width": 1200,
+          "height": 527
+        },
+        "image": "https://receptionos.com/og-image.jpg",
         "isAccessibleForFree": true,
         "description": "Automatyzacja rejestracji, przypomnienia SMS, pobieranie przedpłat - pełna kontrola nad grafikiem i wizytami w swojej klinice. Zyskaj spokój i skup się na pacjentach, nie na telefonach.",
         "email": "k@receptionos.com",
@@ -163,7 +190,20 @@ function Seo({ description, meta = [], title, ogImage }) {
           "addressRegion": "PODKARPACKIE",
           "postalCode": "37-450",
           "@id": "https://maps.app.goo.gl/NrgvCJAr2nsb6sRY9"
-        },
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ReceptionOS",
+        "url": "https://receptionos.com/",
+        "description": "Autopilot dla Twojej kliniki stomatologicznej",
+        "image": "https://receptionos.com/og-image.jpg",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://receptionos.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       }
     `}
       </script>
