@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from "react"
 
-export const useVideoAutoplay = () => {
+export const useVideoAutoplay = (autoPlay = true, onEnded) => {
   const ref = useRef()
   const videoRef = useRef()
   const [load, setLoad] = useState(false)
@@ -27,20 +27,38 @@ export const useVideoAutoplay = () => {
     if (videoRef.current && load) {
       const video = videoRef.current
 
-      const playPromise = video.play()
+      // Attach onEnded callback if provided
+      if (onEnded) {
+        video.addEventListener("ended", onEnded)
+      }
 
-      if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            setShowPlayButton(false)
-          })
-          .catch(error => {
-            console.log("Autoplay prevented, showing play button")
-            setShowPlayButton(true)
-          })
+      // Only auto-play if autoPlay is true
+      if (autoPlay) {
+        const playPromise = video.play()
+
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              setShowPlayButton(false)
+            })
+            .catch(error => {
+              console.log("Autoplay prevented, showing play button")
+              setShowPlayButton(true)
+            })
+        }
+      } else {
+        // If not auto-playing, show play button
+        setShowPlayButton(true)
+      }
+
+      // Cleanup function
+      return () => {
+        if (onEnded) {
+          video.removeEventListener("ended", onEnded)
+        }
       }
     }
-  }, [load])
+  }, [load, autoPlay, onEnded])
 
   const handlePlayClick = () => {
     if (videoRef.current) {

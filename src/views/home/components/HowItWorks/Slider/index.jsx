@@ -10,9 +10,6 @@ import { BorderContainerNoRowsVerticalSidesLong } from '../../../../../component
 
 const SliderComponent = ({ items }) => {
   let sliderRef = useRef(null);
-  const prevVideoRef = useRef(null);
-  const prevEndedHandlerRef = useRef(null);
-
   const [slideIndex, setSlideIndex] = useState(1);
 
   function NextArrow(props) {
@@ -49,70 +46,56 @@ const SliderComponent = ({ items }) => {
     slidesToScroll: 1,
     autoplay: false,
     arrows: true,
-    afterChange: () => {
-      attachEndedToCurrent();
-    },
     beforeChange: (current, next) => setSlideIndex(next + 1),
+    afterChange: (current) => {
+      // Pause all videos first
+      const listEl = sliderRef.current?.innerSlider?.list || sliderRef.current?.list;
+      if (listEl) {
+        const allVideos = listEl.querySelectorAll("video");
+        allVideos.forEach((video) => {
+          try {
+            video.pause();
+            video.currentTime = 0;
+          } catch (e) {
+            // Ignore errors
+          }
+        });
+
+        // Play the current video after a short delay
+        setTimeout(() => {
+          const currentVideo = listEl.querySelector(".slick-current video");
+          if (currentVideo) {
+            currentVideo.play().catch(() => {
+              // Autoplay failed, video will show play button
+            });
+          }
+        }, 100);
+      }
+    },
     fade: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />
   };
 
-  const attachEndedToCurrent = useCallback(() => {
-    const listEl = sliderRef.current?.innerSlider?.list || sliderRef.current?.list;
-    if (!listEl) return;
-
-    const currentVideo = listEl.querySelector(".slick-current video");
-    const allVideos = listEl.querySelectorAll("video");
-
-    allVideos.forEach((v) => {
-      try {
-        if (v !== currentVideo) {
-          v.pause();
-          v.currentTime = 0;
-        }
-      } catch (e) {
-      }
-    });
-
-    if (prevVideoRef.current && prevEndedHandlerRef.current) {
-      try {
-        prevVideoRef.current.removeEventListener("ended", prevEndedHandlerRef.current);
-      } catch (e) { }
-      prevVideoRef.current = null;
-      prevEndedHandlerRef.current = null;
-    }
-
-    if (!currentVideo) return;
-    const onEnded = () => {
-      try {
-        currentVideo.removeEventListener("ended", onEnded);
-      } catch (e) { }
-      prevVideoRef.current = null;
-      prevEndedHandlerRef.current = null;
-      sliderRef.current?.slickNext();
-    };
-
-    prevVideoRef.current = currentVideo;
-    prevEndedHandlerRef.current = onEnded;
-
-    currentVideo.addEventListener("ended", onEnded);
-    currentVideo.play().catch(() => {
-    });
+  const handleVideoEnded = useCallback(() => {
+    sliderRef.current?.slickNext();
   }, []);
 
+  // Start the first video when component mounts
   useEffect(() => {
-    const t = setTimeout(() => attachEndedToCurrent(), 50);
-    return () => {
-      clearTimeout(t);
-      if (prevVideoRef.current && prevEndedHandlerRef.current) {
-        try {
-          prevVideoRef.current.removeEventListener("ended", prevEndedHandlerRef.current);
-        } catch (e) { }
-        prevVideoRef.current = null;
-        prevEndedHandlerRef.current = null;
+    const timer = setTimeout(() => {
+      const listEl = sliderRef.current?.innerSlider?.list || sliderRef.current?.list;
+      if (listEl) {
+        const currentVideo = listEl.querySelector(".slick-current video");
+        if (currentVideo) {
+          currentVideo.play().catch(() => {
+            // Autoplay failed, video will show play button
+          });
+        }
       }
-    };
+    }, 200);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const renderItems = items?.map((item, index) => {
@@ -147,7 +130,12 @@ const SliderComponent = ({ items }) => {
           <div className='video-space-middle'>
             <BorderContainer4Rows className='slider-tile-right-top'></BorderContainer4Rows>
             <BorderContainer4Rows>
-              <LocalVideo src={item.link} className="slider-video" />
+              <LocalVideo
+                src={item.link}
+                className="slider-video"
+                autoPlay={true}
+                onEnded={handleVideoEnded}
+              />
             </BorderContainer4Rows>
             <BorderContainer4Rows className='slider-tile-right-bottom'></BorderContainer4Rows>
           </div>

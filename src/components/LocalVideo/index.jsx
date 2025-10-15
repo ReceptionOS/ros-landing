@@ -3,8 +3,8 @@ import { LocalVideoSection } from './styled.components';
 import { useVideoAutoplay } from '../../hooks/useVideoAutoplay';
 import PlayButton from '../PlayButton/PlayButton';
 
-const LocalVideo = ({ src, className }) => {
-  const { ref, videoRef, load, showPlayButton, handlePlayClick } = useVideoAutoplay();
+const LocalVideo = ({ src, className, autoPlay = true, onEnded }) => {
+  const { ref, videoRef, load, showPlayButton, handlePlayClick } = useVideoAutoplay(autoPlay, onEnded);
 
   return (
     <LocalVideoSection ref={ref} className={className} style={{ position: 'relative' }}>
