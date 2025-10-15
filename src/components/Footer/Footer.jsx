@@ -135,7 +135,7 @@ const Footer = ({ t }) => {
                   )
                 }}
               >
-                r@receptionos.com
+                k@receptionos.com
               </a>
               <RoundedButtonSvg as="a" href="mailto:k@receptionos.com">
                 <svg
