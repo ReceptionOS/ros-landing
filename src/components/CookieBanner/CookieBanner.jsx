@@ -173,7 +173,6 @@ const CookieBanner = () => {
                   <div className="check-con">
                     <CustomCheckbox
                       checked={checkboxStates[type.name]}
-                      onChange={() => handleCheckboxChange(type.name)}
                       disabled={type.name === "necessary"}
                     />
                     <label
