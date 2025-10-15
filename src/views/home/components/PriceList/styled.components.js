@@ -7,14 +7,6 @@ export const PriceListComponent = styled.div`
   align-items: center;
   gap: 40px;
 
-  /* .border-container-bottom-rows-top {
-    border-bottom: none;
-  }
-
-  .border-container-top-rows-bottom {
-    border-top: none;
-  } */
-
   .top-border-container {
     width: 100%;
     box-sizing: border-box;
@@ -38,11 +30,9 @@ export const PriceListComponent = styled.div`
       display: flex;
       width: 48px;
       height: 48px;
-      /* padding: 0 24px; */
       justify-content: center;
       align-items: center;
       gap: 12px;
-      /* border-radius: 500px 0 0 500px; */
       background: linear-gradient(
           129deg,
           rgba(231, 98, 32, 0) 35.85%,
@@ -97,7 +87,6 @@ export const PriceListComponent = styled.div`
       display: flex;
       width: 48px;
       height: 48px;
-      /* padding: 0 24px; */
       justify-content: center;
       align-items: center;
       gap: 12px;
@@ -132,7 +121,6 @@ export const PriceListComponent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 16px; */
 
     .pricing-container {
       width: 100%;

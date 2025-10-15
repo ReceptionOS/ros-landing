@@ -27,10 +27,7 @@ export const SliderContainer = styled.div`
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    /* gap: 30px !important; */
     margin: auto;
-    /* width: 570px; */
-    /* height: calc(358px + 128px); */
 
     .slider-tile-left {
       display: flex;
@@ -186,7 +183,6 @@ export const SliderContainer = styled.div`
 
     .text-container {
       display: flex;
-      /* width: 278px; */
       flex-direction: column;
       align-items: flex-start;
       vertical-align: middle;

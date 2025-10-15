@@ -1,12 +1,6 @@
 import styled from "styled-components"
 
-export const BaseModalContainer = styled.div`
-  /* display: flex;
-  padding: 24px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px; */
-`
+export const BaseModalContainer = styled.div``
 
 export const BaseModalHeader = styled.div`
   display: flex;

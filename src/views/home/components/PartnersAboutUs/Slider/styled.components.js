@@ -38,10 +38,6 @@ export const SliderContainer = styled.div`
     padding: 0;
   }
 
-  .gatsby-image-wrapper {
-    /* height: 120px; */
-  }
-
   .slider-tile {
     display: flex !important;
     width: 308px !important;

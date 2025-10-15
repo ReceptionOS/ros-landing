@@ -3,9 +3,7 @@ import Modal from 'react-modal';
 import { BaseModalContainer } from './styled.components';
 
 const BaseModal = ({
-    // t,
     isModal,
-    // setIsModal,
     props,
     modalStyles
 }) => {

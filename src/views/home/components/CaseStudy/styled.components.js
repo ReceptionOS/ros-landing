@@ -44,7 +44,6 @@ export const CaseStudyComponent = styled.div`
     align-items: center;
     justify-content: center;
     max-width: 966px;
-    /* box-sizing: border-box; */
     padding: 24px;
 
     .apolonia-image {
