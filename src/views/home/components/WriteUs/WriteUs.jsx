@@ -8,7 +8,6 @@ const WriteUs = ({ t }) => {
 
   return (
     <>
-      {/* <div className="container"> */}
       <WriteUsComponent>
         <div className="text-container">
           <h2>{t('home.WriteUs.title')}</h2>
@@ -23,7 +22,6 @@ const WriteUs = ({ t }) => {
           <RoundedButtonOrange as="a" href={orderAnalysisButton} target="_blank" rel="noreferrer">{t('home.WriteUs.button')}</RoundedButtonOrange>
         </div>
       </WriteUsComponent>
-      {/* </div> */}
     </>
   )
 }

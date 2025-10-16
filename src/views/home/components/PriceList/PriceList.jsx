@@ -89,7 +89,7 @@ const PriceList = ({ t }) => {
                     </div>
 
                     <div className="price-bottom">
-                      <h3>{computed} PLN <span>/ msc</span></h3>
+                      <h3>{computed} PLN <span>/ {t(`home.PriceList.month`)}</span></h3>
 
                       {item.listText && (
                         <p className="list-text">{t(`home.PriceList.${item.name}-list-text`)}</p>

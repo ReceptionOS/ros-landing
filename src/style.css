@@ -4,7 +4,6 @@ main {
 
 body {
   margin: 0;
-  /* font-family: "Red Hat Display"; */
   font-family: "Inter Tight";
   background-color: var(--Black);
 }
@@ -20,7 +19,6 @@ body {
 
 .container {
   margin: 0 auto;
-  /* width: 100%; */
 }
 
 h1,
@@ -90,7 +88,6 @@ h4 {
 }
 
 .p-new-model-16 {
-  /* color: rgba(255, 232, 217, 0.64); */
   color: #a3948b;
   font-size: 16px;
   font-style: normal;

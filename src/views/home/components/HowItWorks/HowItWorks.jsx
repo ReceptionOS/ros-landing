@@ -7,10 +7,7 @@ import SliderComponent from "./Slider"
 import Video1 from '../../../../assets/videos/how/ANIMACJA_KALENDARZ_ALPHA_1.mp4';
 import Video2 from '../../../../assets/videos/how/ANIMACJA_NOSHOW_1_1.mp4';
 import Video3 from '../../../../assets/videos/how/ANIMACJA_ROZMOWA_SMS_ALPHA_1_1.mp4';
-import Video4 from '../../../../assets/videos/how/ANIMACJA_UMOWIONE_ALPHA_1_1.mp4';
-import Video5 from '../../../../assets/videos/how/KALENDARZ KASOWANIE_1.mp4';
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
-import LocalVideo from "../../../../components/LocalVideo"
 import LocalVideo2 from "../../../../components/LocalVideo/LocalVideo2"
 import { BorderContainer4Rows2Sides } from "../../../../components/BorderContainer/BorderContainer4Rows2Sides"
 const HowItWorks = ({ t }) => {
@@ -30,24 +27,13 @@ const HowItWorks = ({ t }) => {
       title: t('home.HowItWorks.video3-title'),
       description: t('home.HowItWorks.video3-description'),
       link: Video3
-    },
-    // {
-    //   title: t('home.HowItWorks.video4-title'),
-    //   description: t('home.HowItWorks.video4-description'),
-    //   link: Video4
-    // },
-    // {
-    //   title: t('home.HowItWorks.video5-title'),
-    //   description: t('home.HowItWorks.video5-description'),
-    //   link: Video5
-    // },
+    }
   ]
 
   return (
     <>
       <HowItWorksComponent>
         <div className="container">
-          {/* 25.08 */}
           <BorderContainerNoRowsSides className="hiw-text">
             <div className="top-tile">
               <RoundedInfoTile>
@@ -58,7 +44,6 @@ const HowItWorks = ({ t }) => {
           </BorderContainerNoRowsSides>
         </div>
       </HowItWorksComponent>
-      {/* 25.08 */}
       <HowItWorksSliderComponent className="desktop">
         <div className="container">
           {items && <SliderComponent items={items} />}

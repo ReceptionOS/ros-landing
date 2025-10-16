@@ -50,18 +50,6 @@ export const BorderContainerTopRowsBottom2 = ({ children, className }) => {
           }
         `}</style>
             </div>
-            {/* <svg
-                className="top-rows-bottom2-bottom desktop"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 963 111"
-                fill="none"
-            >
-                <path
-                    d="M962 0.5V94L933 104H875.5L844.5 110V104L30 104.134L1 94.134V0.5"
-                    stroke="#302C29"
-                    strokeLinecap="round"
-                />
-            </svg> */}
             <svg className="top-rows-bottom2-bottom desktop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 962 32" fill="none">
                 <path opacity="0.3" d="M961 1V15L933 24.9999H875.5L844.5 30.9999V24.9999L30 25.1339L1 15.134V1.13397" stroke="#877B72" strokeLinecap="round" />
             </svg>

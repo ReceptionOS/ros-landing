@@ -99,7 +99,7 @@
 
   "home.AboutUs.about-us": "O Nas",
   "home.AboutUs.title": "Dlaczego kliniki ufają ReceptionOS",
-  "home.AboutUs.description": "Znamy te wyzwania z własnego doświadczenia. Stomatologia mamy we krwi — nasza rodzinna klinika ma <span>ponad 35 lat doświadczenia w implantologii.</span> ReceptionOS stworzyliśmy, by rozwiązać problemy, z którymi sami mierzyliśmy się każdego dnia.",
+  "home.AboutUs.description": "Znamy te wyzwania z własnego doświadczenia. Stomatologię mamy we krwi — nasza rodzinna klinika ma <span>ponad 35 lat doświadczenia w implantologii.</span> ReceptionOS stworzyliśmy, by rozwiązać problemy, z którymi sami mierzyliśmy się każdego dnia.",
 
   "home.PriceList.price-list": "Cennik",
   "home.PriceList.title": "Porównaj pakiety",
@@ -127,6 +127,7 @@
   "home.PriceList.Elite-list-text": "Wszystko z Optimum +",
   "home.PriceList.button": "Skontaktuj się",
   "home.PriceList.chairs": "Liczba foteli w placówce",
+  "home.PriceList.month": "msc",
 
   "home.WriteUs.title": "Gotowy dołączyć do top 1% klinik?",
   "home.WriteUs.description": "Umów audyt już dziś — odezwiemy się natychmiast.",
