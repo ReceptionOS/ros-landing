@@ -32,6 +32,21 @@ export const useVideoAutoplay = (autoPlay = true, onEnded) => {
         video.addEventListener("ended", onEnded)
       }
 
+      // Add event listeners for play/pause to track actual video state
+      const handlePlay = () => {
+        setShowPlayButton(false)
+      }
+
+      const handlePause = () => {
+        // Only show play button if video is paused and not at the end
+        if (video.currentTime < video.duration) {
+          setShowPlayButton(true)
+        }
+      }
+
+      video.addEventListener("play", handlePlay)
+      video.addEventListener("pause", handlePause)
+
       // Only auto-play if autoPlay is true
       if (autoPlay) {
         const playPromise = video.play()
@@ -56,6 +71,8 @@ export const useVideoAutoplay = (autoPlay = true, onEnded) => {
         if (onEnded) {
           video.removeEventListener("ended", onEnded)
         }
+        video.removeEventListener("play", handlePlay)
+        video.removeEventListener("pause", handlePause)
       }
     }
   }, [load, autoPlay, onEnded])
@@ -73,11 +90,24 @@ export const useVideoAutoplay = (autoPlay = true, onEnded) => {
     }
   }
 
+  const resetPlayButton = () => {
+    if (videoRef.current) {
+      const video = videoRef.current
+      // Reset play button based on current video state
+      if (video.paused || video.ended) {
+        setShowPlayButton(true)
+      } else {
+        setShowPlayButton(false)
+      }
+    }
+  }
+
   return {
     ref,
     videoRef,
     load,
     showPlayButton,
     handlePlayClick,
+    resetPlayButton,
   }
 }

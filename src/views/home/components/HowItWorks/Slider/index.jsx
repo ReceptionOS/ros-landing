@@ -61,12 +61,17 @@ const SliderComponent = ({ items }) => {
           }
         });
 
-        // Play the current video after a short delay
+        // Reset and play the current video after a short delay
         setTimeout(() => {
           const currentVideo = listEl.querySelector(".slick-current video");
           if (currentVideo) {
+            // Reset video to beginning
+            currentVideo.currentTime = 0;
+
+            // Try to play the video
             currentVideo.play().catch(() => {
               // Autoplay failed, video will show play button
+              console.log("Autoplay failed for current video");
             });
           }
         }, 100);
@@ -88,8 +93,11 @@ const SliderComponent = ({ items }) => {
       if (listEl) {
         const currentVideo = listEl.querySelector(".slick-current video");
         if (currentVideo) {
+          // Ensure video is at the beginning
+          currentVideo.currentTime = 0;
           currentVideo.play().catch(() => {
             // Autoplay failed, video will show play button
+            console.log("Initial autoplay failed");
           });
         }
       }
