@@ -4,9 +4,9 @@ import { BorderContainerNoRowsSides } from "../../../../components/BorderContain
 import { RoundedInfoTile } from "../../../../styled.components"
 import SliderComponent from "./Slider"
 
-import Video1 from '../../../../assets/videos/how/ANIMACJA_KALENDARZ_ALPHA_1.mp4';
-import Video2 from '../../../../assets/videos/how/ANIMACJA_NOSHOW_1_1.mp4';
-import Video3 from '../../../../assets/videos/how/ANIMACJA_ROZMOWA_SMS_ALPHA_1_1.mp4';
+import Video1 from '../../../../assets/videos/how/output1.mp4';
+import Video2 from '../../../../assets/videos/how/output2.mp4';
+import Video3 from '../../../../assets/videos/how/output3.mp4';
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 import LocalVideo2 from "../../../../components/LocalVideo/LocalVideo2"
 import { BorderContainer4Rows2Sides } from "../../../../components/BorderContainer/BorderContainer4Rows2Sides"
