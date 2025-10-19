@@ -11,7 +11,7 @@ const LocalVideo = ({ src, className, autoPlay = true, onEnded }) => {
       {load ? (
         <>
           <video ref={videoRef} muted playsInline style={{ width: '100%', height: '100%' }}>
-            <source src={src} type="video/webm" />
+            <source src={src} type="video/mp4" />
           </video>
           {showPlayButton && <PlayButton onClick={handlePlayClick} />}
         </>
