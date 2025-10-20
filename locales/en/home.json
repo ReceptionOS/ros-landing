@@ -1,5 +1,5 @@
 {
-  "home.seo.title": "ReceptionOS | Your Dental Clinic on Autopilot",
+  "home.seo.title": "ReceptionOS | Your Clinic on Autopilot",
   "home.seo.description": "Handle patient communication 24/7, schedule appointments, take prepayments and manage cancellations — fewer no-shows and smoother front-desk.",
 
   "home.Menu.order-button": "Order audit",
@@ -36,7 +36,7 @@
 
   "home.EliminateProblems.eliminate-problems": "Eliminate Problems",
   "home.EliminateProblems.title": "Chaotic front desk - sounds familiar?",
-  "home.EliminateProblems.description": "See how ReceptionOS solves everyday problems of dental clinics",
+  "home.EliminateProblems.description": "See how ReceptionOS solves everyday problems of clinics",
   "home.EliminateProblems.tile1-title": "Chaos",
   "home.EliminateProblems.tile1-description": "at the front desk and suboptimal calendar",
   "home.EliminateProblems.tile2-title": "No shows",
@@ -123,7 +123,7 @@
   "home.PriceList.Elite-li1": "Automated appointment booking & deposit collection",
   "home.PriceList.Elite-li2": "Regular alerts on lost opportunities",
   "home.PriceList.Elite-li3": "Monthly reception training sessions",
-  "home.PriceList.Elite-li4": "Strategy consulting and growth planning with a dental clinic expert",
+  "home.PriceList.Elite-li4": "Strategy consulting and growth planning with a clinic expert",
   "home.PriceList.Elite-list-text": "Everything in Optimum, plus:",
   "home.PriceList.button": "Contact us",
   "home.PriceList.chairs": "Number of chairs in the clinic",
