@@ -7,7 +7,7 @@ const OurPartners = ({ t }) => {
 
   const items = [
     {
-      link: 'https://nowipacjenci.pl/home',
+      link: null,
       img: (
         <StaticImage
           className="image"
@@ -71,9 +71,13 @@ const OurPartners = ({ t }) => {
   const renderItems = items?.map((item, index) => {
     return (
       <div key={index} className="we-work-with-a-wrapper">
-        <a href={item.link} target="_blank" rel="noreferrer nofollow">
-          {item.img}
-        </a>
+        {item.link ? (
+          <a href={item.link} target="_blank" rel="noreferrer nofollow">
+            {item.img}
+          </a>
+        ) : (
+          item.img
+        )}
       </div>
     );
   });
