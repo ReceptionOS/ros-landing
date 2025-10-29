@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const PriceListComponent = styled.div`
   padding: 30px 0 24px 0;
   display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   gap: 40px;
