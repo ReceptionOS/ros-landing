@@ -1,0 +1,16 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.13 34.7712C12.044 34.7712 5.48897 28.2162 5.48897 20.1302C5.48897 12.0441 12.044 5.48914 20.13 5.48914C28.216 5.48914 34.771 12.0441 34.771 20.1302C34.771 28.2162 28.216 34.7712 20.13 34.7712Z" fill="url(#paint0_linear_206_3606)" fillOpacity="0.24"/>
+<path d="M20.9246 5.38834C17.3399 5.16147 13.7969 6.26027 10.9696 8.47567C8.14231 10.6911 6.22805 13.8685 5.591 17.4034C4.95395 20.9384 5.63857 24.5841 7.51462 27.6471C9.39066 30.7102 12.3272 32.9767 15.7656 34.0155C19.204 35.0543 22.9043 34.7929 26.1625 33.281C29.4207 31.7692 32.0094 29.1123 33.4362 25.816C34.863 22.5197 35.0283 18.8139 33.9007 15.4036C32.773 11.9933 30.4311 9.11657 27.3204 7.32063L24.7059 11.849" stroke="#FFF2E9" strokeLinecap="round" strokeLinejoin="round"/>
+<circle cx="2.09157" cy="2.09157" r="2.09157" transform="matrix(-1 0 0 1 22.2217 3.39758)" fill="#0A0A0A" stroke="#FFF2E9" strokeLinecap="round" strokeLinejoin="round"/>
+<circle cx="2.09157" cy="2.09157" r="2.09157" transform="matrix(-1 0 0 1 22.2217 32.6796)" fill="#0A0A0A" stroke="#FFF2E9" strokeLinecap="round" strokeLinejoin="round"/>
+<circle cx="2.09157" cy="2.09157" r="2.09157" transform="matrix(4.37114e-08 1 1 -4.37114e-08 3.39746 18.0386)" fill="#0A0A0A" stroke="#FFF2E9" strokeLinecap="round" strokeLinejoin="round"/>
+<circle cx="2.09157" cy="2.09157" r="2.09157" transform="matrix(4.37114e-08 1 1 -4.37114e-08 32.6794 18.0386)" fill="#0A0A0A" stroke="#FFF2E9" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M22.3982 16.1974L19.0779 21.9485" stroke="#FF8637" strokeLinecap="round"/>
+<path d="M16.9102 19.561L19.0781 21.9471" stroke="#FF8637" strokeLinecap="round"/>
+<defs>
+<linearGradient id="paint0_linear_206_3606" x1="20.13" y1="5.48914" x2="20.13" y2="34.7712" gradientUnits="userSpaceOnUse">
+<stop stopColor="white" stopOpacity="0"/>
+<stop offset="1" stopColor="#FF3610"/>
+</linearGradient>
+</defs>
+</svg>
