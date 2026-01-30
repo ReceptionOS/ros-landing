@@ -7,13 +7,12 @@ const OurPartners = ({ t }) => {
 
   const items = [
     {
-      link: null,
+      link: 'https://elevenlabs.io/startup-grants',
       img: (
-        <StaticImage
+        <img
           className="image"
-          src="../../../../images/our-partners/1.webp"
-          alt="image"
-          placeholder="none"
+          src="https://eleven-public-cdn.elevenlabs.io/payloadcms/cy7rxce8uki-IIElevenLabsGrants%201.webp"
+          alt="ElevenLabs Grants"
           loading="lazy"
         />
       )
