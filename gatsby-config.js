@@ -16,13 +16,17 @@ module.exports = {
     siteUrl: `https://receptionos.com`,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
-        head: false,
-      },
-    },
+    ...(process.env.GOOGLE_ANALYTICS_TRACKING_ID
+      ? [
+          {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+              trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+              head: false,
+            },
+          },
+        ]
+      : []),
     {
       resolve: `gatsby-plugin-posthog`,
       options: {

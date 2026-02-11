@@ -1,0 +1,20 @@
+{
+  "offer.seo.title": "ReceptionOS Oferta | Twoja Klinika na Autopilocie",
+  "offer.seo.description": "Odkryj naszą kompleksową ofertę automatyzacji kliniki. Obsługuj komunikację pacjentów 24/7, planuj wizyty, zbieraj przedpłaty i zarządzaj anulacjami.",
+
+  "offer.Hero.title": "Zero nieodebranych.\n Pełna kontrola. ",
+  "offer.Hero.description": "System rozwijany w najlepszych klinikach, który przejmuje \npowtarzalne zadania, pozwalając Ci skupić się na pacjentach.",
+  "offer.Hero.special": "Przygotowano specjalnie dla {clinic-name}",
+  "offer.Hero.order-button": "Zamów audyt",
+  "offer.Hero.order-button-href": "https://buy.stripe.com/aFadRabOxbx624131487K02",
+
+  "offer.Footer.contact": "Skontaktuj się z nami",
+  "offer.Footer.media": "social media",
+  "offer.Footer.resources": "zasoby",
+  "offer.Footer.policy": "Polityka Prywatności",
+  "offer.Footer.terms": "Warunki",
+  "offer.Footer.place": "receptionOS © 2025",
+  "offer.Footer.change-language": "Zmień język",
+  "offer.Footer.polish": "Polski",
+  "offer.Footer.english": "Angielski"
+}
