@@ -15,5 +15,8 @@
   "offer.Footer.place": "Warsaw, Poland c 2025",
   "offer.Footer.change-language": "Change language",
   "offer.Footer.polish": "Polish",
-  "offer.Footer.english": "English"
+  "offer.Footer.english": "English",
+
+  "offer.FAQ.title": "Frequently Asked Questions",
+  "offer.FAQ.placeholder": "FAQ content coming soon..."
 }
