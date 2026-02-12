@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const FAQComponent = styled.div`
   position: relative;
+  padding: 0 20px;
 
   .faq-container {
     position: relative;
@@ -58,14 +59,14 @@ export const FAQComponent = styled.div`
     margin-bottom: 84px;
   }
 
-  .faq-items {
-  }
-
-  .faq-placeholder {
-  }
-
   @media only screen and (max-width: 578px) {
     .faq-title {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    .faq-title-container {
+      margin-bottom: 48px;
     }
   }
 `
@@ -124,6 +125,11 @@ export const AccordionButton = styled.button`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: 578px) {
+    padding: 24px;
+    padding-bottom: ${props => (props.isOpen ? "12px" : "24px")};
+  }
 `
 
 export const AccordionIcon = styled.span`
@@ -152,5 +158,13 @@ export const AccordionContent = styled.div`
     padding-left: 32px;
     padding-right: 32px;
     margin: 0;
+  }
+
+  @media only screen and (max-width: 578px) {
+    p {
+      padding-bottom: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
   }
 `
