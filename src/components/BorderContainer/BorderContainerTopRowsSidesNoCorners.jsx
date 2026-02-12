@@ -31,7 +31,9 @@ export const BorderContainerTopRowsSidesNoCorners = ({
               y2="457"
               gradientUnits="userSpaceOnUse"
             >
-              <stop offset="0" stopColor="#302C29" />
+              <stop offset="0" stopColor="#302C29" stopOpacity="0" />
+              <stop offset="0.3" stopColor="#302C29" stopOpacity="1" />
+              <stop offset="0.5" stopColor="#302C29" stopOpacity="1" />
               <stop offset="0.55" stopColor="#302C29" stopOpacity="0.5" />
               <stop offset="0.60" stopColor="#302C29" stopOpacity="0" />
             </linearGradient>
@@ -59,7 +61,9 @@ export const BorderContainerTopRowsSidesNoCorners = ({
               y2="435.5"
               gradientUnits="userSpaceOnUse"
             >
-              <stop offset="0" stopColor="#302C29" />
+              <stop offset="0" stopColor="#302C29" stopOpacity="0" />
+              <stop offset="0.3" stopColor="#302C29" stopOpacity="1" />
+              <stop offset="0.5" stopColor="#302C29" stopOpacity="1" />
               <stop offset="0.55" stopColor="#302C29" stopOpacity="0.5" />
               <stop offset="0.60" stopColor="#302C29" stopOpacity="0" />
             </linearGradient>
@@ -87,7 +91,9 @@ export const BorderContainerTopRowsSidesNoCorners = ({
               y2="457"
               gradientUnits="userSpaceOnUse"
             >
-              <stop offset="0" stopColor="#302C29" />
+              <stop offset="0" stopColor="#302C29" stopOpacity="0" />
+              <stop offset="0.3" stopColor="#302C29" stopOpacity="1" />
+              <stop offset="0.5" stopColor="#302C29" stopOpacity="1" />
               <stop offset="0.55" stopColor="#302C29" stopOpacity="0.5" />
               <stop offset="0.60" stopColor="#302C29" stopOpacity="0" />
             </linearGradient>
@@ -115,7 +121,9 @@ export const BorderContainerTopRowsSidesNoCorners = ({
               y2="435.5"
               gradientUnits="userSpaceOnUse"
             >
-              <stop offset="0" stopColor="#302C29" />
+              <stop offset="0" stopColor="#302C29" stopOpacity="0" />
+              <stop offset="0.3" stopColor="#302C29" stopOpacity="1" />
+              <stop offset="0.5" stopColor="#302C29" stopOpacity="1" />
               <stop offset="0.55" stopColor="#302C29" stopOpacity="0.5" />
               <stop offset="0.60" stopColor="#302C29" stopOpacity="0" />
             </linearGradient>
