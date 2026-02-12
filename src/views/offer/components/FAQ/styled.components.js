@@ -68,6 +68,10 @@ export const FAQComponent = styled.div`
     .faq-title-container {
       margin-bottom: 48px;
     }
+
+    .faq-container {
+      padding-bottom: 64px;
+    }
   }
 `
 
