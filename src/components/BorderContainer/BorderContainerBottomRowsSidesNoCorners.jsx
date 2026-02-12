@@ -131,12 +131,12 @@ export const BorderContainerBottomRowsSidesNoCorners = ({
 
             .left {
               position: absolute;
-              top: -1px;
+              bottom: -1px;
               left: -34px;
             }
             .right {
               position: absolute;
-              top: -1px;
+              bottom: -1px;
               right: -34px;
             }
           }

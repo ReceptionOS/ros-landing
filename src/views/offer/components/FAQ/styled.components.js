@@ -2,9 +2,12 @@ import styled from "styled-components"
 
 export const FAQComponent = styled.div`
   .faq-container {
+    padding: 0 48px;
+    position: relative;
   }
 
   .faq-title {
+    padding-top: 48px;
   }
 
   .faq-items {
