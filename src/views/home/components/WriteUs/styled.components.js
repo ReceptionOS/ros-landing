@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import BackgroundImage from "../../../../images/writeus/writeus-background.webp"
 
-export const WriteUsComponent = styled.div`
+export const WriteUsCTAComponent = styled.div`
   padding: 64px 0;
   overflow: hidden;
   background-size: cover !important;
