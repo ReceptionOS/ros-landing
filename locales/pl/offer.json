@@ -16,5 +16,10 @@
   "offer.Footer.place": "receptionOS © 2025",
   "offer.Footer.change-language": "Zmień język",
   "offer.Footer.polish": "Polski",
-  "offer.Footer.english": "Angielski"
+  "offer.Footer.english": "Angielski",
+
+  "offer.WriteUs.title": "Budujemy autopilota dla \n najlepszych klinik",
+  "offer.WriteUs.description": "Zaczynamy od recepcji. {clinic_name} może być następna.",
+  "offer.WriteUs.button": "Umów rozmowę",
+  "offer.WriteUs.contact": "lub napisz "
 }
