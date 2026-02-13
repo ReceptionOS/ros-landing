@@ -2,6 +2,7 @@ import React from "react"
 import { HeroComponent } from "./styled.components"
 import { StaticImage } from "gatsby-plugin-image"
 import { RoundedButtonOrange } from "../../../../styled.components"
+import { orderAnalysisButton } from "../../../../config/externalResources"
 
 const Hero = ({ t }) => {
   return (
@@ -30,7 +31,7 @@ const Hero = ({ t }) => {
             </div>
             <RoundedButtonOrange
               as="a"
-              href={t(`offer.Hero.order-button-href`)}
+              href={orderAnalysisButton}
               target="_blank"
               rel="noreferrer"
             >
