@@ -7,6 +7,7 @@ import ElevenWidget from "../../components/ElevenWidget/ElevenWidget"
 import CookieBanner from "../../components/CookieBanner/CookieBanner"
 import Footer from "../../components/Footer/Footer"
 import { agentId } from "../../config/externalResources"
+import FeaturedSection from "./components/FeaturedSection/FeaturedSection"
 
 const Offer = () => {
   const { t } = useTranslation()
@@ -29,6 +30,7 @@ const Offer = () => {
       <Seo title={t`offer.seo.title`} description={t`offer.seo.description`} />
       <Menu t={t} />
       <Hero t={t} handleClick={setAgentId} />
+      <FeaturedSection t={t} />
       <Footer t={t} />
       <CookieBanner />
     </>
