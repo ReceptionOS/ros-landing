@@ -52,6 +52,10 @@ export const FeaturedSectionComponent = styled.div`
       flex-direction: column;
       gap: 10px;
 
+      p {
+        white-space: nowrap;
+      }
+
       .item-cons {
         display: flex;
         align-items: center;
