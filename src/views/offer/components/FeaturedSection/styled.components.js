@@ -1,12 +1,13 @@
 import styled from "styled-components"
 
 export const FeaturedSectionComponent = styled.div`
+  padding: 0 20px;
+
   .featured-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    padding: 0 20px;
     text-align: center;
     margin-bottom: 98px;
 
@@ -26,20 +27,25 @@ export const FeaturedSectionComponent = styled.div`
     display: none;
   }
 
-  .borders {
+  .borders-desktop {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: rgba(255, 232, 217, 0.5);
+  }
+
+  .borders-mobile {
+    display: none;
   }
   .pros-cons-wrapper {
     padding: 24px 32px;
     display: flex;
     gap: 24px;
     justify-content: space-between;
+    width: 100%;
   }
 
-  .container {
+  .lines-container {
     max-width: 395px;
     width: 100%;
     padding: 32px;
@@ -155,8 +161,76 @@ export const FeaturedSectionComponent = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 890px) {
+    .borders-desktop {
+      display: none;
+    }
+
+    .borders-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: rgba(255, 232, 217, 0.5);
+      max-width: 578px;
+      margin: 0 auto;
+    }
+
+    .border-top {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .featured-container {
+      margin-bottom: 64px;
+    }
+
+    .borders-mobile {
+      .lines-container {
+        max-width: none !important;
+        padding: 24px;
+      }
+
+      .description {
+        margin-bottom: 16px !important;
+      }
+
+      .bottom-wrapper {
+        text-align: center;
+        padding: 48px 36px;
+      }
+
+      .how-it-works {
+        align-items: center;
+      }
+
+      .pros-cons-wrapper {
+        gap: 0;
+        padding: 0;
+      }
+
+      .items {
+        p {
+          white-space: pre-line;
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+
+        p {
+          max-width: none !important;
+        }
+      }
+    }
+  }
 
   @media only screen and (max-width: 578px) {
+    .pros-cons-wrapper {
+      flex-direction: column;
+    }
     .image {
       display: none !important;
     }
