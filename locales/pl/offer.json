@@ -20,5 +20,19 @@
   "offer.Footer.place": "receptionOS © 2025",
   "offer.Footer.change-language": "Zmień język",
   "offer.Footer.polish": "Polski",
-  "offer.Footer.english": "Angielski"
+  "offer.Footer.english": "Angielski",
+
+  "offer.featured.cons.title": "Kliniki które zostaną w miejscu",
+  "offer.featured.cons.item-1": "Będą się uczyć, gdy konkurencja już działa",
+  "offer.featured.cons.item-2": "Stracą dwa lata danych treningowych",
+  "offer.featured.cons.item-3": "Praca od zera gdy inni będą w połowie drogi",
+  "offer.featured.pros.title": "Kliniki które się rozwiną",
+  "offer.featured.pros.item-1": "Nauczą system na swoich danych",
+  "offer.featured.pros.item-2": "Zbudują procesy i know-how",
+  "offer.featured.pros.item-3": "Będą gotowe na kolejne fale AI",
+  "offer.featured.exclusivity.title": "Wyłączność w regionie",
+  "offer.featured.exclusivity.description": "Budujemy długoterminowe partnerstwa, nie sprzedajemy licencje. Wasz sukces to nasz sukces. Nie chcemy żeby Wasza konkurencja korzystała z tych samych narzędzi co Wy.",
+  "offer.featured.exclusivity.how-it-works": "Jak to działa?",
+  "offer.featured.exclusivity.how-it-works.description-first": "W promieniu 25 km od {clinic-city} możemy wdrożyć system tylko u jednej kliniki, która pierwsza podejmie decyzję.",
+  "offer.featured.exclusivity.how-it-works.description-second": "Na ten moment w Waszym regionie nie mamy jeszcze partnera i {clinic_name} może być pierwszą."
 }
