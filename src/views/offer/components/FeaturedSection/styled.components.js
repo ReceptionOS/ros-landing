@@ -1,8 +1,9 @@
 import styled from "styled-components"
 
 export const FeaturedSectionComponent = styled.div`
-  padding: 0 20px;
-
+  .featured-wrapper {
+    padding: 0 20px;
+  }
   .featured-container {
     display: flex;
     flex-direction: column;
@@ -60,6 +61,9 @@ export const FeaturedSectionComponent = styled.div`
 
       p {
         white-space: nowrap;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        min-width: 0;
       }
 
       .item-cons {
@@ -96,6 +100,11 @@ export const FeaturedSectionComponent = styled.div`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+  }
+
+  .rows {
+    width: 100%;
+    max-width: 100%;
   }
 
   .bottom-wrapper {
@@ -171,8 +180,10 @@ export const FeaturedSectionComponent = styled.div`
       flex-direction: column;
       align-items: center;
       color: rgba(255, 232, 217, 0.5);
-      max-width: 578px;
+      max-width: 768px;
       margin: 0 auto;
+      overflow: hidden;
+      position: relative;
     }
 
     .border-top {
@@ -180,14 +191,33 @@ export const FeaturedSectionComponent = styled.div`
       max-width: 100%;
     }
 
+    .border-bottom {
+      width: 100%;
+      max-width: 100%;
+    }
+
     .featured-container {
       margin-bottom: 64px;
+
+      .featured-title {
+        font-size: 32px;
+        line-height: 32px; /* 100% */
+        letter-spacing: -0.72px;
+      }
     }
 
     .borders-mobile {
       .lines-container {
         max-width: none !important;
         padding: 24px;
+        width: 100%;
+        box-sizing: border-box;
+
+        .title {
+          white-space: normal;
+          overflow-wrap: anywhere;
+          word-break: break-word;
+        }
       }
 
       .description {
@@ -197,10 +227,19 @@ export const FeaturedSectionComponent = styled.div`
       .bottom-wrapper {
         text-align: center;
         padding: 48px 36px;
+
+        > .title {
+          font-size: 28px;
+          line-height: 32px; /* 114.286% */
+        }
       }
 
       .how-it-works {
         align-items: center;
+
+        > .title {
+          display: none;
+        }
       }
 
       .pros-cons-wrapper {
@@ -208,10 +247,32 @@ export const FeaturedSectionComponent = styled.div`
         padding: 0;
       }
 
+      .rows {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+
       .items {
         p {
-          white-space: pre-line;
+          white-space: normal;
+          overflow-wrap: anywhere;
+          word-break: break-word;
         }
+
+        .item-cons,
+        .item-pros {
+          align-items: flex-start;
+        }
+
+        svg {
+          flex-shrink: 0;
+          margin-top: 2px;
+        }
+      }
+
+      .content {
+        margin-bottom: 0px;
       }
 
       .content {

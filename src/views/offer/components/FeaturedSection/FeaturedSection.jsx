@@ -31,15 +31,17 @@ const FeaturedSection = ({ t }) => {
         alt="ros-image"
         loading="lazy"
       />
-      <div className="featured-container">
-        <RoundedInfoTile>
-          <p>{t("offer.featured.pill")}</p>
-        </RoundedInfoTile>
-        <h2 className="featured-title">{t("offer.featured.title")}</h2>
-        <p className="p-new-model-16">{t("offer.featured.description")}</p>
+      <div className="featured-wrapper">
+        <div className="featured-container">
+          <RoundedInfoTile>
+            <p>{t("offer.featured.pill")}</p>
+          </RoundedInfoTile>
+          <h2 className="featured-title">{t("offer.featured.title")}</h2>
+          <p className="p-new-model-16">{t("offer.featured.description")}</p>
+        </div>
+        <FeaturedDesktop t={t} consItems={consItems} prosItems={prosItems} />
+        <FeaturedMobile t={t} consItems={consItems} prosItems={prosItems} />
       </div>
-      <FeaturedDesktop t={t} consItems={consItems} prosItems={prosItems} />
-      <FeaturedMobile t={t} consItems={consItems} prosItems={prosItems} />
     </FeaturedSectionComponent>
   )
 }

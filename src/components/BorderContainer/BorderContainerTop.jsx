@@ -62,6 +62,8 @@ export const BorderContainerTop = ({ className }) => {
       </svg>
       <style jsx="true">{`
         .border-container-top {
+          position: relative;
+          top: 2px;
           width: 100%;
           max-width: 351px;
         }
