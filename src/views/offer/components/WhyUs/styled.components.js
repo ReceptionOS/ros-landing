@@ -57,6 +57,10 @@ export const WhyUsComponent = styled.div`
     margin: 32px auto 0;
   }
 
+  .borders-mobile {
+    display: none;
+  }
+
   .why-us-lines-container {
     max-width: 395px;
     width: 100%;
@@ -222,6 +226,10 @@ export const WhyUsComponent = styled.div`
       }
     }
 
+    .why-us-pros-cons-wrapper {
+      margin: 0 auto 0;
+    }
+
     .why-us-tile-container.desktop {
       display: none;
     }
@@ -293,9 +301,81 @@ export const WhyUsComponent = styled.div`
     }
   }
 
+  @media only screen and (max-width: 890px) {
+    .why-us-pros-cons-desktop {
+      display: none;
+    }
+
+    .borders-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: rgba(255, 232, 217, 0.5);
+      max-width: 768px;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+
+      .border-top {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .pros-cons-wrapper {
+        display: flex;
+        gap: 0;
+        width: 100%;
+        padding: 0;
+      }
+
+      .rows {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+
+      .why-us-lines-container {
+        max-width: none !important;
+        padding: 24px;
+        width: 100%;
+        box-sizing: border-box;
+
+        .title {
+          white-space: normal;
+          overflow-wrap: anywhere;
+          word-break: break-word;
+        }
+      }
+
+      .items {
+        p {
+          white-space: normal;
+          overflow-wrap: anywhere;
+          word-break: break-word;
+        }
+
+        .item-cons,
+        .item-pros {
+          align-items: flex-start;
+        }
+
+        svg {
+          flex-shrink: 0;
+          margin-top: 2px;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 578px) {
     .why-us-pros-cons-wrapper {
       flex-direction: column;
+    }
+
+    .borders-mobile {
+      .pros-cons-wrapper {
+        flex-direction: column;
+      }
     }
   }
 `

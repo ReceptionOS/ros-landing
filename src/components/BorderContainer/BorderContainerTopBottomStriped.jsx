@@ -112,6 +112,24 @@ export const BorderContainerTopBottomStriped = ({ children, className }) => {
           right: 32px;
           bottom: 24px;
         }
+
+        @media (max-width: 889px) {
+          .border-container-top-bottom-striped {
+            display: contents;
+            max-width: none;
+            margin: 0;
+            bottom: 0;
+          }
+
+          .border-container-top-bottom-striped-svg {
+            display: none;
+          }
+
+          .border-container-top-bottom-striped-content {
+            position: static;
+            display: contents;
+          }
+        }
       `}</style>
     </div>
   )
