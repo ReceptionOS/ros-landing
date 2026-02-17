@@ -5,7 +5,7 @@ import { BorderContainer4Rows } from "../BorderContainer/BorderContainer4Rows"
 import { BorderContainerNoRowsTop } from "../BorderContainer/BorderContainerNoRowsTop"
 import { RoundedButtonSvg } from "../../styled.components"
 import Dropdown from "react-bootstrap/Dropdown"
-import { useI18next, Link } from "gatsby-plugin-react-i18next"
+import { useI18next } from "gatsby-plugin-react-i18next"
 import { navigate } from "gatsby"
 import {
   facebook,
@@ -42,12 +42,15 @@ const Footer = ({ t }) => {
       changeLanguage(target)
       navigate(originalPath, { replace: true })
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const handleUserLanguagePick = lang => {
     try {
       localStorage.setItem("user-chose-language", "1")
-    } catch (e) {}
+    } catch (e) {
+      // eslint-disable-next-line no-unused-vars
+    }
     if (language !== lang) {
       changeLanguage(lang)
       navigate(originalPath)

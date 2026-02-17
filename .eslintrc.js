@@ -28,7 +28,16 @@ module.exports = {
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "react/display-name": "off",
+    "react/no-unknown-property": "off",
     "no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
-    "prettier/prettier": "warn",
+    // Zgodne z .prettierrc – przy zmianie Prettiera zaktualizuj i tu
+    "prettier/prettier": [
+      "warn",
+      {
+        trailingComma: "none",
+        semi: false,
+        arrowParens: "avoid",
+      },
+    ],
   },
 }

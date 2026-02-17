@@ -3,7 +3,6 @@ import Slider from "react-slick"
 import { SliderContainer } from "./styled.components"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { StaticImage } from "gatsby-plugin-image"
 import { BorderContainerRowsVerticalSides } from "../../../../../components/BorderContainer/BorderContainerRowsVerticalSides"
 
 const SliderComponent = ({ t, items }) => {

@@ -119,6 +119,7 @@ const CookieBanner = () => {
   })
 
   const isRodoAccepted = () => {
+    // eslint-disable-next-line valid-typeof
     if (typeof document !== undefined) {
       const cookies = document.cookie.split(`; `)
       for (let cookie of cookies) {

@@ -3,7 +3,7 @@ import { OurPartnersContainer } from "./styled.components"
 import { StaticImage } from "gatsby-plugin-image"
 import SliderComponent from "./Slider"
 
-const OurPartners = ({ t }) => {
+const OurPartners = () => {
   const items = [
     {
       link: "https://elevenlabs.io/startup-grants",

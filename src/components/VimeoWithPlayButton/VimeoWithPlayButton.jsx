@@ -4,6 +4,7 @@ import PlayButton from "../PlayButton/PlayButton"
 
 const VimeoWithPlayButton = React.forwardRef(({ videoId, className }, ref) => {
   const [showPlayButton, setShowPlayButton] = useState(false)
+  // eslint-disable-next-line no-unused-vars
   const [isPlaying, setIsPlaying] = useState(false)
   const iframeRef = useRef(null)
 

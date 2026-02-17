@@ -10,6 +10,7 @@ const LocalVideo = ({ src, className, autoPlay = true, onEnded }) => {
     load,
     showPlayButton,
     handlePlayClick,
+    // eslint-disable-next-line no-unused-vars
     resetPlayButton
   } = useVideoAutoplay(autoPlay, onEnded)
 

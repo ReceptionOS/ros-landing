@@ -67,6 +67,7 @@ const SliderComponent = ({ items }) => {
     autoplay: false,
     arrows: true,
     beforeChange: (current, next) => setSlideIndex(next + 1),
+    // eslint-disable-next-line no-unused-vars
     afterChange: current => {
       // Pause all videos first
       const listEl =
@@ -99,7 +100,9 @@ const SliderComponent = ({ items }) => {
       }
     },
     fade: true,
+    // eslint-disable-next-line react-hooks/static-components
     nextArrow: <NextArrow />,
+    // eslint-disable-next-line react-hooks/static-components
     prevArrow: <PrevArrow />
   }
 

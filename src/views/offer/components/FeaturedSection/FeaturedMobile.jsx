@@ -1,7 +1,6 @@
 import React from "react"
 import { BorderContainerTop } from "../../../../components/BorderContainer/BorderContainerTop"
 import { BorderContainerSidesTopBottomSmallerMobile } from "../../../../components/BorderContainer/BorderContainerSidesTopBottomSmallerMobile"
-import { BorderContainer4Rows2Sides } from "../../../../components/BorderContainer/BorderContainer4Rows2Sides"
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 
 const FeaturedMobile = ({ t, consItems, prosItems }) => {

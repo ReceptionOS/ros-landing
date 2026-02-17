@@ -2,9 +2,11 @@ import React, { useEffect, useRef, useState } from "react"
 
 export default function ElevenWidget({ agentId }) {
   const mountRef = useRef(null)
+  // eslint-disable-next-line no-unused-vars
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     setReady(true)
 
     if (!document.querySelector("#elevenlabs-widget-script")) {
