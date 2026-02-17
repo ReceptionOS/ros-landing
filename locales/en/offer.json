@@ -3,6 +3,10 @@
   "offer.seo.description": "Explore our comprehensive offer for clinic automation. Handle patient communication 24/7, schedule appointments, take prepayments and manage cancellations.",
 
   "offer.Hero.title": "Zero missed calls.\n Full control. ",
+  "offer.Hero.description": "A system developed in the best clinics that takes over \nrepetitive tasks, allowing you to focus on patients.",
+  "offer.Hero.special": "Prepared especially for {clinic-name}",
+  "offer.Hero.order-button": "Order audit",
+  "offer.Hero.order-button-href": "https://buy.stripe.com/aFadRabOxbx624131487K02",
   "offer.Hero.description": "A system developed in the best clinics that takes over\n repetitive tasks, letting you focus on patients.",
   "offer.Hero.special": "Prepared especially for {clinic-name}",
   "offer.Hero.order-button": "Order an audit",
@@ -12,15 +16,26 @@
   "offer.featured.title": "The AI wave is already here",
   "offer.featured.description": "The biggest technological shift of the internet is underway. Companies that don’t\n implement AI in 2–3 years will lose competitiveness.",
 
+
   "offer.Footer.contact": "Contact us",
   "offer.Footer.media": "social media",
   "offer.Footer.resources": "resources",
   "offer.Footer.policy": "Privacy Policy",
+
+  "offer.Footer.terms": "Terms & Conditions",
+
   "offer.Footer.terms": "Terms",
+
   "offer.Footer.place": "receptionOS © 2025",
   "offer.Footer.change-language": "Change language",
   "offer.Footer.polish": "Polish",
   "offer.Footer.english": "English",
+
+
+  "offer.WriteUs.title": "We build an autopilot for \n the best clinics",
+  "offer.WriteUs.description": "We start with reception. {clinic_name} can be next.",
+  "offer.WriteUs.button": "Schedule a call",
+  "offer.WriteUs.contact": "or write us "
 
 
   "offer.featured.cons.title": "Clinics that will stay in place",

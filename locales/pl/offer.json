@@ -23,6 +23,11 @@
   "offer.Footer.english": "Angielski",
 
 
+  "offer.WriteUs.title": "Budujemy autopilota dla \n najlepszych klinik",
+  "offer.WriteUs.description": "Zaczynamy od recepcji. {clinic_name} może być następna.",
+  "offer.WriteUs.button": "Umów rozmowę",
+  "offer.WriteUs.contact": "lub napisz "
+
   "offer.featured.cons.title": "Kliniki które zostaną w miejscu",
   "offer.featured.cons.item-1": "Będą się uczyć, gdy konkurencja już działa",
   "offer.featured.cons.item-2": "Stracą dwa lata danych treningowych",

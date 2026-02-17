@@ -3,10 +3,10 @@ import Seo from "../../components/seo"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 import Menu from "../../components/Menu/Menu"
 import Hero from "./components/Hero/Hero"
-import ElevenWidget from "../../components/ElevenWidget/ElevenWidget"
 import CookieBanner from "../../components/CookieBanner/CookieBanner"
 import Footer from "../../components/Footer/Footer"
 import { agentId } from "../../config/externalResources"
+import WriteUsCTA from "./components/WriteUsCTA/WriteUsCTA"
 import FeaturedSection from "./components/FeaturedSection/FeaturedSection"
 import FAQ from "./components/FAQ/FAQ"
 
@@ -31,6 +31,7 @@ const Offer = () => {
       <Seo title={t`offer.seo.title`} description={t`offer.seo.description`} />
       <Menu t={t} />
       <Hero t={t} handleClick={setAgentId} />
+      <WriteUsCTA t={t} />
       <FeaturedSection t={t} />
       <FAQ t={t} />
       <Footer t={t} />
