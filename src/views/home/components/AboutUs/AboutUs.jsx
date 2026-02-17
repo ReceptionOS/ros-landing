@@ -5,16 +5,15 @@ import { Trans } from "react-i18next"
 import { StaticImage } from "gatsby-plugin-image"
 
 const AboutUs = ({ t }) => {
-
   return (
     <>
       <AboutUsComponent>
         <div className="container">
           <div className="about-us-top">
             <RoundedInfoTile>
-              <p>{t('home.AboutUs.about-us')}</p>
+              <p>{t("home.AboutUs.about-us")}</p>
             </RoundedInfoTile>
-            <h3>{t('home.AboutUs.title')}</h3>
+            <h3>{t("home.AboutUs.title")}</h3>
             <p className="p-new-model-16">
               <Trans
                 i18nKey="home.AboutUs.description"

@@ -30,7 +30,7 @@ const VimeoWithPlayButton = React.forwardRef(({ videoId, className }, ref) => {
         setShowPlayButton(true)
         setIsPlaying(false)
       }
-    },
+    }
   }))
 
   useEffect(() => {

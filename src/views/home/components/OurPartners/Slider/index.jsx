@@ -1,8 +1,8 @@
-import React from 'react';
-import Slider from 'react-slick';
-import { SliderContainer } from './styled.components';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from "react"
+import Slider from "react-slick"
+import { SliderContainer } from "./styled.components"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 const SliderComponent = ({ renderItems }) => {
   const settings = {
@@ -17,8 +17,8 @@ const SliderComponent = ({ renderItems }) => {
     className: "center",
     centerMode: true,
     centerPadding: "55px",
-    variableWidth: true,
-  };
+    variableWidth: true
+  }
 
   return (
     <section>
@@ -26,7 +26,7 @@ const SliderComponent = ({ renderItems }) => {
         <Slider {...settings}>{renderItems}</Slider>
       </SliderContainer>
     </section>
-  );
-};
+  )
+}
 
-export default SliderComponent;
+export default SliderComponent

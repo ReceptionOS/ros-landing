@@ -11,7 +11,8 @@ export const RoundedButtonSvg = styled.button`
   flex-shrink: 0;
   border-radius: 500px;
   border: none;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       129deg,
       rgba(231, 98, 32, 0) 35.85%,
       rgba(231, 98, 32, 0.2) 72.26%
@@ -23,7 +24,8 @@ export const RoundedButtonSvg = styled.button`
     ),
     linear-gradient(180deg, rgba(13, 7, 2, 0) 0%, rgba(115, 59, 21, 0.2) 100%);
   background-blend-mode: color-dodge, normal, normal;
-  box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+  box-shadow:
+    0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
     0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
 
   transition: all 0.15s ease-out;
@@ -35,7 +37,8 @@ export const RoundedButtonSvg = styled.button`
 
   @media only screen and (max-width: 1130px) {
     &:hover {
-      background: linear-gradient(
+      background:
+        linear-gradient(
           129deg,
           rgba(231, 98, 32, 0) 35.85%,
           rgba(231, 98, 32, 0.2) 72.26%
@@ -51,7 +54,8 @@ export const RoundedButtonSvg = styled.button`
           rgba(115, 59, 21, 0.2) 100%
         );
       background-blend-mode: color-dodge, normal, normal;
-      box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+      box-shadow:
+        0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
         0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
     }
   }
@@ -59,7 +63,8 @@ export const RoundedButtonSvg = styled.button`
 
 export const RoundedButtonSvgDark = styled(RoundedButtonSvg)`
   border: 1px solid #302c29;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       90deg,
       rgba(255, 173, 156, 0.07) 0.01%,
       rgba(255, 156, 156, 0.07) 50.01%,
@@ -80,7 +85,8 @@ export const RoundedButtonOrange = styled.button`
   flex-shrink: 0;
   border: none;
   border-radius: 500px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       129deg,
       rgba(231, 98, 32, 0) 35.85%,
       rgba(231, 98, 32, 0.2) 72.26%
@@ -92,7 +98,8 @@ export const RoundedButtonOrange = styled.button`
     ),
     linear-gradient(180deg, rgba(13, 7, 2, 0) 0%, rgba(115, 59, 21, 0.2) 100%);
   background-blend-mode: color-dodge, normal, normal;
-  box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+  box-shadow:
+    0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
     0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
 
   transition: all 0.15s ease-out;
@@ -112,7 +119,8 @@ export const RoundedButtonOrange = styled.button`
 
   @media only screen and (max-width: 1130px) {
     &:hover {
-      background: linear-gradient(
+      background:
+        linear-gradient(
           129deg,
           rgba(231, 98, 32, 0) 35.85%,
           rgba(231, 98, 32, 0.2) 72.26%
@@ -128,7 +136,8 @@ export const RoundedButtonOrange = styled.button`
           rgba(115, 59, 21, 0.2) 100%
         );
       background-blend-mode: color-dodge, normal, normal;
-      box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+      box-shadow:
+        0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
         0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
     }
   }
@@ -140,7 +149,8 @@ export const RoundedButtonDark = styled(RoundedButtonOrange)`
     rgba(13, 7, 2, 0) 0%,
     rgba(115, 59, 21, 0.2) 100%
   );
-  box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+  box-shadow:
+    0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
     0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
 
   @media only screen and (max-width: 1130px) {
@@ -150,7 +160,8 @@ export const RoundedButtonDark = styled(RoundedButtonOrange)`
         rgba(13, 7, 2, 0) 0%,
         rgba(115, 59, 21, 0.2) 100%
       );
-      box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+      box-shadow:
+        0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
         0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
     }
   }
@@ -162,7 +173,8 @@ export const RoundedInfoTile = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 500px;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       90deg,
       rgba(255, 173, 156, 0.07) 0.01%,
       rgba(255, 156, 156, 0.07) 50.01%,
@@ -189,7 +201,8 @@ export const RoundedInfoTile = styled.div`
   ${props =>
     props.disabled &&
     css`
-      background: linear-gradient(
+      background:
+        linear-gradient(
           90deg,
           rgba(255, 173, 156, 0.07) 0.01%,
           rgba(255, 156, 156, 0.07) 50.01%,

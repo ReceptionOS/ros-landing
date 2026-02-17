@@ -1,13 +1,12 @@
-import React from 'react';
-import { OurPartnersContainer } from './styled.components';
-import { StaticImage } from 'gatsby-plugin-image';
-import SliderComponent from './Slider';
+import React from "react"
+import { OurPartnersContainer } from "./styled.components"
+import { StaticImage } from "gatsby-plugin-image"
+import SliderComponent from "./Slider"
 
 const OurPartners = ({ t }) => {
-
   const items = [
     {
-      link: 'https://elevenlabs.io/startup-grants',
+      link: "https://elevenlabs.io/startup-grants",
       img: (
         <img
           className="image"
@@ -18,7 +17,7 @@ const OurPartners = ({ t }) => {
       )
     },
     {
-      link: 'https://dentalway.pl/',
+      link: "https://dentalway.pl/",
       img: (
         <StaticImage
           className="image"
@@ -30,7 +29,7 @@ const OurPartners = ({ t }) => {
       )
     },
     {
-      link: 'https://numlabs.com/',
+      link: "https://numlabs.com/",
       img: (
         <StaticImage
           className="image"
@@ -42,7 +41,7 @@ const OurPartners = ({ t }) => {
       )
     },
     {
-      link: 'https://www.apoloniadental.pl/',
+      link: "https://www.apoloniadental.pl/",
       img: (
         <StaticImage
           className="image"
@@ -54,7 +53,7 @@ const OurPartners = ({ t }) => {
       )
     },
     {
-      link: 'https://www.innovationshub.pl/',
+      link: "https://www.innovationshub.pl/",
       img: (
         <StaticImage
           className="image"
@@ -64,8 +63,8 @@ const OurPartners = ({ t }) => {
           loading="lazy"
         />
       )
-    },
-  ];
+    }
+  ]
 
   const renderItems = items?.map((item, index) => {
     return (
@@ -78,23 +77,21 @@ const OurPartners = ({ t }) => {
           item.img
         )}
       </div>
-    );
-  });
+    )
+  })
 
   return (
     <>
       <OurPartnersContainer>
-        <div className='container'>
-          <div className='container-desktop desktop'>
-            {renderItems}
-          </div>
-          <div className='mobile'>
+        <div className="container">
+          <div className="container-desktop desktop">{renderItems}</div>
+          <div className="mobile">
             {items && <SliderComponent renderItems={renderItems} />}
           </div>
         </div>
       </OurPartnersContainer>
     </>
-  );
-};
+  )
+}
 
-export default OurPartners;
+export default OurPartners

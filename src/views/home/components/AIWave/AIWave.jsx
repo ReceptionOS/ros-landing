@@ -3,7 +3,7 @@ import { AIWaveContainer } from "./styled.components"
 import { RoundedInfoTile } from "../../../../styled.components"
 import { StaticImage } from "gatsby-plugin-image"
 import { BorderContainerRowsVerticalSides } from "../../../../components/BorderContainer/BorderContainerRowsVerticalSides"
-import '../../../../images/aiwave/middle-empty.webp'
+import "../../../../images/aiwave/middle-empty.webp"
 import SliderComponent from "./Slider"
 
 const AIWave = ({ t }) => {
@@ -106,7 +106,7 @@ const AIWave = ({ t }) => {
         <AIWaveContainer>
           <div className="text-container">
             <RoundedInfoTile>
-              <p>{t('home.AIWave.ai-wave')}</p>
+              <p>{t("home.AIWave.ai-wave")}</p>
             </RoundedInfoTile>
             <h2>{t(`home.AIWave.title`)}</h2>
             <p className="p-new-model-18 ">{t(`home.AIWave.description`)}</p>
@@ -133,8 +133,11 @@ const AIWave = ({ t }) => {
               placeholder="middle-empty"
               loading="lazy"
             />
-            {tilesData.map((tile) => (
-              <BorderContainerRowsVerticalSides key={tile.id} className={tile.className}>
+            {tilesData.map(tile => (
+              <BorderContainerRowsVerticalSides
+                key={tile.id}
+                className={tile.className}
+              >
                 <div className="tile-content">
                   {tile.image}
                   <div className="text-tile">

@@ -1,5 +1,5 @@
-import React from 'react';
-import { GifSection } from './styled.components';
+import React from "react"
+import { GifSection } from "./styled.components"
 
 const GifComponent = ({ src, className }) => (
   <GifSection className={className}>
@@ -7,6 +7,6 @@ const GifComponent = ({ src, className }) => (
       <source src={src} type="video/mp4" />
     </video>
   </GifSection>
-);
+)
 
-export default GifComponent;
+export default GifComponent

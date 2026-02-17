@@ -1,5 +1,5 @@
-import React from 'react';
-import { VideoComponent } from './styled.components';
+import React from "react"
+import { VideoComponent } from "./styled.components"
 
 const Video = ({ src, title }) => (
   <VideoComponent>
@@ -11,6 +11,6 @@ const Video = ({ src, title }) => (
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     />
   </VideoComponent>
-);
+)
 
-export default Video;
+export default Video

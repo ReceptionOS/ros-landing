@@ -22,7 +22,9 @@ const WriteUsCTA = ({ t }) => {
           </RoundedButtonOrange>
           <p className="p-new-model-16">
             {t("offer.WriteUs.contact")}
-            <a className="link" href="mailto:k@receptionos.com">k@receptionos.com</a>
+            <a className="link" href="mailto:k@receptionos.com">
+              k@receptionos.com
+            </a>
           </p>
         </div>
         <StaticImage

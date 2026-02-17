@@ -7,39 +7,52 @@ import { RoundedButtonSvg } from "../../styled.components"
 import Dropdown from "react-bootstrap/Dropdown"
 import { useI18next, Link } from "gatsby-plugin-react-i18next"
 import { navigate } from "gatsby"
-import { facebook, linkedin, privacyPolicy, terms, twitter } from "../../config/externalResources"
+import {
+  facebook,
+  linkedin,
+  privacyPolicy,
+  terms,
+  twitter
+} from "../../config/externalResources"
 
 const Footer = ({ t }) => {
-  const { language, languages, originalPath, changeLanguage } = useI18next();
+  const { language, languages, originalPath, changeLanguage } = useI18next()
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
+    if (typeof window === "undefined") return
 
-    if (localStorage.getItem("user-chose-language")) return;
+    if (localStorage.getItem("user-chose-language")) return
 
-    const nav = (navigator.languages && navigator.languages[0]) || navigator.language || "en";
-    const preferred = nav.split("-")[0];
+    const nav =
+      (navigator.languages && navigator.languages[0]) ||
+      navigator.language ||
+      "en"
+    const preferred = nav.split("-")[0]
 
-    const target = preferred === "pl"
-      ? (languages.includes("pl") ? "pl" : languages[0])
-      : (languages.includes("en") ? "en" : languages[0]);
+    const target =
+      preferred === "pl"
+        ? languages.includes("pl")
+          ? "pl"
+          : languages[0]
+        : languages.includes("en")
+          ? "en"
+          : languages[0]
 
     if (language !== target) {
-      changeLanguage(target);
-      navigate(originalPath, { replace: true });
+      changeLanguage(target)
+      navigate(originalPath, { replace: true })
     }
-  }, []);
+  }, [])
 
-  const handleUserLanguagePick = (lang) => {
+  const handleUserLanguagePick = lang => {
     try {
-      localStorage.setItem("user-chose-language", "1");
-    } catch (e) {
-    }
+      localStorage.setItem("user-chose-language", "1")
+    } catch (e) {}
     if (language !== lang) {
-      changeLanguage(lang);
-      navigate(originalPath);
+      changeLanguage(lang)
+      navigate(originalPath)
     }
-  };
+  }
   return (
     <>
       <div className="container">
@@ -103,9 +116,22 @@ const Footer = ({ t }) => {
               </p>
               <Dropdown>
                 <Dropdown.Toggle id="dropdown-basic">
-                  {language.includes("pl") ? t(`home.Footer.polish`) : t(`home.Footer.english`)}
-                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
-                    <path d="M4.85718 7.64258L9.57146 12.3569L14.2857 7.64258" stroke="#FFE8D9" strokeOpacity="0.64" strokeLinejoin="round" />
+                  {language.includes("pl")
+                    ? t(`home.Footer.polish`)
+                    : t(`home.Footer.english`)}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="20"
+                    viewBox="0 0 19 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.85718 7.64258L9.57146 12.3569L14.2857 7.64258"
+                      stroke="#FFE8D9"
+                      strokeOpacity="0.64"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
@@ -116,7 +142,9 @@ const Footer = ({ t }) => {
                         key={lang}
                         onClick={() => handleUserLanguagePick(lang)}
                       >
-                        {lang.includes("pl") ? t(`home.Footer.polish`) : t(`home.Footer.english`)}
+                        {lang.includes("pl")
+                          ? t(`home.Footer.polish`)
+                          : t(`home.Footer.english`)}
                       </Dropdown.Item>
                     ))}
                 </Dropdown.Menu>
@@ -129,10 +157,7 @@ const Footer = ({ t }) => {
                 href="mailto:k@receptionos.com"
                 onCopy={e => {
                   e.preventDefault()
-                  e.clipboardData.setData(
-                    "text/plain",
-                    "k@receptionos.com"
-                  )
+                  e.clipboardData.setData("text/plain", "k@receptionos.com")
                 }}
               >
                 k@receptionos.com

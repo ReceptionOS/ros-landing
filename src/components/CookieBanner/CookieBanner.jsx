@@ -12,7 +12,7 @@ const CustomCheckbox = ({ checked, onChange, disabled = false }) => {
         height="17"
         viewBox="0 0 16 17"
         fill="none"
-        style={{ cursor: disabled ? 'not-allowed' : 'pointer' }}
+        style={{ cursor: disabled ? "not-allowed" : "pointer" }}
         onClick={disabled ? undefined : onChange}
       >
         <g clipPath="url(#clip0_523_5936)">
@@ -30,20 +30,39 @@ const CustomCheckbox = ({ checked, onChange, disabled = false }) => {
             d="M12.6667 2.5H3.33333C2.59333 2.5 2 3.1 2 3.83333V13.1667C2 13.9 2.59333 14.5 3.33333 14.5H12.6667C13.4067 14.5 14 13.9 14 13.1667V3.83333C14 3.1 13.4067 2.5 12.6667 2.5ZM6.66667 11.8333L3.33333 8.5L4.27333 7.56L6.66667 9.94667L11.7267 4.88667L12.6667 5.83333L6.66667 11.8333Z"
             fill="url(#paint1_linear_523_5936)"
             fillOpacity="0.2"
-            style={{ mixBlendMode: 'color-dodge' }}
+            style={{ mixBlendMode: "color-dodge" }}
           />
         </g>
         <defs>
-          <linearGradient id="paint0_linear_523_5936" x1="8" y1="2.5" x2="8" y2="14.5" gradientUnits="userSpaceOnUse">
+          <linearGradient
+            id="paint0_linear_523_5936"
+            x1="8"
+            y1="2.5"
+            x2="8"
+            y2="14.5"
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stopColor="#0D0702" stopOpacity="0" />
             <stop offset="1" stopColor="#733B15" />
           </linearGradient>
-          <linearGradient id="paint1_linear_523_5936" x1="7.51852" y1="5.28571" x2="12.3093" y2="9.13042" gradientUnits="userSpaceOnUse">
+          <linearGradient
+            id="paint1_linear_523_5936"
+            x1="7.51852"
+            y1="5.28571"
+            x2="12.3093"
+            y2="9.13042"
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stopColor="#E76220" stopOpacity="0" />
             <stop offset="1" stopColor="#E76220" />
           </linearGradient>
           <clipPath id="clip0_523_5936">
-            <rect width="16" height="16" fill="white" transform="translate(0 0.5)" />
+            <rect
+              width="16"
+              height="16"
+              fill="white"
+              transform="translate(0 0.5)"
+            />
           </clipPath>
         </defs>
       </svg>
@@ -57,7 +76,7 @@ const CustomCheckbox = ({ checked, onChange, disabled = false }) => {
       height="17"
       viewBox="0 0 16 17"
       fill="none"
-      style={{ cursor: disabled ? 'not-allowed' : 'pointer' }}
+      style={{ cursor: disabled ? "not-allowed" : "pointer" }}
       onClick={disabled ? undefined : onChange}
     >
       <rect
@@ -77,16 +96,16 @@ const CustomCheckbox = ({ checked, onChange, disabled = false }) => {
 const CookieTypes = [
   {
     name: "necessary",
-    description: "extras.necessary",
+    description: "extras.necessary"
   },
   {
     name: "preferences",
-    description: "extras.preferences",
+    description: "extras.preferences"
   },
   {
     name: "statistics",
-    description: "extras.statistics",
-  },
+    description: "extras.statistics"
+  }
 ]
 
 const CookieBanner = () => {
@@ -116,8 +135,8 @@ const CookieBanner = () => {
     if (!isRodoAccepted()) setTimeout(() => setShouldShow(true), 700)
   }, [])
 
-  const handleCheckboxChange = (type) => {
-    if (type === 'necessary') return // Can't uncheck necessary cookies
+  const handleCheckboxChange = type => {
+    if (type === "necessary") return // Can't uncheck necessary cookies
     setCheckboxStates(prev => ({
       ...prev,
       [type]: !prev[type]
@@ -157,7 +176,11 @@ const CookieBanner = () => {
     <>
       <CookieBannerContainer>
         <div className="header-con">
-          <p className="p-style p-head">{!editCookies ? t`home.CookieBanner.header` : t`home.CookieBanner.edit-header`}</p>
+          <p className="p-style p-head">
+            {!editCookies
+              ? t`home.CookieBanner.header`
+              : t`home.CookieBanner.edit-header`}
+          </p>
           {!editCookies && (
             <p className="p-style p-description">{t`home.CookieBanner.description`}</p>
           )}
@@ -166,9 +189,17 @@ const CookieBanner = () => {
           <div className="agrees-con">
             {CookieTypes.map((type, index) => {
               return (
-                <div key={index} className="agree-con"
-                  onClick={type.name !== "necessary" ? () => handleCheckboxChange(type.name) : undefined}
-                  style={{ cursor: type.name !== "necessary" ? 'pointer' : 'default' }}
+                <div
+                  key={index}
+                  className="agree-con"
+                  onClick={
+                    type.name !== "necessary"
+                      ? () => handleCheckboxChange(type.name)
+                      : undefined
+                  }
+                  style={{
+                    cursor: type.name !== "necessary" ? "pointer" : "default"
+                  }}
                 >
                   <div className="check-con">
                     <CustomCheckbox
@@ -176,13 +207,18 @@ const CookieBanner = () => {
                       disabled={type.name === "necessary"}
                     />
                     <label
-                      style={{ cursor: type.name !== "necessary" ? 'pointer' : 'default' }}
+                      style={{
+                        cursor:
+                          type.name !== "necessary" ? "pointer" : "default"
+                      }}
                     >
                       {t(String("home.CookieBanner." + type.name))}
                     </label>
                   </div>
                   <p className="p-style p-description">
-                    {t(String("home.CookieBanner." + type.name + "-description"))}
+                    {t(
+                      String("home.CookieBanner." + type.name + "-description")
+                    )}
                   </p>
                 </div>
               )
@@ -198,12 +234,13 @@ const CookieBanner = () => {
           </RoundedButtonDark>
           <RoundedButtonDark
             className="cookie-button"
-
             onClick={
               !editCookies ? () => setEditCookies(true) : () => acceptSome()
             }
           >
-            {editCookies ? t("home.CookieBanner.save") : t("home.CookieBanner.edit-cookies")}
+            {editCookies
+              ? t("home.CookieBanner.save")
+              : t("home.CookieBanner.edit-cookies")}
           </RoundedButtonDark>
           <RoundedButtonOrange
             className="cookie-button"

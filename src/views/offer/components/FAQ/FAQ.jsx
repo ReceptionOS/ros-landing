@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionButton,
   AccordionContent,
-  AccordionIcon,
+  AccordionIcon
 } from "./styled.components"
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 import { BorderContainerTopRowsSidesNoCorners } from "../../../../components/BorderContainer/BorderContainerTopRowsSidesNoCorners"
@@ -17,7 +17,7 @@ const FAQ = ({ t }) => {
   const faqItems = [
     { question: "offer.FAQ.1.question", answer: "offer.FAQ.1.answer" },
     { question: "offer.FAQ.2.question", answer: "offer.FAQ.2.answer" },
-    { question: "offer.FAQ.3.question", answer: "offer.FAQ.3.answer" },
+    { question: "offer.FAQ.3.question", answer: "offer.FAQ.3.answer" }
   ]
 
   const toggleItem = index => {

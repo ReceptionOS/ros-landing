@@ -108,6 +108,6 @@ export const useVideoAutoplay = (autoPlay = true, onEnded) => {
     load,
     showPlayButton,
     handlePlayClick,
-    resetPlayButton,
+    resetPlayButton
   }
 }

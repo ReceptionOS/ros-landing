@@ -2,6 +2,17 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+const path = require("path")
+
+const gatsbyRequiredRules = path.join(
+  process.cwd(),
+  "node_modules",
+  "gatsby",
+  "dist",
+  "utils",
+  "eslint-rules"
+)
+
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
@@ -16,6 +27,15 @@ module.exports = {
     siteUrl: `https://receptionos.com`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-eslint",
+      options: {
+        rulePaths: [gatsbyRequiredRules],
+        stages: ["develop"],
+        extensions: ["js", "jsx"],
+        exclude: ["node_modules", "bower_components", ".cache", "public"],
+      },
+    },
     ...(process.env.GOOGLE_ANALYTICS_TRACKING_ID
       ? [
           {

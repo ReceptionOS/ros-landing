@@ -2,7 +2,7 @@ import React from "react"
 
 export const BorderContainerSidesTopBottomSmallerMobile = ({
   children,
-  className,
+  className
 }) => {
   return (
     <div
