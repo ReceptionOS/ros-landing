@@ -20,6 +20,7 @@ export const WhyUsComponent = styled.div`
       font-weight: 400;
       line-height: 56px; /* 116.667% */
       letter-spacing: -0.72px;
+      padding-bottom: 2px;
     }
 
     p {
