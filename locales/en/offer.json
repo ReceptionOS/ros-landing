@@ -15,5 +15,14 @@
   "offer.Footer.place": "Warsaw, Poland c 2025",
   "offer.Footer.change-language": "Change language",
   "offer.Footer.polish": "Polish",
-  "offer.Footer.english": "English"
+  "offer.Footer.english": "English",
+
+  "offer.FAQ.pill": "FAQ",
+  "offer.FAQ.title": "Frequently Asked Questions",
+  "offer.FAQ.1.question": "What if the AI says something inappropriate to a patient?",
+  "offer.FAQ.1.answer": "In the first months, the AI never sends anything without reception approval. The system proposes - the human decides. Only when the AI achieves 90% accuracy can partial automation be enabled. Difficult cases always go to a human.",
+  "offer.FAQ.2.question": "Can the AI understand medical terminology?",
+  "offer.FAQ.2.answer": "Yes, the AI is trained on large medical datasets, so it understands clinical terminology and context. In case of doubt, you can always take control and correct the response.",
+  "offer.FAQ.3.question": "How much time does my reception need to dedicate to this?",
+  "offer.FAQ.3.answer": "In the first months, the AI never sends anything without reception approval. The system proposes - the human decides. Only when the AI achieves 90% accuracy can partial automation be enabled. Difficult cases always go to a human."
 }
