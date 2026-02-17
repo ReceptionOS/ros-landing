@@ -54,7 +54,7 @@ export const WhyUsComponent = styled.div`
     justify-content: space-between;
     width: 100%;
     max-width: 798px;
-    margin: 0 auto 98px;
+    margin: 32px auto 0;
   }
 
   .why-us-lines-container {
