@@ -22,6 +22,7 @@
   "offer.Footer.polish": "Polski",
   "offer.Footer.english": "Angielski",
 
+
   "offer.featured.cons.title": "Kliniki które zostaną w miejscu",
   "offer.featured.cons.item-1": "Będą się uczyć, gdy konkurencja już działa",
   "offer.featured.cons.item-2": "Stracą dwa lata danych treningowych",
@@ -35,4 +36,14 @@
   "offer.featured.exclusivity.how-it-works": "Jak to działa?",
   "offer.featured.exclusivity.how-it-works.description-first": "W promieniu 25 km od {clinic-city} możemy wdrożyć system tylko u jednej kliniki, która pierwsza podejmie decyzję.",
   "offer.featured.exclusivity.how-it-works.description-second": "Na ten moment w Waszym regionie nie mamy jeszcze partnera i {clinic_name} może być pierwszą."
+
+  "offer.FAQ.pill": "FAQ",
+  "offer.FAQ.title": "Najczęstsze pytania",
+  "offer.FAQ.1.question": "Co jeśli AI powie coś głupiego pacjentowi?",
+  "offer.FAQ.1.answer": "W pierwszych miesiącach AI nigdy nie wysyła niczego bez zatwierdzenia przez recepcję. System proponuje - człowiek decyduje. Dopiero gdy AI osiągnie 90% skuteczności, można włączyć częściową automatyzację. Trudne przypadki zawsze idą do człowieka.",
+  "offer.FAQ.2.question": "Czy AI może zrozumieć żargon medyczny?",
+  "offer.FAQ.2.answer": "Tak, AI jest trenowany na ogromnych zbiorach danych medycznych, więc rozumie terminologię i kontekst kliniczny. W przypadku wątpliwości, zawsze można przejąć kontrolę i poprawić odpowiedź.",
+  "offer.FAQ.3.question": "Ile czasu moja recepcja musi na to poświęcić?",
+  "offer.FAQ.3.answer": "W pierwszych miesiącach AI nigdy nie wysyła niczego bez zatwierdzenia przez recepcję. System proponuje - człowiek decyduje. Dopiero gdy AI osiągnie 90% skuteczności, można włączyć częściową automatyzację. Trudne przypadki zawsze idą do człowieka."
+
 }
