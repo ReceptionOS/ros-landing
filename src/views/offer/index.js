@@ -7,6 +7,8 @@ import CookieBanner from "../../components/CookieBanner/CookieBanner"
 import Footer from "../../components/Footer/Footer"
 import { agentId } from "../../config/externalResources"
 import WriteUsCTA from "./components/WriteUsCTA/WriteUsCTA"
+import FeaturedSection from "./components/FeaturedSection/FeaturedSection"
+import FAQ from "./components/FAQ/FAQ"
 
 const Offer = () => {
   const { t } = useTranslation()
@@ -30,6 +32,8 @@ const Offer = () => {
       <Menu t={t} />
       <Hero t={t} handleClick={setAgentId} />
       <WriteUsCTA t={t} />
+      <FeaturedSection t={t} />
+      <FAQ t={t} />
       <Footer t={t} />
       <CookieBanner />
     </>

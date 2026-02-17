@@ -8,6 +8,10 @@
   "offer.Hero.order-button": "Zamów audyt",
   "offer.Hero.order-button-href": "https://buy.stripe.com/aFadRabOxbx624131487K02",
 
+  "offer.featured.pill": "Funkcje",
+  "offer.featured.title": "Fala AI już nadchodzi",
+  "offer.featured.description": "Trwa największa technologiczna zmiana internetu. Firmy, które w 2–3 lata nie \n wdrożą AI, stracą konkurencyjność.",
+
   "offer.Footer.contact": "Skontaktuj się z nami",
   "offer.Footer.media": "social media",
   "offer.Footer.resources": "zasoby",
@@ -18,8 +22,33 @@
   "offer.Footer.polish": "Polski",
   "offer.Footer.english": "Angielski",
 
+
   "offer.WriteUs.title": "Budujemy autopilota dla \n najlepszych klinik",
   "offer.WriteUs.description": "Zaczynamy od recepcji. {clinic_name} może być następna.",
   "offer.WriteUs.button": "Umów rozmowę",
   "offer.WriteUs.contact": "lub napisz "
+
+  "offer.featured.cons.title": "Kliniki które zostaną w miejscu",
+  "offer.featured.cons.item-1": "Będą się uczyć, gdy konkurencja już działa",
+  "offer.featured.cons.item-2": "Stracą dwa lata danych treningowych",
+  "offer.featured.cons.item-3": "Praca od zera gdy inni będą w połowie drogi",
+  "offer.featured.pros.title": "Kliniki które się rozwiną",
+  "offer.featured.pros.item-1": "Nauczą system na swoich danych",
+  "offer.featured.pros.item-2": "Zbudują procesy i know-how",
+  "offer.featured.pros.item-3": "Będą gotowe na kolejne fale AI",
+  "offer.featured.exclusivity.title": "Wyłączność w regionie",
+  "offer.featured.exclusivity.description": "Budujemy długoterminowe partnerstwa, nie sprzedajemy licencje. Wasz sukces to nasz sukces. Nie chcemy żeby Wasza konkurencja korzystała z tych samych narzędzi co Wy.",
+  "offer.featured.exclusivity.how-it-works": "Jak to działa?",
+  "offer.featured.exclusivity.how-it-works.description-first": "W promieniu 25 km od {clinic-city} możemy wdrożyć system tylko u jednej kliniki, która pierwsza podejmie decyzję.",
+  "offer.featured.exclusivity.how-it-works.description-second": "Na ten moment w Waszym regionie nie mamy jeszcze partnera i {clinic_name} może być pierwszą."
+
+  "offer.FAQ.pill": "FAQ",
+  "offer.FAQ.title": "Najczęstsze pytania",
+  "offer.FAQ.1.question": "Co jeśli AI powie coś głupiego pacjentowi?",
+  "offer.FAQ.1.answer": "W pierwszych miesiącach AI nigdy nie wysyła niczego bez zatwierdzenia przez recepcję. System proponuje - człowiek decyduje. Dopiero gdy AI osiągnie 90% skuteczności, można włączyć częściową automatyzację. Trudne przypadki zawsze idą do człowieka.",
+  "offer.FAQ.2.question": "Czy AI może zrozumieć żargon medyczny?",
+  "offer.FAQ.2.answer": "Tak, AI jest trenowany na ogromnych zbiorach danych medycznych, więc rozumie terminologię i kontekst kliniczny. W przypadku wątpliwości, zawsze można przejąć kontrolę i poprawić odpowiedź.",
+  "offer.FAQ.3.question": "Ile czasu moja recepcja musi na to poświęcić?",
+  "offer.FAQ.3.answer": "W pierwszych miesiącach AI nigdy nie wysyła niczego bez zatwierdzenia przez recepcję. System proponuje - człowiek decyduje. Dopiero gdy AI osiągnie 90% skuteczności, można włączyć częściową automatyzację. Trudne przypadki zawsze idą do człowieka."
+
 }
