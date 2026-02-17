@@ -5,7 +5,6 @@ import Menu from "../../components/Menu/Menu"
 import Hero from "./components/Hero/Hero"
 import CookieBanner from "../../components/CookieBanner/CookieBanner"
 import Footer from "../../components/Footer/Footer"
-import { agentId } from "../../config/externalResources"
 import WriteUsCTA from "./components/WriteUsCTA/WriteUsCTA"
 import FeaturedSection from "./components/FeaturedSection/FeaturedSection"
 import FAQ from "./components/FAQ/FAQ"
@@ -14,11 +13,6 @@ const Offer = () => {
   const { t } = useTranslation()
 
   const [mounted, setMounted] = useState(false)
-  const [agent, setAgent] = useState()
-
-  const setAgentId = () => {
-    setAgent(agentId)
-  }
 
   useEffect(() => {
     setMounted(true)
@@ -30,10 +24,10 @@ const Offer = () => {
     <>
       <Seo title={t`offer.seo.title`} description={t`offer.seo.description`} />
       <Menu t={t} />
-      <Hero t={t} handleClick={setAgentId} />
-      <WriteUsCTA t={t} />
+      <Hero t={t} />
       <FeaturedSection t={t} />
       <FAQ t={t} />
+      <WriteUsCTA t={t} />
       <Footer t={t} />
       <CookieBanner />
     </>
