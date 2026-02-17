@@ -2,20 +2,40 @@
   "offer.seo.title": "ReceptionOS Offer | Your Clinic on Autopilot",
   "offer.seo.description": "Explore our comprehensive offer for clinic automation. Handle patient communication 24/7, schedule appointments, take prepayments and manage cancellations.",
 
-  "offer.Menu.order-button": "Order audit",
+  "offer.Hero.title": "Zero missed calls.\n Full control. ",
+  "offer.Hero.description": "A system developed in the best clinics that takes over\n repetitive tasks, letting you focus on patients.",
+  "offer.Hero.special": "Prepared especially for {clinic-name}",
+  "offer.Hero.order-button": "Order an audit",
+  "offer.Hero.order-button-href": "https://buy.stripe.com/aFadRabOxbx624131487K02",
 
-  "offer.Hero.title": "Offer",
-  "offer.Hero.description": "Discover our comprehensive solutions for your clinic",
+  "offer.featured.pill": "Features",
+  "offer.featured.title": "The AI wave is already here",
+  "offer.featured.description": "The biggest technological shift of the internet is underway. Companies that don’t\n implement AI in 2–3 years will lose competitiveness.",
 
-  "offer.Footer.contact": "contact us",
+  "offer.Footer.contact": "Contact us",
   "offer.Footer.media": "social media",
   "offer.Footer.resources": "resources",
   "offer.Footer.policy": "Privacy Policy",
-  "offer.Footer.terms": "Terms & Conditions",
-  "offer.Footer.place": "Warsaw, Poland c 2025",
+  "offer.Footer.terms": "Terms",
+  "offer.Footer.place": "receptionOS © 2025",
   "offer.Footer.change-language": "Change language",
   "offer.Footer.polish": "Polish",
   "offer.Footer.english": "English",
+
+
+  "offer.featured.cons.title": "Clinics that will stay in place",
+  "offer.featured.cons.item-1": "Sample downside 1",
+  "offer.featured.cons.item-2": "Sample downside 2",
+  "offer.featured.cons.item-3": "Sample downside 3",
+  "offer.featured.pros.title": "Clinics that will grow",
+  "offer.featured.pros.item-1": "Sample upside 1",
+  "offer.featured.pros.item-2": "Sample upside 2",
+  "offer.featured.pros.item-3": "Sample upside 3",
+  "offer.featured.exclusivity.title": "Regional exclusivity",
+  "offer.featured.exclusivity.description": "We build long-term partnerships, not license sales. Your success is our success. We don’t want your competitors to use the same tools as you.",
+  "offer.featured.exclusivity.how-it-works": "How does it work?",
+  "offer.featured.exclusivity.how-it-works.description-first": "Within a 25 km radius of {clinic-city}, we can implement the system for only one clinic that decides first.",
+  "offer.featured.exclusivity.how-it-works.description-second": "At the moment we don’t have a partner in your region yet, and {clinic_name} can be the first."
 
   "offer.FAQ.pill": "FAQ",
   "offer.FAQ.title": "Frequently Asked Questions",
@@ -25,4 +45,5 @@
   "offer.FAQ.2.answer": "Yes, the AI is trained on large medical datasets, so it understands clinical terminology and context. In case of doubt, you can always take control and correct the response.",
   "offer.FAQ.3.question": "How much time does my reception need to dedicate to this?",
   "offer.FAQ.3.answer": "In the first months, the AI never sends anything without reception approval. The system proposes - the human decides. Only when the AI achieves 90% accuracy can partial automation be enabled. Difficult cases always go to a human."
+
 }
