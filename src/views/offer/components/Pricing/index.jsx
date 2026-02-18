@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import {
   PricingWrapper,
   PricingContainer,
@@ -14,7 +14,13 @@ import {
 } from "./Pricing.styled"
 import { RoundedInfoTile } from "../../../../styled.components"
 import { pricingIcons } from "./Pricing.icons"
-import { Vector115, Vector4, CornerArrow } from "./Pricing.vectors"
+import {
+  Vector115,
+  Vector4,
+  CornerArrow,
+  SideVectorLeft,
+  SideVectorRight
+} from "./Pricing.vectors"
 
 /**
  * @param {Object} content
@@ -53,6 +59,7 @@ import { Vector115, Vector4, CornerArrow } from "./Pricing.vectors"
 
 const Pricing = ({ t }) => {
   const content = t("offer.Pricing", { returnObjects: true })
+  const [activeTab, setActiveTab] = useState(0)
 
   const { pill, title, price, features, calc, numbers, footer } = content
 
@@ -137,32 +144,82 @@ const Pricing = ({ t }) => {
 
           {/* Middle */}
           <PricingMiddle>
-            {/* Calc */}
+            <div className="side-vector-left">
+              <SideVectorLeft />
+            </div>
+            <div className="side-vector-right">
+              <SideVectorRight />
+            </div>
+
             <PMiddleCalc>
-              <h2>{calc.title}</h2>
-              {calc.tabs.map((tab, index) => (
-                <div key={index}>
-                  <h3>{tab.title}</h3>
-                  <div className="tab-items">
-                    {tab.items.map((item, index) => (
-                      <div key={index}>
-                        <div className="item-label">{item.label}</div>
-                        <div className="item-value">{item.value}</div>
-                      </div>
-                    ))}
-                  </div>
+              <div className="calc-heading">
+                <h2>{calc.title}</h2>
+                <div className="tab-switcher">
+                  {calc.tabs.map((tab, index) => (
+                    <button
+                      key={index}
+                      className={`tab-btn ${activeTab === index ? "tab-btn-active" : "tab-btn-inactive"}`}
+                      onClick={() => setActiveTab(index)}
+                    >
+                      {activeTab === index && (
+                        <span className="tab-prefix">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                      )}
+                      {tab.title}
+                    </button>
+                  ))}
                 </div>
-              ))}
+              </div>
+
+              <div className="calc-divider" />
+
+              <div className="calc-content">
+                <div className="calc-list">
+                  {calc.tabs[activeTab].items.map((item, index) => (
+                    <React.Fragment key={index}>
+                      {index > 0 && <div className="calc-item-divider" />}
+                      <div className="calc-item">
+                        {item.label}
+                        <span className="calc-item-value">{item.value}</span>
+                      </div>
+                    </React.Fragment>
+                  ))}
+                </div>
+              </div>
             </PMiddleCalc>
 
-            {/* Numbers */}
             <PMiddleNumbers>
-              {numbers.map((number, index) => (
-                <div key={index}>
-                  <div className="number-label">{number.label}</div>
-                  <div className="number-value">{number.value}</div>
+              <div className="numbers-top-line">
+                <div className="numbers-accent numbers-accent-1" />
+                <div className="numbers-accent numbers-accent-2" />
+                <div className="numbers-accent numbers-accent-3" />
+              </div>
+              <div className="numbers-container">
+                <CornerArrow position="left-top" />
+                <CornerArrow position="right-top" />
+                <CornerArrow position="left-bottom" />
+                <CornerArrow position="right-bottom" />
+                <div className="numbers-grid">
+                  {numbers.map((number, index) => (
+                    <div className="number-item" key={index}>
+                      <span className="number-value">
+                        {number.value.includes(" /") ? (
+                          <>
+                            {number.value.split(" /")[0]}{" "}
+                            <span className="number-value-suffix">
+                              /{number.value.split("/")[1]}
+                            </span>
+                          </>
+                        ) : (
+                          number.value
+                        )}
+                      </span>
+                      <span className="number-label">{number.label}</span>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
             </PMiddleNumbers>
           </PricingMiddle>
 

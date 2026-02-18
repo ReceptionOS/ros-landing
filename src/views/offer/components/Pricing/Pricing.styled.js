@@ -353,24 +353,357 @@ export const PTopFeatures = styled.div`
 `
 
 export const PricingMiddle = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
+  position: relative;
+  width: 100%;
+  max-width: 638px;
+
+  .side-vector-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 100%;
+    transform: rotate(-90deg) scaleY(-1);
+    transform-origin: top left;
+    pointer-events: none;
+  }
+
+  .side-vector-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 100%;
+    transform: rotate(90deg);
+    transform-origin: top right;
+    pointer-events: none;
+  }
+
+  @media only screen and (max-width: 578px) {
+    .side-vector-left,
+    .side-vector-right {
+      display: none;
+    }
+  }
 `
 
 export const PMiddleCalc = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  padding: 0 32px;
+
+  h2 {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+    text-align: center;
+    background: linear-gradient(
+      180deg,
+      #fff8f3 0%,
+      rgba(255, 232, 217, 0.7) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 26px;
+  }
+
+  .tab-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px;
+    border-radius: 999px;
+    border: 1px solid #302c29;
+    background: #100d0d;
+  }
+
+  .tab-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 108px;
+    height: 41px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 16px;
+    transition: all 0.2s ease;
+  }
+
+  .tab-btn-active {
+    color: #ffe8d9;
+    background:
+      linear-gradient(
+        129deg,
+        rgba(231, 98, 32, 0) 35.85%,
+        rgba(231, 98, 32, 0.2) 72.26%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(230, 105, 40, 0.1) 0%,
+        rgba(230, 105, 40, 0.1) 100%
+      ),
+      linear-gradient(180deg, rgba(13, 7, 2, 0) 0%, rgba(115, 59, 21, 0.2) 100%);
+    background-blend-mode: color-dodge, normal, normal;
+    box-shadow:
+      inset 0 0.5px 1px -1px rgba(255, 255, 255, 0.25),
+      inset 0 0 3px -1px rgba(255, 255, 255, 0.54);
+  }
+
+  .tab-btn-inactive {
+    color: rgba(163, 148, 139, 0.85);
+    background: transparent;
+  }
+
+  .tab-prefix {
+    opacity: 0.8;
+  }
+
+  .calc-divider {
+    width: 100%;
+    height: 1px;
+    background: #302c29;
+    margin-top: 24px;
+  }
+
+  .calc-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 48px 0 0;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .calc-item {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 232, 217, 0.64);
+    text-align: center;
+    white-space: nowrap;
+
+    .calc-item-value {
+      color: #ffe8d9;
+    }
+  }
+
+  .calc-item-divider {
+    width: 26px;
+    height: 1px;
+    background: #877b72;
+    opacity: 0.5;
+  }
+
+  @media only screen and (max-width: 578px) {
+    padding: 0;
+
+    .calc-heading {
+      border-bottom: 1px solid #302c29;
+      border-left: 1px solid #302c29;
+      border-right: 1px solid #302c29;
+      padding: 32px 24px 48px;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .calc-divider {
+      display: none;
+    }
+
+    .calc-content {
+      border-bottom: 1px solid #302c29;
+      border-left: 1px solid #302c29;
+      border-right: 1px solid #302c29;
+      padding: 56px 24px;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+    }
+
+    .calc-list {
+      padding: 0;
+    }
+
+    .calc-item {
+      white-space: normal;
+      color: rgba(255, 232, 217, 0.8);
+    }
+  }
 `
 
 export const PMiddleNumbers = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
+  position: relative;
+  width: 100%;
+  padding: 0 32px;
+  box-sizing: border-box;
+
+  .numbers-top-line {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background: #302c29;
+  }
+
+  .numbers-accent {
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 73px;
+    background: #877b72;
+  }
+
+  .numbers-accent-1 {
+    left: 43px;
+  }
+
+  .numbers-accent-2 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .numbers-accent-3 {
+    right: 43px;
+  }
+
+  .numbers-container {
+    position: relative;
+    border: 1px solid #302c29;
+    border-top: none;
+    padding: 24px 38px;
+
+    .corner-arrow {
+      position: absolute;
+      z-index: 3;
+    }
+    .corner-left-top {
+      top: -1px;
+      left: -1px;
+    }
+    .corner-right-top {
+      top: -1px;
+      right: -1px;
+    }
+    .corner-left-bottom {
+      bottom: -1px;
+      left: -1px;
+    }
+    .corner-right-bottom {
+      bottom: -1px;
+      right: -1px;
+    }
+  }
+
+  .numbers-grid {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .number-item {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .number-value {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    background: linear-gradient(
+      180deg,
+      #fff8f3 0%,
+      rgba(255, 232, 217, 0.7) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .number-value-suffix {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .number-label {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 232, 217, 0.64);
+  }
+
+  @media only screen and (max-width: 578px) {
+    padding: 0;
+
+    .numbers-top-line {
+      display: none;
+    }
+
+    .numbers-container {
+      border: none;
+      padding: 0;
+
+      .corner-arrow {
+        display: none;
+      }
+    }
+
+    .numbers-grid {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .number-item {
+      width: 100%;
+      border-bottom: 1px solid #302c29;
+      border-left: 1px solid #302c29;
+      border-right: 1px solid #302c29;
+      padding: 24px;
+      box-sizing: border-box;
+      text-align: center;
+      min-height: 104px;
+      justify-content: center;
+    }
+
+    .number-value {
+      color: #ffe8d9;
+      background: none;
+      -webkit-text-fill-color: #ffe8d9;
+    }
+
+    .number-value-suffix {
+      color: #ffe8d9;
+      -webkit-text-fill-color: #ffe8d9;
+    }
+
+    .number-label {
+      color: rgba(255, 232, 217, 0.8);
+    }
+  }
 `
 
 export const PricingBottom = styled.div`

@@ -40,6 +40,44 @@ export const Vector4 = () => (
   </svg>
 )
 
+export const SideVectorLeft = () => (
+  <svg
+    preserveAspectRatio="none"
+    width="100%"
+    height="100%"
+    overflow="visible"
+    style={{ display: "block" }}
+    viewBox="0 0 518 33.1675"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0.5 0.666904L351 0.66746L382 6.66746V0.66746L491.25 32.6675H517.5"
+      stroke="#302C29"
+      strokeLinecap="round"
+    />
+  </svg>
+)
+
+export const SideVectorRight = () => (
+  <svg
+    preserveAspectRatio="none"
+    width="100%"
+    height="100%"
+    overflow="visible"
+    style={{ display: "block" }}
+    viewBox="0 0 518 33.1675"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0.5 0.666904L351 0.66746L382 6.66746V0.66746L491.25 32.6675H517.5"
+      stroke="#302C29"
+      strokeLinecap="round"
+    />
+  </svg>
+)
+
 export const CornerArrow = ({ position }) => {
   const paths = {
     "left-top": "M7 1L1 1L1 7",
