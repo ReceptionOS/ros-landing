@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import bgTop8 from "../../../../images/whyus/bg-top8.webp"
 
 export const WhyUsComponent = styled.div`
   .why-us-wrapper {
@@ -224,13 +225,22 @@ export const WhyUsComponent = styled.div`
   .why-us-bottom {
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
     max-width: 894px;
     margin: 0 auto;
+    border-top: 1px solid #302c29;
     border-bottom: 1px solid #302c29;
 
     .why-us-bottom-left {
       padding: 40px 32px;
-      max-width: 50%;
+      max-width: 448px;
+      border-right: 1px solid #302c29;
+      width: 100%;
+      box-sizing: border-box;
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
 
       .main-headline {
         display: flex;
@@ -265,11 +275,70 @@ export const WhyUsComponent = styled.div`
         }
       }
       .subcontent {
-        margin-top: 80px;
+        margin-top: auto;
       }
     }
 
-    .why-us-bottom-left {
+    .why-us-bottom-right {
+      max-width: 448px;
+      width: 100%;
+      box-sizing: border-box;
+      background-image: url(${bgTop8});
+      background-size: 100% 100%;
+
+      .bg-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+      }
+
+      .clinics {
+        font-size: 16px;
+        line-height: 22px; /* 137.5% */
+        background: linear-gradient(
+          180deg,
+          #fff8f3 0%,
+          rgba(255, 232, 217, 0.7) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .rating {
+        color: rgba(255, 232, 217, 0.64);
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px; /* 157.143% */
+        opacity: 0.7;
+        max-width: 264px;
+        margin-top: 24px;
+        margin-bottom: 38px;
+      }
+
+      .top {
+        padding: 12px 30px;
+        margin-top: 76px;
+        margin-bottom: 52px;
+
+        p {
+          font-size: 32px;
+
+          font-weight: 500;
+          line-height: 40px; /* 125% */
+          letter-spacing: -0.36px;
+          background: linear-gradient(
+            180deg,
+            #e76220 27.08%,
+            rgba(231, 98, 32, 0.45) 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
     }
   }
 
