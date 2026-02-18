@@ -40,6 +40,11 @@ exports.onRenderBody = ({
             opacity: 0;
             pointer-events: none;
           }
+          @media only screen and (max-width: 1130px) {
+            #ros-loader-overlay .ros-loader {
+              transform: translate(3%, 5%);
+            }
+          }
           #gatsby-focus-wrapper {
             opacity: 0;
             transform: translateY(6px);
