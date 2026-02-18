@@ -432,7 +432,27 @@ export const WhyUsComponent = styled.div`
     }
   }
 
+  .why-us-bottom-desktop {
+    display: flex;
+    width: 100%;
+    gap: 0;
+  }
+
+  .why-us-bottom-mobile {
+    display: none;
+  }
+
   @media only screen and (max-width: 890px) {
+    .why-us-bottom-desktop {
+      display: none;
+    }
+
+    .why-us-bottom-mobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
     .why-us-bottom {
       flex-direction: column;
 

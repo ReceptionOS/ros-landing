@@ -274,28 +274,55 @@ const WhyUs = ({ t }) => {
         </div>
         <Divider className="divider" />
         <div className="why-us-bottom">
-          <BorderContainer4RowsLeft className="why-us-bottom-left">
-            <div className="main-headline">
-              <h3>Wasza pozycja na rynku:</h3>
-              <p className="">Pacjenci płacą premium i oczekują premium.</p>
-            </div>
-            <p className="subcontent p-new-model-16">
-              Chaos, nieodebrane telefony i brak opieki psują ten obraz.
-              ReceptionOS pomoże dostarczyć doświadczenia na poziomie Waszych
-              cen.
-            </p>
-          </BorderContainer4RowsLeft>
-          <div className="why-us-bottom-right">
-            <BorderContainer4RowsRight className="bg-content">
-              <BorderContainer4RowsCornersOnly className="top">
-                <p>TOP 8%</p>
-              </BorderContainer4RowsCornersOnly>
-              <p className="clinics">klinik w regionie</p>
-              <p className="rating">
-                Ocena została obliczona na podstawie cen zabiegów w clinic -
-                city i okolicach
+          <div className="why-us-bottom-desktop">
+            <BorderContainer4RowsLeft className="why-us-bottom-left">
+              <div className="main-headline">
+                <h3>Wasza pozycja na rynku:</h3>
+                <p className="">Pacjenci płacą premium i oczekują premium.</p>
+              </div>
+              <p className="subcontent p-new-model-16">
+                Chaos, nieodebrane telefony i brak opieki psują ten obraz.
+                ReceptionOS pomoże dostarczyć doświadczenia na poziomie Waszych
+                cen.
               </p>
-            </BorderContainer4RowsRight>
+            </BorderContainer4RowsLeft>
+            <div className="why-us-bottom-right">
+              <BorderContainer4RowsRight className="bg-content">
+                <BorderContainer4RowsCornersOnly className="top">
+                  <p>TOP 8%</p>
+                </BorderContainer4RowsCornersOnly>
+                <p className="clinics">klinik w regionie</p>
+                <p className="rating">
+                  Ocena została obliczona na podstawie cen zabiegów w clinic -
+                  city i okolicach
+                </p>
+              </BorderContainer4RowsRight>
+            </div>
+          </div>
+          <div className="why-us-bottom-mobile">
+            <BorderContainer4Rows className="why-us-bottom-left">
+              <div className="main-headline">
+                <h3>Wasza pozycja na rynku:</h3>
+                <p className="">Pacjenci płacą premium i oczekują premium.</p>
+              </div>
+              <p className="subcontent p-new-model-16">
+                Chaos, nieodebrane telefony i brak opieki psują ten obraz.
+                ReceptionOS pomoże dostarczyć doświadczenia na poziomie Waszych
+                cen.
+              </p>
+            </BorderContainer4Rows>
+            <div className="why-us-bottom-right">
+              <BorderContainer4Rows className="bg-content">
+                <BorderContainer4RowsCornersOnly className="top">
+                  <p>TOP 8%</p>
+                </BorderContainer4RowsCornersOnly>
+                <p className="clinics">klinik w regionie</p>
+                <p className="rating">
+                  Ocena została obliczona na podstawie cen zabiegów w clinic -
+                  city i okolicach
+                </p>
+              </BorderContainer4Rows>
+            </div>
           </div>
         </div>
         <BorderContainerBottom className="divider" />
