@@ -43,7 +43,7 @@ export const WhyUsComponent = styled.div`
     -webkit-text-fill-color: transparent;
     margin: 0 auto;
     padding: 32px 0px;
-    max-width: 1023px;
+    max-width: 894px;
     border-top: 1px solid #302c29;
     border-right: 1px solid #302c29;
     border-left: 1px solid #302c29;
@@ -126,7 +126,7 @@ export const WhyUsComponent = styled.div`
 
   .why-us-tile-container {
     display: grid;
-    grid-template-columns: repeat(3, 341px);
+    grid-template-columns: repeat(3, 298px);
     row-gap: 31px;
     position: relative;
     justify-content: center;

@@ -94,7 +94,7 @@ export const BorderContainerTopBottomStriped = ({ children, className }) => {
         .border-container-top-bottom-striped {
           position: relative;
           width: 100%;
-          max-width: 1098px;
+          max-width: 959px;
           margin: 0 auto;
           bottom: -1px;
         }
