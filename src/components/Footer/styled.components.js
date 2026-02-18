@@ -60,7 +60,7 @@ export const FooterComponent = styled.div`
       padding: 0;
       cursor: pointer;
       color: rgba(255, 232, 217, 0.64);
-      font-family: "Inter Tight";
+      font-family: "Inter Tight Variable", "Inter Tight", sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;

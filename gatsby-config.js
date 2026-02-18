@@ -16,6 +16,7 @@ module.exports = {
     siteUrl: `https://receptionos.com`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -28,7 +29,7 @@ module.exports = {
       options: {
         apiKey: process.env.POSTHOG_API_KEY,
         apiHost: "https://eu.i.posthog.com",
-        head: true,
+        head: false,
         isEnabledDevMode: true,
       },
     },
@@ -86,7 +87,6 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
         ],
       },
     },
