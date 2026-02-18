@@ -14,6 +14,7 @@ import {
 } from "./Pricing.styled"
 import { RoundedInfoTile } from "../../../../styled.components"
 import { pricingIcons } from "./Pricing.icons"
+import { Vector115, Vector4, CornerArrow } from "./Pricing.vectors"
 
 /**
  * @param {Object} content
@@ -68,29 +69,70 @@ const Pricing = ({ t }) => {
         <PricingInner>
           {/* Top */}
           <PricingTop>
-            {/* Price */}
+            <div className="vector-115">
+              <Vector115 />
+            </div>
+            <div className="vector-4">
+              <Vector4 />
+            </div>
+
             <PTopPricing>
-              <div className="price-label">{price.label}</div>
-              <div className="price-value">{price.value}</div>
+              <div className="price-flag">
+                <div className="price-flag-inner">
+                  <p>{price.label}</p>
+                </div>
+              </div>
+              <div className="price-amount">
+                <span className="price-value">
+                  {price.value.split(" /")[0]}
+                </span>
+                <span className="price-suffix">
+                  / {price.value.split("/ ")[1] || price.value.split("/")[1]}
+                </span>
+              </div>
             </PTopPricing>
 
-            {/* Features */}
-            <PTopFeatures>
-              {features.items.map((item, index) => (
-                <div key={index}>
-                  <div className="feature-icon">{pricingIcons[item.icon]}</div>
-                  <div className="feature-label">{item.label}</div>
-                  {item.info && (
-                    <div className="feature-info">
-                      {item.info.map((info, index) => (
-                        <div key={index}>{info}</div>
-                      ))}
-                    </div>
-                  )}
+            <div className="top-border">
+              <CornerArrow position="left-top" />
+              <CornerArrow position="right-top" />
+              <CornerArrow position="left-bottom" />
+              <CornerArrow position="right-bottom" />
+
+              <PTopFeatures>
+                <div className="features-left">
+                  {features.items
+                    .filter(item => !item.info)
+                    .map((item, index) => (
+                      <div className="feature-item" key={index}>
+                        {pricingIcons[item.icon]}
+                        <span className="feature-label">{item.label}</span>
+                      </div>
+                    ))}
                 </div>
-              ))}
-            </PTopFeatures>
-            <div className="feature-description">{features.description}</div>
+                <div className="features-right">
+                  {features.items
+                    .filter(item => item.info)
+                    .map((item, index) => (
+                      <React.Fragment key={index}>
+                        <div className="feature-item">
+                          {pricingIcons[item.icon]}
+                          <span className="feature-header">{item.label}</span>
+                        </div>
+                        {item.info.map((info, i) => (
+                          <div className="feature-item" key={i}>
+                            <div className="bullet-dot" />
+                            <span className="feature-label">{info}</span>
+                          </div>
+                        ))}
+                      </React.Fragment>
+                    ))}
+                </div>
+              </PTopFeatures>
+
+              <div className="features-description">{features.description}</div>
+            </div>
+
+            <div className="top-divider" />
           </PricingTop>
 
           {/* Middle */}
