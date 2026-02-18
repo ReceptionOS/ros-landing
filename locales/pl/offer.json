@@ -11,6 +11,10 @@
   "offer.Pricing": {
     "pill": "Case Study",
     "title": "Ile to kosztuje",
+    "price": {
+      "label": "Full Stack",
+      "value": "975 PLN /stanowisko"
+    },
     "features": {
       "items": [
         {
