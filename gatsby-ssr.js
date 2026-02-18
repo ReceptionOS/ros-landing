@@ -29,6 +29,9 @@ exports.onRenderBody = ({
             opacity: 1;
             transition: opacity 800ms cubic-bezier(0.4, 0, 0.2, 1);
           }
+          #ros-loader-overlay path[id^="ros-"] {
+            opacity: 0;
+          }
           #ros-loader-overlay .ros-loader {
             opacity: 0;
             animation: ros-loader-fadein 500ms ease 150ms forwards;
