@@ -12,6 +12,7 @@ import {
   PricingBottom,
   PricingMiddle
 } from "./Pricing.styled"
+import { RoundedInfoTile } from "../../../../styled.components"
 import { pricingIcons } from "./Pricing.icons"
 
 /**
@@ -58,10 +59,9 @@ const Pricing = ({ t }) => {
     <PricingWrapper>
       <PricingContainer>
         <PricingHeader>
-          {/* Pill */}
-          <div className="pill">{pill}</div>
-
-          {/* Title */}
+          <RoundedInfoTile>
+            <p>{pill}</p>
+          </RoundedInfoTile>
           <h1>{title}</h1>
         </PricingHeader>
 
