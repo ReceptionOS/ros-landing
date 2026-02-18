@@ -108,10 +108,10 @@ exports.onRenderBody = ({
         var fade = hp < L * 0.01 ? hp / (L * 0.01) : 1;
 
         if (fade < 0.01) {
-          if (parts[0].getAttribute('opacity') !== '0') {
-            parts[0].setAttribute('opacity', '0');
-            parts[1].setAttribute('opacity', '0');
-            parts[2].setAttribute('opacity', '0');
+          if (parts[0].style.opacity !== '0') {
+            parts[0].style.opacity = '0';
+            parts[1].style.opacity = '0';
+            parts[2].style.opacity = '0';
           }
           return;
         }
@@ -122,19 +122,19 @@ exports.onRenderBody = ({
         var tv = hp < tl ? hp : tl;
         parts[0].setAttribute('stroke-dasharray', tv + ' ' + (L - tv));
         parts[0].setAttribute('stroke-dashoffset', L - (hp - tl > 0 ? hp - tl : 0));
-        parts[0].setAttribute('opacity', (0.06 + 0.18 * sp * 2) * fade);
+        parts[0].style.opacity = (0.06 + 0.18 * sp * 2) * fade;
 
         var bs = hp - bl; if (bs < 0) bs = 0;
         var bv = hp - bs;
         parts[1].setAttribute('stroke-dasharray', bv + ' ' + (L - bv));
         parts[1].setAttribute('stroke-dashoffset', L - bs);
-        parts[1].setAttribute('opacity', (0.12 + 0.50 * sp * 2) * fade);
+        parts[1].style.opacity = (0.12 + 0.50 * sp * 2) * fade;
 
         var hs = hp - hl; if (hs < 0) hs = 0;
         var hv = hp - hs;
         parts[2].setAttribute('stroke-dasharray', hv + ' ' + (L - hv));
         parts[2].setAttribute('stroke-dashoffset', L - hs);
-        parts[2].setAttribute('opacity', (0.55 + 0.45 * sp * 2) * fade);
+        parts[2].style.opacity = (0.55 + 0.45 * sp * 2) * fade;
       }
 
       var startTime = -1;
@@ -150,7 +150,7 @@ exports.onRenderBody = ({
         for (var j = 0; j < 3; j++) {
           els[i][j].setAttribute('stroke-dasharray', '0 ' + L);
           els[i][j].setAttribute('stroke-dashoffset', '0');
-          els[i][j].setAttribute('opacity', '0');
+          els[i][j].style.opacity = '0';
         }
 
       window.__rosLoaderCleanup = function() {
