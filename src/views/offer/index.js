@@ -8,6 +8,7 @@ import Footer from "../../components/Footer/Footer"
 import WriteUsCTA from "./components/WriteUsCTA/WriteUsCTA"
 import FeaturedSection from "./components/FeaturedSection/FeaturedSection"
 import FAQ from "./components/FAQ/FAQ"
+import { Pricing } from "./components/Pricing"
 
 const Offer = () => {
   const { t } = useTranslation()
@@ -17,6 +18,7 @@ const Offer = () => {
       <Seo title={t`offer.seo.title`} description={t`offer.seo.description`} />
       <Menu t={t} />
       <Hero t={t} />
+      <Pricing t={t} />
       <FeaturedSection t={t} />
       <FAQ t={t} />
       <WriteUsCTA t={t} />

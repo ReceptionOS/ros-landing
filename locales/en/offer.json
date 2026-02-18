@@ -8,10 +8,91 @@
   "offer.Hero.order-button": "Order an audit",
   "offer.Hero.order-button-href": "https://buy.stripe.com/aFadRabOxbx624131487K02",
 
+  "offer.Pricing": {
+    "pill": "Case Study",
+    "title": "How much does it cost",
+    "features": {
+      "items": [
+        {
+          "icon": "icon-layers",
+          "label": "All 5 layers" },
+        {
+          "icon": "icon-user",
+          "label": "Dedicated guardian" },
+        {
+          "icon": "icon-reload",
+          "label": "Updates and new features" },
+        {
+          "icon": "icon-phone",
+          "label": "VOICEBOT MINUTES:",
+          "info": [ "500 min/month in price", "Each additional 100 min: 150 PLN" ]
+        }
+      ],
+      "description": "What is the position? It depends on the structure of the clinic – it can be a user, a telephone line or a cabinet. We will discuss the exact configuration at the meeting."
+    },
+    "calc": {
+      "title": "ROI calculation",
+      "tabs": [
+        {
+          "title": "Assumptions",
+          "items": [
+            {
+              "label": "Average patient value: ",
+              "value": "1,800 PLN" },
+            {
+              "label": "Net margin: ",
+              "value": "20% → 360 PLN income/patient" },
+            {
+              "label": "Missed calls: ",
+              "value": "15%" },
+            {
+              "label": "Conversion of missed calls: ",
+              "value": "25% potential patients" }
+          ]
+        },
+        {
+          "title": "Example",
+          "items": [
+            {
+              "label": "Average patient value: ",
+              "value": "1,800 PLN" },
+            {
+              "label": "Net margin: ",
+              "value": "20% → 360 PLN income/patient" },
+            {
+              "label": "Missed calls: ",
+              "value": "15%" },
+            {
+              "label": "Conversion of missed calls: ",
+              "value": "25% potential patients" }
+          ]
+        }
+      ]
+    },
+    "numbers": [
+      {
+        "label": "receptionOS cost",
+        "value": "3,900 PLN /month" },
+      {
+        "label": "From the first month",
+        "value": "ROI 5.1 x" },
+      {
+        "label": "Recovered income",
+        "value": "20,160 PLN /month" }
+    ],
+    "footer": {
+      "title": "Cancel anytime",
+      "description": "Without contracts and without penalties. You can cancel anytime. If receptionOS doesn't give value – you leave. 30 000 calls confirm the effectiveness of the system.",
+      "button": {
+        "label": "Let's talk",
+        "href": "mailto:k@receptionos.com"
+      }
+    }
+  },
+
   "offer.featured.pill": "Features",
   "offer.featured.title": "The AI wave is already here",
-  "offer.featured.description": "The biggest technological shift of the internet is underway. Companies that don’t\n implement AI in 2–3 years will lose competitiveness.",
-
+  "offer.featured.description": "The biggest technological shift of the internet is underway. Companies that don't\n implement AI in 2–3 years will lose competitiveness.",
   "offer.featured.cons.title": "Clinics that will stay in place",
   "offer.featured.cons.item-1": "Sample downside 1",
   "offer.featured.cons.item-2": "Sample downside 2",
@@ -21,10 +102,10 @@
   "offer.featured.pros.item-2": "Sample upside 2",
   "offer.featured.pros.item-3": "Sample upside 3",
   "offer.featured.exclusivity.title": "Regional exclusivity",
-  "offer.featured.exclusivity.description": "We build long-term partnerships, not license sales. Your success is our success. We don’t want your competitors to use the same tools as you.",
+  "offer.featured.exclusivity.description": "We build long-term partnerships, not license sales. Your success is our success. We don't want your competitors to use the same tools as you.",
   "offer.featured.exclusivity.how-it-works": "How does it work?",
   "offer.featured.exclusivity.how-it-works.description-first": "Within a 25 km radius of {clinic-city}, we can implement the system for only one clinic that decides first.",
-  "offer.featured.exclusivity.how-it-works.description-second": "At the moment we don’t have a partner in your region yet, and {clinic_name} can be the first.",
+  "offer.featured.exclusivity.how-it-works.description-second": "At the moment we don't have a partner in your region yet, and {clinic_name} can be the first.",
 
   "offer.WriteUs.title": "We build an autopilot for \n the best clinics",
   "offer.WriteUs.description": "We start with reception. {clinic_name} can be next.",

@@ -86,6 +86,10 @@ module.exports = {
         defaultLanguage: `pl`,
         siteUrl: `https://receptionos.com/`,
         redirect: false,
+        i18nextOptions: {
+          interpolation: { escapeValue: false },
+          keySeparator: `.`, // required for t('offer.Pricing', { returnObjects: true })
+        },
         pages: [
           {
             matchPath: "/dev-404-page",

@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "editor.defaultFormatter": "prettier.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "prettier.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "prettier.prettier-vscode"
+  },
+  "prettier.trailingComma": "none",
+  "prettier.semi": false,
+  "prettier.arrowParens": "avoid"
+}

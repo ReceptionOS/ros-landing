@@ -8,6 +8,88 @@
   "offer.Hero.order-button": "Zamów audyt",
   "offer.Hero.order-button-href": "https://buy.stripe.com/aFadRabOxbx624131487K02",
 
+  "offer.Pricing": {
+    "pill": "Case Study",
+    "title": "Ile to kosztuje",
+    "features": {
+      "items": [
+        {
+          "icon": "icon-layers",
+          "label": "Wszystkie 5 warstw" },
+        {
+          "icon": "icon-user",
+          "label": "Dedykowany opiekun" },
+        {
+          "icon": "icon-reload",
+          "label": "Aktualizacje i nowe funkcje" },
+        {
+          "icon": "icon-phone",
+          "label": "MINUTYH VOICEBOTA:",
+          "info": [ "500 min/mies w cenie", "Każde dodatkowe 100 min: 150 PLN" ]
+        }
+      ],
+      "description": "Czym jest stanowisko? Zależy od struktury kliniki – może to być użytkownik, linia telefoniczna lub gabinet. Dokładną konfigurację ustalimy na spotkaniu."
+    },
+    "calc": {
+      "title": "Kalkulacja ROI",
+      "tabs": [
+        {
+          "title": "Założenia",
+          "items": [
+            {
+              "label": "Średnia wartość pacjenta: ",
+              "value": "1,800 PLN" },
+            {
+              "label": "Marża netto: ",
+              "value": "20% → 360 PLN dochodu/pacjent" },
+            {
+              "label": "Nieodebrane połączenia: ",
+              "value": "15%" },
+            {
+              "label": "Konwersja nieodebranych: ",
+              "value": "25% potencjalnych pacjentów" }
+          ]
+        },
+        {
+          "title": "Przykład",
+          "items": [
+            {
+              "label": "Średnia wartość pacjenta: ",
+              "value": "1,800 PLN" },
+            {
+              "label": "Marża netto: ",
+              "value": "20% → 360 PLN dochodu/pacjent" },
+            {
+              "label": "Nieodebrane połączenia: ",
+              "value": "15%" },
+            {
+              "label": "Konwersja nieodebranych: ",
+              "value": "25% potencjalnych pacjentów" }
+          ]
+        }
+      ]
+    },
+    "numbers": [
+      {
+        "label": "Koszt receptionOS",
+        "value": "3,900 PLN /mies" },
+      {
+        "label": "Z pierwszego miesiąca",
+        "value": "ROI 5.1 x" },
+      {
+        "label": "Odzyskany dochód",
+        "value": "20,160 PLN /mies" }
+    ],
+    "footer": {
+      "title": "Zrezygnuj kiedy chcesz",
+      "description": "Bez umów i bez kar. Rezygnujesz kiedy chcesz. Jeśli receptionOS nie daje wartości – odchodzisz. 30 000 rozmów potwierdza skuteczność systemu.",
+      "button": {
+        "label": "Porozmawiajmy",
+        "href": "mailto:k@receptionos.com"
+      }
+    }
+  },
+
   "offer.featured.pill": "Funkcje",
   "offer.featured.title": "Fala AI już nadchodzi",
   "offer.featured.description": "Trwa największa technologiczna zmiana internetu. Firmy, które w 2–3 lata nie \n wdrożą AI, stracą konkurencyjność.",
