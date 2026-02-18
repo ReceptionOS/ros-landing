@@ -27,6 +27,7 @@ export const BorderContainer4RowsLeft = ({ children, className }) => {
       <style jsx="true">{`
         .border-container-4-rows-left {
           position: relative;
+          border-left: 1px solid #302C29;
 
           .left-top {
             position: absolute;

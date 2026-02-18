@@ -9,6 +9,8 @@ import { BorderContainerTop } from "../../../../components/BorderContainer/Borde
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 import { Divider } from "../../../../components/BorderContainer/Divider"
 import { BorderContainerBottom } from "../../../../components/BorderContainer/BorderContainerBottom"
+import { BorderContainer4RowsLeft } from "../../../../components/BorderContainer/BorderContainer4RowsLeft"
+import { BorderContainer4RowsRight } from "../../../../components/BorderContainer/BorderContainer4RowsRight"
 
 const WhyUs = ({ t }) => {
   const consItems = [
@@ -243,26 +245,26 @@ const WhyUs = ({ t }) => {
           <SliderComponent t={t} items={tilesData} />
         </div>
         <Divider className="divider" />
-        <div>
-          <div>
-            <div>
+        <div className="why-us-bottom">
+          <BorderContainer4RowsLeft className="why-us-bottom-left">
+            <div className="main-headline">
               <h3>Wasza pozycja na rynku:</h3>
-              <p>Pacjenci płacą premium i oczekują premium.</p>
+              <p className="">Pacjenci płacą premium i oczekują premium.</p>
             </div>
-            <p>
+            <p className="subcontent p-new-model-16">
               Chaos, nieodebrane telefony i brak opieki psują ten obraz.
               ReceptionOS pomoże dostarczyć doświadczenia na poziomie Waszych
               cen.
             </p>
-          </div>
-          <div>
+          </BorderContainer4RowsLeft>
+          <BorderContainer4RowsRight>
             <p>TOP 8%</p>
             <p>klinik w regionie</p>
             <p>
               Ocena została obliczona na podstawie cen zabiegów w clinic - city
               i okolicach
             </p>
-          </div>
+          </BorderContainer4RowsRight>
         </div>
         <BorderContainerBottom className="divider" />
       </div>

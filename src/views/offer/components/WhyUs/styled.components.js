@@ -221,6 +221,58 @@ export const WhyUsComponent = styled.div`
     margin: 0 auto;
   }
 
+  .why-us-bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 894px;
+    margin: 0 auto;
+    border-bottom: 1px solid #302c29;
+
+    .why-us-bottom-left {
+      padding: 40px 32px;
+      max-width: 50%;
+
+      .main-headline {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h3 {
+          font-size: 32px;
+          line-height: 40px; /* 125% */
+          letter-spacing: -0.36px;
+          background: linear-gradient(
+            180deg,
+            #fff8f3 0%,
+            rgba(255, 232, 217, 0.7) 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 22px; /* 137.5% */
+          background: linear-gradient(
+            180deg,
+            #fff8f3 0%,
+            rgba(255, 232, 217, 0.7) 100%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .subcontent {
+        margin-top: 80px;
+      }
+    }
+
+    .why-us-bottom-left {
+    }
+  }
+
   @media only screen and (max-width: 1130px) {
     .why-us-container {
       margin-bottom: 64px;
