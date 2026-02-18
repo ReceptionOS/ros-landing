@@ -216,6 +216,11 @@ export const WhyUsComponent = styled.div`
     }
   }
 
+  .divider {
+    max-width: 894px;
+    margin: 0 auto;
+  }
+
   @media only screen and (max-width: 1130px) {
     .why-us-container {
       margin-bottom: 64px;

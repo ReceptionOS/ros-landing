@@ -7,6 +7,7 @@ import SliderComponent from "../../../home/components/AIWave/Slider"
 import { BorderContainerTopBottomStriped } from "../../../../components/BorderContainer/BorderContainerTopBottomStriped"
 import { BorderContainerTop } from "../../../../components/BorderContainer/BorderContainerTop"
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
+import { Divider } from "../../../../components/BorderContainer/Divider"
 
 const WhyUs = ({ t }) => {
   const consItems = [
@@ -240,6 +241,7 @@ const WhyUs = ({ t }) => {
         <div className="why-us-mobile">
           <SliderComponent t={t} items={tilesData} />
         </div>
+        <Divider className='divider' />
       </div>
     </WhyUsComponent>
   )
