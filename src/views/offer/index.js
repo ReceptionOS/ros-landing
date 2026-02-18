@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Seo from "../../components/seo"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 import Menu from "../../components/Menu/Menu"
@@ -7,10 +7,20 @@ import CookieBanner from "../../components/CookieBanner/CookieBanner"
 import Footer from "../../components/Footer/Footer"
 import WriteUsCTA from "./components/WriteUsCTA/WriteUsCTA"
 import FeaturedSection from "./components/FeaturedSection/FeaturedSection"
+import ThreePoints from "./components/ThreePoints/ThreePoints"
+import WhyUs from "./components/WhyUs/WhyUs"
 import FAQ from "./components/FAQ/FAQ"
 
 const Offer = () => {
   const { t } = useTranslation()
+
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) return
 
   return (
     <>
@@ -18,6 +28,8 @@ const Offer = () => {
       <Menu t={t} />
       <Hero t={t} />
       <FeaturedSection t={t} />
+      <ThreePoints t={t} />
+      <WhyUs t={t} />
       <FAQ t={t} />
       <WriteUsCTA t={t} />
       <Footer t={t} />
