@@ -38,10 +38,11 @@ export const PricingHeader = styled.div`
 `
 
 export const PricingInner = styled.div`
+  max-width: 638px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
 `
 
 export const PricingTop = styled.div`
