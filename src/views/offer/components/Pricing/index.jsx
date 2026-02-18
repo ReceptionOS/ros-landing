@@ -19,7 +19,8 @@ import {
   Vector4,
   CornerArrow,
   SideVectorLeft,
-  SideVectorRight
+  SideVectorRight,
+  BottomShapes
 } from "./Pricing.vectors"
 
 /**
@@ -223,13 +224,20 @@ const Pricing = ({ t }) => {
             </PMiddleNumbers>
           </PricingMiddle>
 
-          {/* Footer */}
+          {/* Bottom */}
           <PricingBottom>
-            <h3>{footer.title}</h3>
-            <p>{footer.description}</p>
-            <a href={footer.button.href} className="button">
-              {footer.button.label}
-            </a>
+            <div className="bottom-shapes">
+              <BottomShapes />
+            </div>
+            <div className="bottom-side-lines-mobile left" />
+            <div className="bottom-side-lines-mobile right" />
+            <div className="bottom-content">
+              <h3>{footer.title}</h3>
+              <p>{footer.description}</p>
+              <a href={footer.button.href} className="bottom-cta">
+                {footer.button.label}
+              </a>
+            </div>
           </PricingBottom>
         </PricingInner>
       </PricingContainer>

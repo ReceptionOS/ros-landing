@@ -78,6 +78,77 @@ export const SideVectorRight = () => (
   </svg>
 )
 
+export const BottomShapes = () => (
+  <svg
+    preserveAspectRatio="none"
+    width="100%"
+    height="100%"
+    overflow="visible"
+    style={{ display: "block" }}
+    viewBox="0 0 639 413.5"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M32.5 0.5L32.5 83.5001L26.5 114.5L32.5 114.5L0.500012 223.75L0.5 413"
+      stroke="url(#bottom-grad-left)"
+      strokeLinecap="round"
+    />
+    <path
+      d="M606.5 0.5L606.5 83.5001L612.5 114.5L606.5 114.5L638.5 223.75L638.5 413"
+      stroke="url(#bottom-grad-right)"
+      strokeLinecap="round"
+    />
+    <path
+      d="M604.5 0.5H547.06L516.092 6.5V0.5H32.5001"
+      stroke="#302C29"
+      strokeLinecap="round"
+    />
+    <rect x="32.5" y="0.5" width="574" height="24" fill="url(#bottom-hatch)" />
+    <rect x="32.5" y="24" width="574" height="1" fill="#302C29" />
+    <defs>
+      <linearGradient
+        id="bottom-grad-left"
+        x1="16.5"
+        y1="0.5"
+        x2="16.5"
+        y2="413"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#302C29" />
+        <stop offset="1" stopColor="#302C29" stopOpacity="0" />
+      </linearGradient>
+      <linearGradient
+        id="bottom-grad-right"
+        x1="622.5"
+        y1="0.5"
+        x2="622.5"
+        y2="413"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#302C29" />
+        <stop offset="1" stopColor="#302C29" stopOpacity="0" />
+      </linearGradient>
+      <pattern
+        id="bottom-hatch"
+        patternUnits="userSpaceOnUse"
+        width="9"
+        height="9"
+        patternTransform="translate(32.5 0.5)"
+      >
+        <line
+          x1="9.354"
+          y1="0.354"
+          x2="0.354"
+          y2="9.354"
+          stroke="#302C29"
+          opacity="0.5"
+        />
+      </pattern>
+    </defs>
+  </svg>
+)
+
 export const CornerArrow = ({ position }) => {
   const paths = {
     "left-top": "M7 1L1 1L1 7",
