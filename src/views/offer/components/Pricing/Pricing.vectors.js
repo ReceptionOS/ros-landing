@@ -47,15 +47,17 @@ export const SideVectorLeft = () => (
     height="100%"
     overflow="visible"
     style={{ display: "block" }}
-    viewBox="0 0 518 33.1675"
+    viewBox="0 0 33.1675 518"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path
-      d="M0.5 0.666904L351 0.66746L382 6.66746V0.66746L491.25 32.6675H517.5"
-      stroke="#302C29"
-      strokeLinecap="round"
-    />
+    <g transform="scale(1,-1) rotate(-90)">
+      <path
+        d="M0.5 0.666904L351 0.66746L382 6.66746V0.66746L491.25 32.6675H517.5"
+        stroke="#302C29"
+        strokeLinecap="round"
+      />
+    </g>
   </svg>
 )
 
@@ -66,15 +68,17 @@ export const SideVectorRight = () => (
     height="100%"
     overflow="visible"
     style={{ display: "block" }}
-    viewBox="0 0 518 33.1675"
+    viewBox="0 0 33.1675 518"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path
-      d="M0.5 0.666904L351 0.66746L382 6.66746V0.66746L491.25 32.6675H517.5"
-      stroke="#302C29"
-      strokeLinecap="round"
-    />
+    <g transform="translate(0,518) rotate(-90)">
+      <path
+        d="M0.5 0.666904L351 0.66746L382 6.66746V0.66746L491.25 32.6675H517.5"
+        stroke="#302C29"
+        strokeLinecap="round"
+      />
+    </g>
   </svg>
 )
 

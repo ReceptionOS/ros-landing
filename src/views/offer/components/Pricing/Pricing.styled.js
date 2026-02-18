@@ -363,9 +363,8 @@ export const PricingMiddle = styled.div`
     left: 0;
     width: 32px;
     height: 100%;
-    transform: rotate(-90deg) scaleY(-1);
-    transform-origin: top left;
     pointer-events: none;
+    rotate: 180deg;
   }
 
   .side-vector-right {
@@ -374,8 +373,6 @@ export const PricingMiddle = styled.div`
     right: 0;
     width: 32px;
     height: 100%;
-    transform: rotate(90deg);
-    transform-origin: top right;
     pointer-events: none;
   }
 
