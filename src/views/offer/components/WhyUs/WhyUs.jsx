@@ -277,50 +277,40 @@ const WhyUs = ({ t }) => {
           <div className="why-us-bottom-desktop">
             <BorderContainer4RowsLeft className="why-us-bottom-left">
               <div className="main-headline">
-                <h3>Wasza pozycja na rynku:</h3>
-                <p className="">Pacjenci płacą premium i oczekują premium.</p>
+                <h3>{t("offer.why-us.market-position.title")}</h3>
+                <p className="">{t("offer.why-us.market-position.subtitle")}</p>
               </div>
               <p className="subcontent p-new-model-16">
-                Chaos, nieodebrane telefony i brak opieki psują ten obraz.
-                ReceptionOS pomoże dostarczyć doświadczenia na poziomie Waszych
-                cen.
+                {t("offer.why-us.market-position.description")}
               </p>
             </BorderContainer4RowsLeft>
             <div className="why-us-bottom-right">
               <BorderContainer4RowsRight className="bg-content">
                 <BorderContainer4RowsCornersOnly className="top">
-                  <p>TOP 8%</p>
+                  <p>{t("offer.why-us.top-percentage")}</p>
                 </BorderContainer4RowsCornersOnly>
-                <p className="clinics">klinik w regionie</p>
-                <p className="rating">
-                  Ocena została obliczona na podstawie cen zabiegów w clinic -
-                  city i okolicach
-                </p>
+                <p className="clinics">{t("offer.why-us.clinics-in-region")}</p>
+                <p className="rating">{t("offer.why-us.rating-description")}</p>
               </BorderContainer4RowsRight>
             </div>
           </div>
           <div className="why-us-bottom-mobile">
             <BorderContainer4Rows className="why-us-bottom-left">
               <div className="main-headline">
-                <h3>Wasza pozycja na rynku:</h3>
-                <p className="">Pacjenci płacą premium i oczekują premium.</p>
+                <h3>{t("offer.why-us.market-position.title")}</h3>
+                <p className="">{t("offer.why-us.market-position.subtitle")}</p>
               </div>
               <p className="subcontent p-new-model-16">
-                Chaos, nieodebrane telefony i brak opieki psują ten obraz.
-                ReceptionOS pomoże dostarczyć doświadczenia na poziomie Waszych
-                cen.
+                {t("offer.why-us.market-position.description")}
               </p>
             </BorderContainer4Rows>
             <div className="why-us-bottom-right">
               <BorderContainer4Rows className="bg-content">
                 <BorderContainer4RowsCornersOnly className="top">
-                  <p>TOP 8%</p>
+                  <p>{t("offer.why-us.top-percentage")}</p>
                 </BorderContainer4RowsCornersOnly>
-                <p className="clinics">klinik w regionie</p>
-                <p className="rating">
-                  Ocena została obliczona na podstawie cen zabiegów w clinic -
-                  city i okolicach
-                </p>
+                <p className="clinics">{t("offer.why-us.clinics-in-region")}</p>
+                <p className="rating">{t("offer.why-us.rating-description")}</p>
               </BorderContainer4Rows>
             </div>
           </div>

@@ -40,9 +40,15 @@
   "offer.why-us.tile-1.title": "Średnia 4.9/5 w Google ",
   "offer.why-us.tile-1.description": "Ponad 127 opinii, a pacjenci Was kochają",
   "offer.why-us.tile-2.title": "Średnia 4.9/5 w Google ",
-  "offer.why-us.tile-2.description": "Ponad 127 opinii, a pacjenci  Was kochają",
+  "offer.why-us.tile-2.description": "Ponad 127 opinii, a pacjenci Was kochają",
   "offer.why-us.tile-3.title": "Średnia 4.9/5 w Google ",
-  "offer.why-us.tile-3.description": "Ponad 127 opinii, a pacjenci  Was kochają",
+  "offer.why-us.tile-3.description": "Ponad 127 opinii, a pacjenci Was kochają",
+  "offer.why-us.market-position.title": "Wasza pozycja na rynku:",
+  "offer.why-us.market-position.subtitle": "Pacjenci płacą premium i oczekują premium.",
+  "offer.why-us.market-position.description": "Chaos, nieodebrane telefony i brak opieki psują ten obraz.\nReceptionOS pomoże dostarczyć doświadczenia na poziomie Waszych cen.",
+  "offer.why-us.top-percentage": "TOP 8%",
+  "offer.why-us.clinics-in-region": "klinik w regionie",
+  "offer.why-us.rating-description": "Ocena została obliczona na podstawie cen zabiegów w clinic -\ncity i okolicach",
 
   "offer.WriteUs.title": "Budujemy autopilota dla \n najlepszych klinik",
   "offer.WriteUs.description": "Zaczynamy od recepcji. {clinic_name} może być następna.",

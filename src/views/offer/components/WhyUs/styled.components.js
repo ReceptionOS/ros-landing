@@ -459,6 +459,14 @@ export const WhyUsComponent = styled.div`
       .why-us-bottom-left {
         max-width: 100%;
         text-align: center;
+
+        .main-headline {
+          h3 {
+            font-size: 28px;
+            line-height: 32px; /* 114.286% */
+            letter-spacing: -0.36px;
+          }
+        }
       }
 
       .why-us-bottom-right {
