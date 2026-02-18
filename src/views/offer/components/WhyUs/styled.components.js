@@ -353,6 +353,10 @@ export const WhyUsComponent = styled.div`
       }
     }
 
+    .why-us-mobile .slick-slider {
+      height: 230px !important;
+    }
+
     .why-us-pros-cons-wrapper {
       margin: 0 auto 0;
     }
@@ -429,6 +433,40 @@ export const WhyUsComponent = styled.div`
   }
 
   @media only screen and (max-width: 890px) {
+    .why-us-bottom {
+      flex-direction: column;
+
+      .why-us-bottom-left {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .why-us-bottom-right {
+        max-width: 100%;
+
+        .rating {
+          margin-top: 12px;
+          margin-bottom: 36px;
+        }
+
+        .top {
+          padding: 12px 22px;
+          margin-top: 32px;
+          margin-bottom: 20px;
+
+          p {
+            font-size: 32px;
+            line-height: 40px; /* 125% */
+            letter-spacing: -0.36px;
+          }
+        }
+      }
+
+      .subcontent {
+        margin-top: 24px !important;
+      }
+    }
+
     .why-us-pros-cons-desktop {
       display: none;
     }
