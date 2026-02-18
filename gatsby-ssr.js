@@ -106,9 +106,11 @@ exports.onRenderBody = ({
         var tailLen = L * 0.50;
         var bodyLen = L * 0.22;
         var headLen = L * 0.05;
+        var startTime = -1;
 
         function run(ts) {
-          var t = (ts % CYCLE) / CYCLE;
+          if (startTime < 0) startTime = ts;
+          var t = ((ts - startTime) % CYCLE) / CYCLE;
           var a = PI2 * t;
           var hp = L * (1 - Math.cos(a)) / 2;
           var sp = Math.abs(Math.sin(a)) / 2;
@@ -149,9 +151,11 @@ exports.onRenderBody = ({
         animFrameIds = [];
       };
 
-      // Start both comets
-      animateComet('ros-tail-a', 'ros-body-a', 'ros-head-a');
-      animateComet('ros-tail-b', 'ros-body-b', 'ros-head-b');
+      // Start both comets after brief delay to sync with CSS fade-in
+      setTimeout(function() {
+        animateComet('ros-tail-a', 'ros-body-a', 'ros-head-a');
+        animateComet('ros-tail-b', 'ros-body-b', 'ros-head-b');
+      }, 200);
     })();
   </script>
 </div>
