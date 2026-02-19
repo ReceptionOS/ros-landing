@@ -35,6 +35,16 @@ export const PricingHeader = styled.div`
     background-clip: text;
     margin: 0;
   }
+
+  @media only screen and (max-width: 578px) {
+    padding: 0 20px;
+
+    h1 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 32px;
+    }
+  }
 `
 
 export const PricingInner = styled.div`
@@ -43,6 +53,11 @@ export const PricingInner = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media only screen and (max-width: 578px) {
+    max-width: 350px;
+    margin: 0 20px;
+  }
 `
 
 export const PricingTop = styled.div`
@@ -120,6 +135,7 @@ export const PricingTop = styled.div`
 
     .vector-4 {
       top: 0;
+      width: 100%;
       height: 123px;
     }
 
@@ -244,7 +260,7 @@ export const PTopPricing = styled.div`
   }
 
   @media only screen and (max-width: 578px) {
-    padding: 26px 24px 0;
+    padding: 24px 24px 0;
 
     .price-amount {
       flex-direction: column;
@@ -499,7 +515,7 @@ export const PMiddleCalc = styled.div`
   .calc-item-divider {
     width: 26px;
     height: 1px;
-    background: #877b72;
+    background: #e76220;
     opacity: 0.5;
   }
 
@@ -516,6 +532,10 @@ export const PMiddleCalc = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    .tab-switcher {
+      width: 232px;
     }
 
     h2 {
@@ -566,7 +586,8 @@ export const PMiddleNumbers = styled.div`
     top: 0;
     height: 1px;
     width: 73px;
-    background: #877b72;
+    background: #e76220;
+    opacity: 0.6;
   }
 
   .numbers-accent-1 {
@@ -662,6 +683,7 @@ export const PMiddleNumbers = styled.div`
 
     .numbers-container {
       border: none;
+      border-top: 1px solid #302c29;
       padding: 0;
 
       .corner-arrow {

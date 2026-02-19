@@ -51,10 +51,23 @@ export const SideVectorLeft = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
+    <defs>
+      <linearGradient
+        id="pricing-side-grad-left"
+        x1="0"
+        y1="0"
+        x2="0"
+        y2="1"
+        gradientUnits="objectBoundingBox"
+      >
+        <stop stopColor="#302C29" />
+        <stop offset="1" stopColor="#302C29" stopOpacity="0" />
+      </linearGradient>
+    </defs>
     <g transform="scale(1,-1) rotate(-90)">
       <path
         d="M0.5 0.666904L351 0.66746L382 6.66746V0.66746L491.25 32.6675H517.5"
-        stroke="#302C29"
+        stroke="url(#pricing-side-grad-left)"
         strokeLinecap="round"
       />
     </g>
@@ -72,10 +85,23 @@ export const SideVectorRight = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
+    <defs>
+      <linearGradient
+        id="pricing-side-grad-right"
+        x1="0"
+        y1="0"
+        x2="0"
+        y2="1"
+        gradientUnits="objectBoundingBox"
+      >
+        <stop stopColor="#302C29" />
+        <stop offset="1" stopColor="#302C29" stopOpacity="0" />
+      </linearGradient>
+    </defs>
     <g transform="translate(0,518) rotate(-90)">
       <path
         d="M0.5 0.666904L351 0.66746L382 6.66746V0.66746L491.25 32.6675H517.5"
-        stroke="#302C29"
+        stroke="url(#pricing-side-grad-right)"
         strokeLinecap="round"
       />
     </g>
@@ -165,8 +191,8 @@ export const CornerArrow = ({ position }) => {
     <svg
       className={`corner-arrow corner-${position}`}
       xmlns="http://www.w3.org/2000/svg"
-      width="8"
-      height="8"
+      width="6"
+      height="6"
       viewBox="0 0 8 8"
       fill="none"
     >
