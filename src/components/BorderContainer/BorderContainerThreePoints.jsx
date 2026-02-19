@@ -133,6 +133,7 @@ export const BorderContainerThreePoints = ({ children, className }) => {
         width="351"
         height="479"
         viewBox="0 0 351 479"
+        preserveAspectRatio="none"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -311,12 +312,15 @@ export const BorderContainerThreePoints = ({ children, className }) => {
 
           .three-points-svg.three-points-svg-mobile {
             display: block;
+            height: 530px;
+            width: 100%;
+            max-width: 100%;
           }
 
           .three-points-content {
             padding-top: 48px;
-            padding-left: 16px;
-            padding-right: 16px;
+            padding-left: 24px;
+            padding-right: 24px;
             padding-bottom: 32px;
           }
 

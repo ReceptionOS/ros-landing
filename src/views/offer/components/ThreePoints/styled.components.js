@@ -160,6 +160,7 @@ export const ThreePointsComponent = styled.div`
   }
 
   @media only screen and (max-width: 1130px) {
+    margin-bottom: 40px;
     .three-points-wrapper {
       h2 {
         font-size: 32px;
@@ -196,7 +197,7 @@ export const ThreePointsComponent = styled.div`
 
   @media only screen and (max-width: 790px) {
     .three-points-container {
-      margin-top: 32px;
+      margin-top: 64px;
       .three-points-pill {
         display: none;
       }
@@ -205,6 +206,12 @@ export const ThreePointsComponent = styled.div`
         padding: 0 40px;
         margin-top: 0px;
       }
+    }
+  }
+
+  @media only screen and (max-width: 390px) {
+    .three-points-container {
+      margin-top: 32px;
     }
   }
 `
