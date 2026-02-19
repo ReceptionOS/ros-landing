@@ -22,7 +22,6 @@ import { agentId } from "../../config/externalResources"
 const Home = () => {
   const { t } = useTranslation()
 
-  const [mounted, setMounted] = useState(false)
   const [agent, setAgent] = useState()
 
   const setAgentId = () => {
@@ -30,10 +29,45 @@ const Home = () => {
   }
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    if (typeof window === "undefined") return
 
-  if (!mounted) return
+    const MIN_LOADER_MS = 3500
+    const loaderStart = window.__rosLoaderStart || Date.now()
+    let dismissed = false
+
+    const dismissLoader = () => {
+      if (dismissed) return
+      dismissed = true
+
+      const loader = document.getElementById("ros-loader-overlay")
+      const wrapper = document.getElementById("gatsby-focus-wrapper")
+
+      if (wrapper) wrapper.classList.add("ros-revealed")
+      if (loader) {
+        loader.classList.add("ros-loader-hidden")
+        setTimeout(() => {
+          if (window.__rosLoaderCleanup) window.__rosLoaderCleanup()
+          loader.remove()
+        }, 900)
+      }
+    }
+
+    const waitForMinTime = new Promise((resolve) => {
+      const elapsed = Date.now() - loaderStart
+      const remaining = Math.max(0, MIN_LOADER_MS - elapsed)
+      setTimeout(resolve, remaining)
+    })
+
+    const waitForHero = new Promise((resolve) => {
+      const video = document.querySelector("video.bg-video")
+      if (!video) return resolve()
+      if (video.readyState >= 3) return resolve()
+      video.addEventListener("canplay", resolve, { once: true })
+      setTimeout(resolve, 8000)
+    })
+
+    Promise.all([waitForMinTime, waitForHero]).then(dismissLoader)
+  }, [])
 
   return (
     <>

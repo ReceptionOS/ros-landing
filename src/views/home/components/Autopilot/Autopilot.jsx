@@ -16,7 +16,7 @@ const Autopilot = ({ t, handleClick }) => {
           loop
           muted
           playsInline
-          preload="metadata"
+          preload="auto"
           aria-hidden="true"
         >
           <source src={BlobAnimation} type="video/mp4" />

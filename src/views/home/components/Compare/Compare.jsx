@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import { CompareComponent } from "./styled.components";
-import Button from 'react-bootstrap/Button';
 import Fade from 'react-bootstrap/Fade';
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 import { StaticImage } from "gatsby-plugin-image";
