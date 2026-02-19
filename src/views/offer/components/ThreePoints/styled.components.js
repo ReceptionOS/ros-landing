@@ -6,7 +6,6 @@ export const ThreePointsComponent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-  
 
     h2 {
       font-size: 48px;
@@ -98,6 +97,8 @@ export const ThreePointsComponent = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    margin-top: 60px;
+    margin-bottom: 160px;
 
     .three-points-title {
       text-align: center;
@@ -161,23 +162,21 @@ export const ThreePointsComponent = styled.div`
   @media only screen and (max-width: 1130px) {
     .three-points-wrapper {
       h2 {
-        font-size: 32px;
+        font-size: 24px;
         line-height: 32px;
         letter-spacing: -0.72px;
-        max-width: 306px;
       }
     }
 
     .three-points-container {
       .three-points-title {
-        font-size: 32px;
+        font-size: 24px;
         line-height: 32px;
         letter-spacing: -0.72px;
-        max-width: 306px;
+        max-width: 600px;
       }
 
       .p-new-model-16 {
-        max-width: 306px;
       }
     }
 
