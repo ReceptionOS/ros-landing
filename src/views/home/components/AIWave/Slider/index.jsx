@@ -3,6 +3,7 @@ import Slider from "react-slick"
 import { SliderContainer } from "./styled.components"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import { StaticImage } from "gatsby-plugin-image"
 import { BorderContainerRowsVerticalSides } from "../../../../../components/BorderContainer/BorderContainerRowsVerticalSides"
 
 const SliderComponent = ({ t, items }) => {
@@ -18,10 +19,13 @@ const SliderComponent = ({ t, items }) => {
     className: "center",
     centerMode: true,
     centerPadding: "55px",
-    variableWidth: true
+    variableWidth: true,
   }
 
   const renderItems = items?.map(item => {
+    const titleKey = item?.titleKey || `home.AIWave.tile-title-${item.id}`
+    const descriptionKey =
+      item?.descriptionKey || `home.AIWave.tile-description-${item.id}`
     return (
       <BorderContainerRowsVerticalSides
         key={item.id}
@@ -31,12 +35,8 @@ const SliderComponent = ({ t, items }) => {
         <div className="tile-content">
           {item.image}
           <div className="text-tile">
-            <p className="p-new-model-18">
-              {t(`home.AIWave.tile-title-${item.id}`)}
-            </p>
-            <p className="p-new-model-16">
-              {t(`home.AIWave.tile-description-${item.id}`)}
-            </p>
+            <p className="p-new-model-18">{t(titleKey)}</p>
+            <p className="p-new-model-16">{t(descriptionKey)}</p>
           </div>
         </div>
       </BorderContainerRowsVerticalSides>
