@@ -33,6 +33,42 @@ export const HowItWorksComponent = styled.div`
     }
   }
 
+  .how-it-works-content {
+  }
+
+  .how-it-works-experience {
+  }
+
+  .how-it-works-subtitle {
+  }
+
+  .how-it-works-clinic {
+  }
+
+  .how-it-works-clinic-label {
+  }
+
+  .how-it-works-clinic-title {
+  }
+
+  .how-it-works-clinic-author {
+  }
+
+  .how-it-works-clinic-image {
+  }
+
+  .how-it-works-clinic-info {
+  }
+
+  .how-it-works-clinic-name {
+  }
+
+  .how-it-works-clinic-university {
+  }
+
+  .how-it-works-clinic-button {
+  }
+
   @media only screen and (max-width: 890px) {
     .how-it-works-wrapper {
       .how-it-works-title {

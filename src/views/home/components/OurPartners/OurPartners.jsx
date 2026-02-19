@@ -3,7 +3,7 @@ import { OurPartnersContainer } from "./styled.components"
 import { StaticImage } from "gatsby-plugin-image"
 import SliderComponent from "./Slider"
 
-const OurPartners = () => {
+const OurPartners = ({ box }) => {
   const items = [
     {
       link: "https://elevenlabs.io/startup-grants",
@@ -82,7 +82,7 @@ const OurPartners = () => {
 
   return (
     <>
-      <OurPartnersContainer>
+      <OurPartnersContainer box={box}>
         <div className="container">
           <div className="container-desktop desktop">{renderItems}</div>
           <div className="mobile">

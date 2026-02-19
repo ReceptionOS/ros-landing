@@ -22,6 +22,8 @@
   "offer.featured.exclusivity.title": "Wyłączność w regionie",
   "offer.featured.exclusivity.description": "Budujemy długoterminowe partnerstwa, nie sprzedajemy licencje. Wasz sukces to nasz sukces. Nie chcemy żeby Wasza konkurencja korzystała z tych samych narzędzi co Wy.",
   "offer.featured.exclusivity.how-it-works": "Znamy rozwiązanie",
+  "offer.featured.exclusivity.how-it-works.description-first": "Prowadzimy klinikę od 35 lat",
+  "offer.featured.exclusivity.how-it-works.description-second": "Wiemy co działa i co nie",
 
   "offer.three-points.pill": "A najgorsze?",
   "offer.three-points.headline": "Każdy właściciel kliniki zna ten moment.",
@@ -36,7 +38,15 @@
 
   "offer.how-it-works.pill": "Jak to działa",
   "offer.how-it-works.title": "Wiemy jak to naprawić ponieważ sami prowadzimy klinikę.",
-  "offer.how-it-works.description": "Nie jesteśmy software house’em który “robi coś dla klinik.” Prowadzimy klinikę, [Wiemy jak to jest gdy telefon dzwoni, a nikt nie odbiera.] Wiemy jak to jest szukać maila sprzed tygodnia. Wiemy jak to jest nie mieć kontroli.",
+  "offer.how-it-works.description": "Nie jesteśmy software house'em który ,,robi coś dla klinik.'' Prowadzimy klinikę, [Wiemy jak to jest gdy telefon dzwoni, a nikt nie odbiera.] Wiemy jak to jest szukać maila sprzed tygodnia. Wiemy jak to jest nie mieć kontroli.",
+  "offer.how-it-works.faq.pill": "Krok po kroku",
+  "offer.how-it-works.faq.title": "Jak to działa?",
+  "offer.how-it-works.experience.title": "Działamy w oparciu o fakty i lata doświadczeń",
+  "offer.how-it-works.experience.description": "Wywodzimy się z Grupy Apolonia – sieci klinik z 35-letnią tradycją implantologii. Zbudowaliśmy receptionOS, żeby rozwiązać nasz własny problem z chaosem na recepcji. Teraz chcemy podzielić się tym rozwiązaniem ze światem.",
+  "offer.how-it-works.clinic.label": "Nasze badanie naukowe",
+  "offer.how-it-works.clinic.title": "Digitalizing Polish Dentistry - Roadmap to technology adoption for clinic owners",
+  "offer.how-it-works.clinic.author.name": "Klemens Gąsienica-Ciułacz",
+  "offer.how-it-works.clinic.author.university": "University of Cambridge",
 
   "offer.why-us.pill": "Analiza",
   "offer.why-us.title": "Dlaczego Wasza klinika?",
@@ -85,5 +95,23 @@
   "offer.Footer.place": "receptionOS © 2025",
   "offer.Footer.change-language": "Zmień język",
   "offer.Footer.polish": "Polski",
-  "offer.Footer.english": "Angielski"
+  "offer.Footer.english": "Angielski",
+
+  "offer.how-it-works.learning.title": "System który uczy się Waszej codzienności",
+  "offer.how-it-works.learning.description": "Jak nowy pracownik który szybko się uczy. Na początku weryfikujesz i ufasz w prostych sprawach. Po 6 tygodniach delegujesz rutynę.",
+  "offer.how-it-works.step-1.title": "01",
+  "offer.how-it-works.step-1.heading": "Recepcja robi swoje",
+  "offer.how-it-works.step-1.description": "Odpowiada na maile, odbiera telefony. AI obserwuje.",
+  "offer.how-it-works.step-2.title": "02",
+  "offer.how-it-works.step-2.heading": "AI sugeruje",
+  "offer.how-it-works.step-2.description": "System sugeruje odpowiedzi do pacjentów.",
+  "offer.how-it-works.step-3.title": "03",
+  "offer.how-it-works.step-3.heading": "Recepcja decyduje",
+  "offer.how-it-works.step-3.description": "Zatwierdza, edytuje lub odrzuca propozycje AI.",
+  "offer.how-it-works.step-4.title": "04",
+  "offer.how-it-works.step-4.heading": "AI się uczy",
+  "offer.how-it-works.step-4.description": "Każda decyzja recepcji to fundament do nauki AI.",
+  "offer.how-it-works.cta.title": "Poznaj nasz system w 30 minut.",
+  "offer.how-it-works.cta.description": "Zobacz działanie receptionOS w praktyce",
+  "offer.how-it-works.cta.button": "Umów rozmowę"
 }

@@ -68,7 +68,7 @@ const FAQ = ({ t }) => {
                   </AccordionIcon>
                 </AccordionButton>
                 <AccordionContent isOpen={activeIndex === index}>
-                  <div>
+                  <div className="">
                     <p>{t(item.answer)}</p>
                   </div>
                 </AccordionContent>

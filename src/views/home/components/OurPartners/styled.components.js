@@ -5,6 +5,39 @@ export const OurPartnersContainer = styled.div`
   padding-top: 120px;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+
+  ${({ box }) =>
+    box &&
+    `
+    padding-top: 0;
+    width: 734px;
+    margin: 0 auto;
+
+    .container {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .container-desktop {
+      gap: 20px;
+      justify-content: center;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .we-work-with-a-wrapper {
+      padding: 6px 12px !important;
+      flex-shrink: 1;
+      min-width: 0;
+    }
+
+    .image {
+      width: auto;
+      flex-shrink: 1;
+      max-width: 100px;
+    }
+  `}
 
   .image {
     width: 126px;
