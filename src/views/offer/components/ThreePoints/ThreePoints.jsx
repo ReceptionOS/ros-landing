@@ -109,7 +109,7 @@ const ThreePoints = ({ t }) => {
             <p>{t("offer.three-points.pill")}</p>
           </RoundedInfoTile>
           <h2 className="three-points-title">
-            {tWithSpan(t, "offer.three-points.title")}
+            {tWithSpan(t, "offer.three-points.title", "highlight", true)}
           </h2>
           <p className="p-new-model-16">
             {tWithSpan(t, "offer.three-points.description")}

@@ -98,7 +98,6 @@ export const ThreePointsComponent = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    
 
     .three-points-title {
       text-align: center;
@@ -124,32 +123,8 @@ export const ThreePointsComponent = styled.div`
       max-width: 468px;
       text-align: center;
 
-      .bracket-highlight {
-        color: #e76220;
-        background: linear-gradient(
-          180deg,
-          #e76220 0%,
-          rgba(231, 98, 32, 0.7) 100%
-        );
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        position: relative;
-        display: inline-flex;
-        align-items: center;
-        gap: 4px;
-
-        .bracket-highlight-top-left {
-          position: absolute;
-          top: 0px;
-          left: 0px;
-        }
-
-        .bracket-highlight-bottom-right {
-          position: absolute;
-          bottom: 0px;
-          right: 0px;
-        }
+      span {
+        color: #ffe8d9;
       }
     }
   }
