@@ -2,6 +2,8 @@ import React from "react"
 import { ThreePointsComponent } from "./styled.components"
 import { BorderContainerRowsVerticalSides } from "../../../../components/BorderContainer/BorderContainerRowsVerticalSides"
 import SliderComponent from "../../../home/components/AIWave/Slider"
+import { RoundedInfoTile } from "../../../../styled.components"
+import { tWithSpan } from "../../../../utils/translationHelpers"
 
 const ThreePoints = ({ t }) => {
   const tilesData = [
@@ -82,7 +84,7 @@ const ThreePoints = ({ t }) => {
   return (
     <ThreePointsComponent>
       <div className="three-points-wrapper">
-        <h2>{t("offer.three-points.title")}</h2>
+        <h2>{t("offer.three-points.headline")}</h2>
         <div className="three-points-tile-container desktop">
           {tilesData.map(tile => (
             <BorderContainerRowsVerticalSides
@@ -101,6 +103,17 @@ const ThreePoints = ({ t }) => {
         </div>
         <div className="three-points-mobile">
           <SliderComponent t={t} items={tilesData} />
+        </div>
+        <div className="three-points-container">
+          <RoundedInfoTile>
+            <p>{t("offer.three-points.pill")}</p>
+          </RoundedInfoTile>
+          <h2 className="three-points-title">
+            {tWithSpan(t, "offer.three-points.title")}
+          </h2>
+          <p className="p-new-model-16">
+            {tWithSpan(t, "offer.three-points.description")}
+          </p>
         </div>
       </div>
     </ThreePointsComponent>

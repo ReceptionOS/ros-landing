@@ -25,6 +25,34 @@ export const ThreePointsComponent = styled.div`
       max-width: 446px;
       text-align: center;
       margin-bottom: 56px;
+
+      .bracket-highlight {
+        color: #e76220;
+        background: linear-gradient(
+          180deg,
+          #e76220 0%,
+          rgba(231, 98, 32, 0.7) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+
+        .bracket-highlight-top-left {
+          position: absolute;
+          top: 5px;
+          left: -4px;
+        }
+
+        .bracket-highlight-bottom-right {
+          position: absolute;
+          bottom: 5px;
+          right: -4px;
+        }
+      }
     }
   }
 
@@ -65,6 +93,67 @@ export const ThreePointsComponent = styled.div`
     gap: 12px;
   }
 
+  .three-points-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    
+
+    .three-points-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 48px; /* 150% */
+      letter-spacing: -0.72px;
+      padding-bottom: 2px;
+      background: linear-gradient(
+        180deg,
+        #fff8f3 0%,
+        rgba(255, 232, 217, 0.7) 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      max-width: 692px;
+      margin-bottom: 0;
+    }
+
+    .p-new-model-16 {
+      margin-top: 8px;
+      max-width: 468px;
+      text-align: center;
+
+      .bracket-highlight {
+        color: #e76220;
+        background: linear-gradient(
+          180deg,
+          #e76220 0%,
+          rgba(231, 98, 32, 0.7) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+
+        .bracket-highlight-top-left {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+        }
+
+        .bracket-highlight-bottom-right {
+          position: absolute;
+          bottom: 0px;
+          right: 0px;
+        }
+      }
+    }
+  }
+
   .three-points-mobile {
     display: none;
 
@@ -100,6 +189,19 @@ export const ThreePointsComponent = styled.div`
         font-size: 32px;
         line-height: 32px;
         letter-spacing: -0.72px;
+        max-width: 306px;
+      }
+    }
+
+    .three-points-container {
+      .three-points-title {
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -0.72px;
+        max-width: 306px;
+      }
+
+      .p-new-model-16 {
         max-width: 306px;
       }
     }
