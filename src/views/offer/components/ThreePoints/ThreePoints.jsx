@@ -4,6 +4,7 @@ import { BorderContainerRowsVerticalSides } from "../../../../components/BorderC
 import SliderComponent from "../../../home/components/AIWave/Slider"
 import { RoundedInfoTile } from "../../../../styled.components"
 import { tWithSpan } from "../../../../utils/translationHelpers"
+import { BorderContainerTop } from "../../../../components/BorderContainer/BorderContainerTop"
 
 const ThreePoints = ({ t }) => {
   const tilesData = [
@@ -85,6 +86,7 @@ const ThreePoints = ({ t }) => {
     <ThreePointsComponent>
       <div className="three-points-wrapper">
         <h2>{t("offer.three-points.headline")}</h2>
+        <BorderContainerTop />
         <div className="three-points-tile-container desktop">
           {tilesData.map(tile => (
             <BorderContainerRowsVerticalSides

@@ -6,7 +6,7 @@ export const ThreePointsComponent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+  
 
     h2 {
       font-size: 48px;
@@ -58,7 +58,7 @@ export const ThreePointsComponent = styled.div`
 
   .three-points-tile-container {
     display: grid;
-    grid-template-columns: repeat(3, 298px);
+    grid-template-columns: repeat(3, 320px);
     row-gap: 31px;
     position: relative;
     justify-content: center;
