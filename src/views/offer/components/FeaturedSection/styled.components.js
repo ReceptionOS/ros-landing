@@ -74,6 +74,16 @@ export const FeaturedSectionComponent = styled.div`
         font-size: 16px;
         font-weight: 400;
         line-height: 24px; /* 150% */
+
+        svg {
+          width: 18px;
+          height: 18px;
+          min-width: 18px;
+          min-height: 18px;
+          max-width: 18px;
+          max-height: 18px;
+          flex-shrink: 0;
+        }
       }
 
       .item-pros {
@@ -84,6 +94,16 @@ export const FeaturedSectionComponent = styled.div`
         font-size: 16px;
         font-weight: 400;
         line-height: 24px; /* 150% */
+
+        svg {
+          width: 18px;
+          height: 18px;
+          min-width: 18px;
+          min-height: 18px;
+          max-width: 18px;
+          max-height: 18px;
+          flex-shrink: 0;
+        }
       }
     }
 
@@ -231,7 +251,6 @@ export const FeaturedSectionComponent = styled.div`
         > .title {
           font-size: 28px;
           line-height: 32px; /* 114.286% */
-          
         }
       }
 
