@@ -10,6 +10,7 @@ import FeaturedSection from "./components/FeaturedSection/FeaturedSection"
 import ThreePoints from "./components/ThreePoints/ThreePoints"
 import WhyUs from "./components/WhyUs/WhyUs"
 import FAQ from "./components/FAQ/FAQ"
+import HowItWorks from "./components/HowItWorks/HowItWorks"
 
 const Offer = () => {
   const { t } = useTranslation()
@@ -28,6 +29,7 @@ const Offer = () => {
       <Menu t={t} />
       <Hero t={t} />
       <ThreePoints t={t} />
+      <HowItWorks t={t} />
       <FeaturedSection t={t} />
       <WhyUs t={t} />
       <FAQ t={t} />

@@ -25,6 +25,11 @@ export const HowItWorksComponent = styled.div`
       line-height: 24px; /* 150% */
       color: rgba(255, 232, 217, 0.64);
       white-space: pre-line;
+      max-width: 535px;
+
+      span {
+        color: #ffe8d9;
+      }
     }
   }
 
