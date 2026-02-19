@@ -17,6 +17,21 @@ export default function ElevenWidget({ agentId }) {
 
         if (mountRef.current && agentId) {
             mountRef.current.innerHTML = `<elevenlabs-convai agent-id="${agentId}"></elevenlabs-convai>`;
+
+            // Auto-open the widget after it initializes
+            const widget = mountRef.current.querySelector("elevenlabs-convai");
+            if (widget) {
+                const tryClick = (attempts) => {
+                    if (attempts <= 0) return;
+                    const sr = widget.shadowRoot;
+                    if (sr) {
+                        const btn = sr.querySelector("button");
+                        if (btn) { btn.click(); return; }
+                    }
+                    setTimeout(() => tryClick(attempts - 1), 200);
+                };
+                tryClick(15);
+            }
         }
     }, [agentId]);
 
