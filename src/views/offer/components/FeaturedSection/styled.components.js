@@ -231,6 +231,7 @@ export const FeaturedSectionComponent = styled.div`
         > .title {
           font-size: 28px;
           line-height: 32px; /* 114.286% */
+          
         }
       }
 

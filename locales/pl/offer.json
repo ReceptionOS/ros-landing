@@ -25,6 +25,17 @@
   "offer.featured.exclusivity.how-it-works.description-first": "W promieniu 25 km od {clinic-city} możemy wdrożyć system tylko u jednej kliniki, która pierwsza podejmie decyzję.",
   "offer.featured.exclusivity.how-it-works.description-second": "Na ten moment w Waszym regionie nie mamy jeszcze partnera i {clinic_name} może być pierwszą.",
 
+  "offer.three-points.pill": "A najgorsze?",
+  "offer.three-points.headline": "Każdy właściciel kliniki zna ten moment.",
+  "offer.three-points.title": "Nie wiesz [ile] pacjentów tracisz. Nie wiesz [dlaczego] nie wracają. Nie masz kontroli nad tym co dzieje się z Twoją reputacją gdy skupiasz się na leczeniu.",
+  "offer.three-points.description": "Zbudowałeś klinikę [żeby leczyć pacjentów i robić metamorfozy] które zmieniają życie. Nie aby gasić pożary na recepcji.",
+  "offer.three-points.tile-1.title": "Telefon dzwoni, nikt nie odbiera.",
+  "offer.three-points.tile-1.description": "“Ile wizyt tracę w ten sposób?”",
+  "offer.three-points.tile-2.title": "Maile giną między skrzynkami",
+  "offer.three-points.tile-2.description": "“A ja tracę orientację gdy wychodzę”",
+  "offer.three-points.tile-3.title": "Braki w odpowiedzialności",
+  "offer.three-points.tile-3.description": "“Nie mogę na nikogo liczyć”",
+
   "offer.why-us.pill": "Analiza",
   "offer.why-us.title": "Dlaczego Wasza klinika?",
   "offer.why-us.subtitle": "Co widzimy w interencie",

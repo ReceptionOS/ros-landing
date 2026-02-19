@@ -7,17 +7,27 @@ import CookieBanner from "../../components/CookieBanner/CookieBanner"
 import Footer from "../../components/Footer/Footer"
 import WriteUsCTA from "./components/WriteUsCTA/WriteUsCTA"
 import FeaturedSection from "./components/FeaturedSection/FeaturedSection"
+import ThreePoints from "./components/ThreePoints/ThreePoints"
 import WhyUs from "./components/WhyUs/WhyUs"
 import FAQ from "./components/FAQ/FAQ"
 
 const Offer = () => {
   const { t } = useTranslation()
 
+  // const [mounted, setMounted] = useState(false)
+
+  // useEffect(() => {
+  //   setMounted(true)
+  // }, [])
+
+  // if (!mounted) return
+
   return (
     <>
       <Seo title={t`offer.seo.title`} description={t`offer.seo.description`} />
       <Menu t={t} />
       <Hero t={t} />
+      <ThreePoints t={t} />
       <FeaturedSection t={t} />
       <WhyUs t={t} />
       <FAQ t={t} />

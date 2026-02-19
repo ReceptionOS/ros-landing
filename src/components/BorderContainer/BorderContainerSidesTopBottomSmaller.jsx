@@ -54,7 +54,7 @@ export const BorderContainerSidesTopBottomSmaller = ({
         .border-container-sides-top-bottom-smaller {
           position: relative;
           width: 100%;
-          max-width: 961px;
+          max-width: 960px;
         }
 
         .sides-svg {
