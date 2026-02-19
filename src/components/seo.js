@@ -145,12 +145,6 @@ function Seo({ description, meta = [], title, ogImage }) {
         },
       ].concat(meta)}
     >
-      <link rel="icon" type="image/png" sizes="32x32" href="/ros-icon.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/ros-icon.png" />
-      <link rel="shortcut icon" href="/ros-icon.png" />
-      <link rel="icon" href="/ros-icon.png" type="image/png" />
-      <link rel="apple-touch-icon" href="/ros-icon.png" />
-
       <script type="application/ld+json">
         {`
       {
