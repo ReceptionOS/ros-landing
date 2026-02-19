@@ -8,7 +8,7 @@ import Footer from "../../components/Footer/Footer"
 import WriteUsCTA from "./components/WriteUsCTA/WriteUsCTA"
 import FeaturedSection from "./components/FeaturedSection/FeaturedSection"
 import ThreePoints from "./components/ThreePoints/ThreePoints"
-// import WhyUs from "./components/WhyUs/WhyUs"
+import WhyUs from "./components/WhyUs/WhyUs"
 import FAQ from "./components/FAQ/FAQ"
 
 const Offer = () => {
@@ -29,7 +29,7 @@ const Offer = () => {
       <Hero t={t} />
       <ThreePoints t={t} />
       <FeaturedSection t={t} />
-      {/* <WhyUs t={t} /> */}
+      <WhyUs t={t} />
       <FAQ t={t} />
       <WriteUsCTA t={t} />
       <Footer t={t} />

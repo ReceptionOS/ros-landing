@@ -121,7 +121,7 @@ export const HeroComponent = styled.div`
     }
 
     .hero-image-container {
-      width: 518px;
+      width: 578px;
       height: 411px;
     }
 
