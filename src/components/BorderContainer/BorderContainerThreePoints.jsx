@@ -3,8 +3,9 @@ import React from "react"
 export const BorderContainerThreePoints = ({ children, className }) => {
   return (
     <div className={`border-container-three-points ${className}`}>
+      {/* Desktop SVG */}
       <svg
-        className="three-points-svg"
+        className="three-points-svg three-points-svg-desktop"
         width="961"
         height="564"
         viewBox="0 0 961 564"
@@ -125,6 +126,154 @@ export const BorderContainerThreePoints = ({ children, className }) => {
           </pattern>
         </defs>
       </svg>
+
+      {/* Mobile SVG */}
+      <svg
+        className="three-points-svg three-points-svg-mobile"
+        width="351"
+        height="479"
+        viewBox="0 0 351 479"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      >
+        <path
+          d="M0.500488 0.5H350.5V48.5H0.500488V0.5Z"
+          fill="url(#pattern0_1465_12636)"
+        />
+        <path
+          d="M0.500488 0.5V0H0.000488281V0.5H0.500488ZM350.5 0.5H351V0H350.5V0.5ZM350.5 48.5V49H351V48.5H350.5ZM0.500488 48.5H0.000488281V49H0.500488V48.5ZM0.500488 0.5V1H350.5V0.5V0H0.500488V0.5ZM350.5 0.5H350V48.5H350.5H351V0.5H350.5ZM350.5 48.5V48H0.500488V48.5V49H350.5V48.5ZM0.500488 48.5H1.00049V0.5H0.500488H0.000488281V48.5H0.500488Z"
+          fill="#302C29"
+        />
+        <path
+          d="M32.5005 399.5H318.5V447.5H32.5005V399.5Z"
+          fill="url(#pattern1_1465_12636)"
+        />
+        <path
+          d="M32.5005 399.5V399H32.0005V399.5H32.5005ZM318.5 399.5H319V399H318.5V399.5ZM318.5 447.5V448H319V447.5H318.5ZM32.5005 447.5H32.0005V448H32.5005V447.5ZM32.5005 399.5V400H318.5V399.5V399H32.5005V399.5ZM318.5 399.5H318V447.5H318.5H319V399.5H318.5ZM318.5 447.5V447H32.5005V447.5V448H318.5V447.5ZM32.5005 447.5H33.0005V399.5H32.5005H32.0005V447.5H32.5005Z"
+          fill="#302C29"
+        />
+        <path
+          d="M32.5005 398.5L32.5002 328L26.5002 297L32.5002 297L0.500213 237.75L0.500214 48.5"
+          stroke="#302C29"
+          strokeLinecap="round"
+        />
+        <path
+          d="M318.5 398.5L318.501 328L324.501 297L318.501 297L350.501 237.75L350.501 48.5"
+          stroke="#302C29"
+          strokeLinecap="round"
+        />
+        <g opacity="0.5">
+          <path
+            d="M350.5 42.5L350.5 48.5L344.5 48.5"
+            stroke="#877B72"
+            strokeLinecap="round"
+          />
+          <path
+            d="M350.5 54.5L350.5 48.5L344.5 48.5"
+            stroke="#877B72"
+            strokeLinecap="round"
+          />
+        </g>
+        <g opacity="0.5">
+          <path
+            d="M0.500488 42.5L0.500488 48.5L6.50049 48.5"
+            stroke="#877B72"
+            strokeLinecap="round"
+          />
+          <path
+            d="M0.500489 54.5L0.500488 48.5L6.50049 48.5"
+            stroke="#877B72"
+            strokeLinecap="round"
+          />
+        </g>
+        <g opacity="0.5">
+          <path
+            d="M38.5005 399.5L32.5005 399.5L32.5005 393.5"
+            stroke="#877B72"
+            strokeLinecap="round"
+          />
+        </g>
+        <g opacity="0.5">
+          <path
+            d="M312.5 399.5L318.5 399.5L318.5 393.5"
+            stroke="#877B72"
+            strokeLinecap="round"
+          />
+        </g>
+        <path
+          d="M318.5 447.502L318.5 461.502L290 471.502L232.5 471.502L201.5 477.502L201.5 471.502L61.5005 471.5L32.5005 461.5L32.5005 447.5"
+          stroke="#302C29"
+          strokeLinecap="round"
+        />
+        <defs>
+          <pattern
+            id="pattern0_1465_12636"
+            patternUnits="userSpaceOnUse"
+            patternTransform="matrix(9 0 0 9 0.500488 0.5)"
+            preserveAspectRatio="none"
+            viewBox="1.13411e-07 0 9 9"
+            width="1"
+            height="1"
+          >
+            <use
+              xlinkHref="#pattern0_1465_12636_inner"
+              transform="translate(-9 -9)"
+            />
+            <use
+              xlinkHref="#pattern0_1465_12636_inner"
+              transform="translate(0 -9)"
+            />
+            <use
+              xlinkHref="#pattern0_1465_12636_inner"
+              transform="translate(-9 0)"
+            />
+            <g id="pattern0_1465_12636_inner">
+              <line
+                opacity="0.5"
+                x1="9.35355"
+                y1="0.353553"
+                x2="0.353553"
+                y2="9.35355"
+                stroke="#302C29"
+              />
+            </g>
+          </pattern>
+          <pattern
+            id="pattern1_1465_12636"
+            patternUnits="userSpaceOnUse"
+            patternTransform="matrix(9 0 0 9 32.5005 399.5)"
+            preserveAspectRatio="none"
+            viewBox="1.13411e-07 0 9 9"
+            width="1"
+            height="1"
+          >
+            <use
+              xlinkHref="#pattern1_1465_12636_inner"
+              transform="translate(-9 -9)"
+            />
+            <use
+              xlinkHref="#pattern1_1465_12636_inner"
+              transform="translate(0 -9)"
+            />
+            <use
+              xlinkHref="#pattern1_1465_12636_inner"
+              transform="translate(-9 0)"
+            />
+            <g id="pattern1_1465_12636_inner">
+              <line
+                opacity="0.5"
+                x1="9.35355"
+                y1="0.353553"
+                x2="0.353553"
+                y2="9.35355"
+                stroke="#302C29"
+              />
+            </g>
+          </pattern>
+        </defs>
+      </svg>
+
       <div className="three-points-content">{children}</div>
       <style jsx="true">{`
         .border-container-three-points {
@@ -142,6 +291,10 @@ export const BorderContainerThreePoints = ({ children, className }) => {
           pointer-events: none;
         }
 
+        .three-points-svg.three-points-svg-mobile {
+          display: none;
+        }
+
         .three-points-content {
           position: relative;
           z-index: 1;
@@ -149,6 +302,27 @@ export const BorderContainerThreePoints = ({ children, className }) => {
           padding-left: 32px;
           padding-right: 32px;
           padding-bottom: 40px;
+        }
+
+        @media (max-width: 790px) {
+          .three-points-svg.three-points-svg-desktop {
+            display: none;
+          }
+
+          .three-points-svg.three-points-svg-mobile {
+            display: block;
+          }
+
+          .three-points-content {
+            padding-top: 48px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 32px;
+          }
+
+          .border-container-three-points {
+            max-width: 470px;
+          }
         }
       `}</style>
     </div>

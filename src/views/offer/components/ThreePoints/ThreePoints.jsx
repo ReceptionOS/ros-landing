@@ -307,7 +307,7 @@ const ThreePoints = ({ t }) => {
         </div>
         <BorderContainerThreePoints>
           <div className="three-points-container">
-            <RoundedInfoTile>
+            <RoundedInfoTile className="three-points-pill">
               <p>{t("offer.three-points.pill")}</p>
             </RoundedInfoTile>
             <h2 className="three-points-title">
