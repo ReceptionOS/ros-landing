@@ -144,7 +144,7 @@ export const BorderContainerFeatures = ({ children, className }) => {
         .border-container-features {
           position: relative;
           width: 100%;
-          max-width: 961px;
+          max-width: 960px;
         }
 
         .features-border-svg {
