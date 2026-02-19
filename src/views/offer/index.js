@@ -27,8 +27,8 @@ const Offer = () => {
       <Seo title={t`offer.seo.title`} description={t`offer.seo.description`} />
       <Menu t={t} />
       <Hero t={t} />
-      <FeaturedSection t={t} />
       <ThreePoints t={t} />
+      <FeaturedSection t={t} />
       {/* <WhyUs t={t} /> */}
       <FAQ t={t} />
       <WriteUsCTA t={t} />
