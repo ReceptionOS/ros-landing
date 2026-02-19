@@ -12,6 +12,10 @@ export const OurPartnersContainer = styled.div`
     flex-shrink: 0;
   }
 
+  .elevenlabs-grant {
+    width: 90px;
+  }
+
   .container-desktop {
     display: inline-flex;
     justify-content: center;
