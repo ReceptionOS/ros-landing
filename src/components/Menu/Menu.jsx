@@ -5,7 +5,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import { RoundedButtonOrange } from "../../styled.components"
 import { orderAnalysisButton } from "../../config/externalResources"
 const Menu = ({ t }) => {
-
   return (
     <>
       <MenuComponent>
@@ -18,7 +17,15 @@ const Menu = ({ t }) => {
             loading="lazy"
           />
           <div className="buttons">
-            <RoundedButtonOrange as="a" href={orderAnalysisButton} target="_blank" rel="noreferrer" className="order-button">{t(`home.Menu.order-button`)}</RoundedButtonOrange>
+            <RoundedButtonOrange
+              as="a"
+              href={orderAnalysisButton}
+              target="_blank"
+              rel="noreferrer"
+              className="order-button"
+            >
+              {t(`home.Menu.order-button`)}
+            </RoundedButtonOrange>
           </div>
         </div>
       </MenuComponent>

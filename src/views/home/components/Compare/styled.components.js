@@ -44,7 +44,8 @@ export const CompareComponent = styled.div`
       font-weight: 500;
       line-height: 20px;
 
-      background: linear-gradient(
+      background:
+        linear-gradient(
           129deg,
           rgba(231, 98, 32, 0) 35.85%,
           rgba(231, 98, 32, 0.2) 72.26%
@@ -60,7 +61,8 @@ export const CompareComponent = styled.div`
           rgba(115, 59, 21, 0.2) 100%
         );
       background-blend-mode: color-dodge, normal, normal;
-      box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+      box-shadow:
+        0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
         0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
 
       transition: background-color 0.3s ease-in-out;
@@ -76,7 +78,8 @@ export const CompareComponent = styled.div`
 
       @media only screen and (max-width: 1130px) {
         &:hover {
-          background: linear-gradient(
+          background:
+            linear-gradient(
               129deg,
               rgba(231, 98, 32, 0) 35.85%,
               rgba(231, 98, 32, 0.2) 72.26%
@@ -92,7 +95,8 @@ export const CompareComponent = styled.div`
               rgba(115, 59, 21, 0.2) 100%
             );
           background-blend-mode: color-dodge, normal, normal;
-          box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+          box-shadow:
+            0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
             0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
         }
       }

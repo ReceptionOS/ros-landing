@@ -1,39 +1,59 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
-import Slider from 'react-slick';
-import { SliderContainer } from './styled.components';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import LocalVideo from '../../../../../components/LocalVideo';
-import { BorderContainer4Rows } from '../../../../../components/BorderContainer/BorderContainer4Rows';
-import { BorderContainerNoRowsVerticalSides } from '../../../../../components/BorderContainer/BorderContainerNoRowsVerticalSides';
-import { BorderContainerNoRowsVerticalSidesLong } from '../../../../../components/BorderContainer/BorderContainerNoRowsVerticalSidesLong';
+import React, { useCallback, useEffect, useRef, useState } from "react"
+import Slider from "react-slick"
+import { SliderContainer } from "./styled.components"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import LocalVideo from "../../../../../components/LocalVideo"
+import { BorderContainer4Rows } from "../../../../../components/BorderContainer/BorderContainer4Rows"
+import { BorderContainerNoRowsVerticalSides } from "../../../../../components/BorderContainer/BorderContainerNoRowsVerticalSides"
+import { BorderContainerNoRowsVerticalSidesLong } from "../../../../../components/BorderContainer/BorderContainerNoRowsVerticalSidesLong"
 
 const SliderComponent = ({ items }) => {
-  let sliderRef = useRef(null);
-  const [slideIndex, setSlideIndex] = useState(1);
+  let sliderRef = useRef(null)
+  const [slideIndex, setSlideIndex] = useState(1)
 
   function NextArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, style, onClick } = props
     return (
-      <svg className={className}
+      <svg
+        className={className}
         style={{ ...style }}
-        onClick={onClick} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path d="M2.92822 9.99995H17.0711M17.0711 9.99995L11.5711 4.5M17.0711 9.99995L11.5711 15.4999" stroke="#FFE8D9" strokeLinejoin="round" />
+        onClick={onClick}
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <path
+          d="M2.92822 9.99995H17.0711M17.0711 9.99995L11.5711 4.5M17.0711 9.99995L11.5711 15.4999"
+          stroke="#FFE8D9"
+          strokeLinejoin="round"
+        />
       </svg>
-    );
+    )
   }
 
   function PrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, style, onClick } = props
     return (
-
       <svg
         className={className}
-        style={{ ...style, opacity: `${slideIndex === 1 ? '0' : '1'}` }}
-        onClick={onClick} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path d="M17.0718 9.99995H2.92892M2.92892 9.99995L8.42892 4.5M2.92892 9.99995L8.42892 15.4999" stroke="#FFE8D9" strokeLinejoin="round" />
+        style={{ ...style, opacity: `${slideIndex === 1 ? "0" : "1"}` }}
+        onClick={onClick}
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <path
+          d="M17.0718 9.99995H2.92892M2.92892 9.99995L8.42892 4.5M2.92892 9.99995L8.42892 15.4999"
+          stroke="#FFE8D9"
+          strokeLinejoin="round"
+        />
       </svg>
-    );
+    )
   }
 
   const settings = {
@@ -47,81 +67,91 @@ const SliderComponent = ({ items }) => {
     autoplay: false,
     arrows: true,
     beforeChange: (current, next) => setSlideIndex(next + 1),
-    afterChange: (current) => {
+    // eslint-disable-next-line no-unused-vars
+    afterChange: current => {
       // Pause all videos first
-      const listEl = sliderRef.current?.innerSlider?.list || sliderRef.current?.list;
+      const listEl =
+        sliderRef.current?.innerSlider?.list || sliderRef.current?.list
       if (listEl) {
-        const allVideos = listEl.querySelectorAll("video");
-        allVideos.forEach((video) => {
+        const allVideos = listEl.querySelectorAll("video")
+        allVideos.forEach(video => {
           try {
-            video.pause();
-            video.currentTime = 0;
+            video.pause()
+            video.currentTime = 0
           } catch (e) {
             // Ignore errors
           }
-        });
+        })
 
         // Reset and play the current video after a short delay
         setTimeout(() => {
-          const currentVideo = listEl.querySelector(".slick-current video");
+          const currentVideo = listEl.querySelector(".slick-current video")
           if (currentVideo) {
             // Reset video to beginning
-            currentVideo.currentTime = 0;
+            currentVideo.currentTime = 0
 
             // Try to play the video
             currentVideo.play().catch(() => {
               // Autoplay failed, video will show play button
-              console.log("Autoplay failed for current video");
-            });
+              console.log("Autoplay failed for current video")
+            })
           }
-        }, 100);
+        }, 100)
       }
     },
     fade: true,
+    // eslint-disable-next-line react-hooks/static-components
     nextArrow: <NextArrow />,
+    // eslint-disable-next-line react-hooks/static-components
     prevArrow: <PrevArrow />
-  };
+  }
 
   const handleVideoEnded = useCallback(() => {
-    sliderRef.current?.slickNext();
-  }, []);
+    sliderRef.current?.slickNext()
+  }, [])
 
   // Start the first video when component mounts
   useEffect(() => {
     const timer = setTimeout(() => {
-      const listEl = sliderRef.current?.innerSlider?.list || sliderRef.current?.list;
+      const listEl =
+        sliderRef.current?.innerSlider?.list || sliderRef.current?.list
       if (listEl) {
-        const currentVideo = listEl.querySelector(".slick-current video");
+        const currentVideo = listEl.querySelector(".slick-current video")
         if (currentVideo) {
           // Ensure video is at the beginning
-          currentVideo.currentTime = 0;
+          currentVideo.currentTime = 0
           currentVideo.play().catch(() => {
             // Autoplay failed, video will show play button
-            console.log("Initial autoplay failed");
-          });
+            console.log("Initial autoplay failed")
+          })
         }
       }
-    }, 200);
+    }, 200)
 
-    return () => clearTimeout(timer);
-  }, []);
+    return () => clearTimeout(timer)
+  }, [])
 
   const renderItems = items?.map((item, index) => {
     return (
-      <BorderContainerNoRowsVerticalSidesLong key={index} className="slider-tile">
-        <div className='slider-tile-left'>
-          <div className='slider-tile-left-top '>
-            <p className='p-new-model-18'>0{slideIndex}</p>
+      <BorderContainerNoRowsVerticalSidesLong
+        key={index}
+        className="slider-tile"
+      >
+        <div className="slider-tile-left">
+          <div className="slider-tile-left-top ">
+            <p className="p-new-model-18">0{slideIndex}</p>
           </div>
-          <BorderContainerNoRowsVerticalSides className="text-border" >
-            <div className='text-container'>
+          <BorderContainerNoRowsVerticalSides className="text-border">
+            <div className="text-container">
               <h4>{item.title}</h4>
-              <p className='p-new-model-16'>{item.description}</p>
+              <p className="p-new-model-16">{item.description}</p>
             </div>
           </BorderContainerNoRowsVerticalSides>
-          <div className='slider-tile-left-top '>
+          <div className="slider-tile-left-top ">
             <input
-              onChange={e => sliderRef.current?.slickGoTo?.(Number(e.target.value))}
+              onChange={e =>
+                sliderRef.current?.slickGoTo?.(Number(e.target.value))
+              }
               value={slideIndex}
               type="range"
               min={1}
@@ -129,14 +159,14 @@ const SliderComponent = ({ items }) => {
             />
           </div>
         </div>
-        <div className='slider-tile-right'>
-          <div className='video-space-side'>
-            <div className='side-1'></div>
-            <div className='side-2'></div>
-            <div className='side-3'></div>
+        <div className="slider-tile-right">
+          <div className="video-space-side">
+            <div className="side-1"></div>
+            <div className="side-2"></div>
+            <div className="side-3"></div>
           </div>
-          <div className='video-space-middle'>
-            <BorderContainer4Rows className='slider-tile-right-top'></BorderContainer4Rows>
+          <div className="video-space-middle">
+            <BorderContainer4Rows className="slider-tile-right-top"></BorderContainer4Rows>
             <BorderContainer4Rows>
               <LocalVideo
                 src={item.link}
@@ -145,28 +175,27 @@ const SliderComponent = ({ items }) => {
                 onEnded={handleVideoEnded}
               />
             </BorderContainer4Rows>
-            <BorderContainer4Rows className='slider-tile-right-bottom'></BorderContainer4Rows>
+            <BorderContainer4Rows className="slider-tile-right-bottom"></BorderContainer4Rows>
           </div>
-          <div className='video-space-side'>
-            <div className='side-1'></div>
-            <div className='side-2'></div>
-            <div className='side-3'></div>
+          <div className="video-space-side">
+            <div className="side-1"></div>
+            <div className="side-2"></div>
+            <div className="side-3"></div>
           </div>
         </div>
       </BorderContainerNoRowsVerticalSidesLong>
-    );
-  });
+    )
+  })
 
   return (
     <section>
       <SliderContainer>
-        <Slider
-          ref={sliderRef}
-          {...settings}
-        >{renderItems}</Slider>
+        <Slider ref={sliderRef} {...settings}>
+          {renderItems}
+        </Slider>
       </SliderContainer>
     </section>
-  );
-};
+  )
+}
 
-export default SliderComponent;
+export default SliderComponent

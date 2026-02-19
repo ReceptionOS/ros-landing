@@ -2,7 +2,7 @@ import React from "react"
 
 export const BorderContainerSidesTopBottomSmaller = ({
   children,
-  className,
+  className
 }) => {
   return (
     <div className={`border-container-sides-top-bottom-smaller ${className}`}>

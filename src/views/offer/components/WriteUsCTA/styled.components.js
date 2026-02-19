@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import BackgroundImage from "../../../../images/writeus/writeus-background.webp"
 
 export const WriteUsComponent = styled.div`
   overflow: hidden;

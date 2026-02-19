@@ -2,7 +2,7 @@ import React from "react"
 
 export const BorderContainerBottomRowsSidesNoCorners = ({
   children,
-  className,
+  className
 }) => {
   return (
     <>

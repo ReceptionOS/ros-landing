@@ -9,12 +9,12 @@ const FeaturedSection = ({ t }) => {
   const consItems = [
     t("offer.featured.cons.item-1"),
     t("offer.featured.cons.item-2"),
-    t("offer.featured.cons.item-3"),
+    t("offer.featured.cons.item-3")
   ]
   const prosItems = [
     t("offer.featured.pros.item-1"),
     t("offer.featured.pros.item-2"),
-    t("offer.featured.pros.item-3"),
+    t("offer.featured.pros.item-3")
   ]
 
   return (

@@ -1,4 +1,13 @@
 {
   "arrowParens": "avoid",
-  "semi": false
+  "semi": false,
+  "trailingComma": "none",
+  "overrides": [
+    {
+      "files": [".eslintrc.js", "*.config.js", "*-config.js"],
+      "options": {
+        "trailingComma": "es5"
+      }
+    }
+  ]
 }

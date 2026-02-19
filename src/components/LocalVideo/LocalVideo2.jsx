@@ -1,13 +1,18 @@
-import React from "react";
-import { LocalVideoSection } from "./styled.components";
-import { useVideoAutoplay } from "../../hooks/useVideoAutoplay";
-import PlayButton from "../PlayButton/PlayButton";
+import React from "react"
+import { LocalVideoSection } from "./styled.components"
+import { useVideoAutoplay } from "../../hooks/useVideoAutoplay"
+import PlayButton from "../PlayButton/PlayButton"
 
 const LocalVideo2 = ({ src, poster, className }) => {
-  const { ref, videoRef, load, showPlayButton, handlePlayClick } = useVideoAutoplay();
+  const { ref, videoRef, load, showPlayButton, handlePlayClick } =
+    useVideoAutoplay()
 
   return (
-    <LocalVideoSection ref={ref} className={className || ""} style={{ position: 'relative' }}>
+    <LocalVideoSection
+      ref={ref}
+      className={className || ""}
+      style={{ position: "relative" }}
+    >
       {load ? (
         <>
           <video
@@ -15,7 +20,7 @@ const LocalVideo2 = ({ src, poster, className }) => {
             muted
             playsInline
             loop
-            style={{ width: '100%', display: 'block' }}
+            style={{ width: "100%", display: "block" }}
           >
             {src && <source src={src} type="video/mp4" />}
           </video>
@@ -25,7 +30,7 @@ const LocalVideo2 = ({ src, poster, className }) => {
         <img src={poster} alt="" style={{ width: "100%", display: "block" }} />
       )}
     </LocalVideoSection>
-  );
-};
+  )
+}
 
-export default LocalVideo2;
+export default LocalVideo2

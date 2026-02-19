@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import Seo from "../../components/seo"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 import Menu from "../../components/Menu/Menu"
@@ -22,18 +22,11 @@ import { agentId } from "../../config/externalResources"
 const Home = () => {
   const { t } = useTranslation()
 
-  const [mounted, setMounted] = useState(false)
   const [agent, setAgent] = useState()
 
   const setAgentId = () => {
     setAgent(agentId)
   }
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) return
 
   return (
     <>

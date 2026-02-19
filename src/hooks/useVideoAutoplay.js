@@ -56,6 +56,7 @@ export const useVideoAutoplay = (autoPlay = true, onEnded) => {
             .then(() => {
               setShowPlayButton(false)
             })
+            // eslint-disable-next-line no-unused-vars
             .catch(error => {
               console.log("Autoplay prevented, showing play button")
               setShowPlayButton(true)
@@ -63,6 +64,7 @@ export const useVideoAutoplay = (autoPlay = true, onEnded) => {
         }
       } else {
         // If not auto-playing, show play button
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         setShowPlayButton(true)
       }
 
@@ -108,6 +110,6 @@ export const useVideoAutoplay = (autoPlay = true, onEnded) => {
     load,
     showPlayButton,
     handlePlayClick,
-    resetPlayButton,
+    resetPlayButton
   }
 }

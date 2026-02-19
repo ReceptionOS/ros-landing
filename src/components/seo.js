@@ -7,22 +7,20 @@ const APP_NAME = "receptionOS"
 const DEFAULT_OG_IMAGE = "/og-image.jpg"
 
 function Seo({ description, meta = [], title, ogImage }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            siteUrl
-            author {
-              name
-            }
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          siteUrl
+          author {
+            name
           }
         }
       }
-    `
-  )
+    }
+  `)
 
   const { language } = useI18next()
   const metaDescription = description || site.siteMetadata.description
@@ -33,8 +31,8 @@ function Seo({ description, meta = [], title, ogImage }) {
     ogImage === undefined
       ? `${siteUrl}${DEFAULT_OG_IMAGE}`
       : ogImage.startsWith("http")
-      ? ogImage
-      : `${siteUrl}${ogImage}`
+        ? ogImage
+        : `${siteUrl}${ogImage}`
   const metaTitle = title || defaultTitle || APP_NAME
   const twitterDomain = siteUrl
     ? siteUrl.replace(/^https?:\/\//, "").replace(/\/$/, "")
@@ -43,7 +41,7 @@ function Seo({ description, meta = [], title, ogImage }) {
   return (
     <Helmet
       htmlAttributes={{
-        lang: language,
+        lang: language
       }}
       title={metaTitle}
       titleTemplate={
@@ -54,95 +52,95 @@ function Seo({ description, meta = [], title, ogImage }) {
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           name: `author`,
-          content: site.siteMetadata.author?.name,
+          content: site.siteMetadata.author?.name
         },
         {
           property: `og:url`,
-          content: siteUrl,
+          content: siteUrl
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `website`
         },
         {
           property: `og:site_name`,
-          content: APP_NAME,
+          content: APP_NAME
         },
         {
           property: `og:locale`,
-          content: language === "pl" ? "pl_PL" : "en_US",
+          content: language === "pl" ? "pl_PL" : "en_US"
         },
         {
           property: `og:title`,
-          content: metaTitle,
+          content: metaTitle
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           property: `og:image`,
-          content: metaOgImage,
+          content: metaOgImage
         },
         {
           property: `og:image:width`,
-          content: `1200`,
+          content: `1200`
         },
         {
           property: `og:image:height`,
-          content: `527`,
+          content: `527`
         },
         {
           property: `og:image:alt`,
           content:
             language === "pl"
               ? `ReceptionOS - Autopilot dla Twojej kliniki stomatologicznej`
-              : `ReceptionOS - Your Dental Clinic on Autopilot`,
+              : `ReceptionOS - Your Dental Clinic on Autopilot`
         },
         {
           property: `al:ios:url`,
-          content: siteUrl,
+          content: siteUrl
         },
         {
           property: `al:ios:app_name`,
-          content: APP_NAME,
+          content: APP_NAME
         },
         {
           property: `al:iphone:url`,
-          content: siteUrl,
+          content: siteUrl
         },
         {
           property: `al:iphone:app_name`,
-          content: APP_NAME,
+          content: APP_NAME
         },
         {
           name: `twitter:card`,
-          content: `summary_large_image`,
+          content: `summary_large_image`
         },
         {
           property: `twitter:domain`,
-          content: twitterDomain,
+          content: twitterDomain
         },
         {
           property: `twitter:url`,
-          content: siteUrl,
+          content: siteUrl
         },
         {
           name: `twitter:title`,
-          content: metaTitle,
+          content: metaTitle
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           name: `twitter:image`,
-          content: metaOgImage,
-        },
+          content: metaOgImage
+        }
       ].concat(meta)}
     >
       <link rel="icon" type="image/png" sizes="32x32" href="/ros-icon.png" />

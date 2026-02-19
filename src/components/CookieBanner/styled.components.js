@@ -8,7 +8,8 @@ export const CookieBannerContainer = styled.div`
   align-items: flex-start;
   border-radius: 16px 16px 0px 0px;
   background: rgba(10, 10, 10, 0.95);
-  box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+  box-shadow:
+    0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
     0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
   position: fixed;
   bottom: 0;

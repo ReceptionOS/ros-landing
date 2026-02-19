@@ -75,7 +75,8 @@ export const SliderContainer = styled.div`
         -webkit-appearance: none; /* Override default look */
         appearance: none;
         margin-top: 0px; /* Centers thumb on the track */
-        background: linear-gradient(
+        background:
+          linear-gradient(
             129deg,
             rgba(231, 98, 32, 0) 35.85%,
             rgba(231, 98, 32, 0.2) 72.26%
@@ -91,7 +92,8 @@ export const SliderContainer = styled.div`
             rgba(115, 59, 21, 0.2) 100%
           );
         background-blend-mode: color-dodge, normal, normal;
-        box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+        box-shadow:
+          0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
           0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
         border-radius: 500px;
         height: 6px;
@@ -99,7 +101,8 @@ export const SliderContainer = styled.div`
       }
 
       input[type="range"]:focus::-webkit-slider-thumb {
-        background: linear-gradient(
+        background:
+          linear-gradient(
             129deg,
             rgba(231, 98, 32, 0) 35.85%,
             rgba(231, 98, 32, 0.2) 72.26%
@@ -115,7 +118,8 @@ export const SliderContainer = styled.div`
             rgba(115, 59, 21, 0.2) 100%
           );
         background-blend-mode: color-dodge, normal, normal;
-        box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+        box-shadow:
+          0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
           0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
         outline-offset: 0.125rem;
       }
@@ -130,7 +134,8 @@ export const SliderContainer = styled.div`
 
       /* slider thumb */
       input[type="range"]::-moz-range-thumb {
-        background: linear-gradient(
+        background:
+          linear-gradient(
             129deg,
             rgba(231, 98, 32, 0) 35.85%,
             rgba(231, 98, 32, 0.2) 72.26%
@@ -146,7 +151,8 @@ export const SliderContainer = styled.div`
             rgba(115, 59, 21, 0.2) 100%
           );
         background-blend-mode: color-dodge, normal, normal;
-        box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+        box-shadow:
+          0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
           0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
         border: none; /*Removes extra border that FF applies*/
         border-radius: 500px;
@@ -155,7 +161,8 @@ export const SliderContainer = styled.div`
       }
 
       input[type="range"]:focus::-moz-range-thumb {
-        background: linear-gradient(
+        background:
+          linear-gradient(
             129deg,
             rgba(231, 98, 32, 0) 35.85%,
             rgba(231, 98, 32, 0.2) 72.26%
@@ -171,7 +178,8 @@ export const SliderContainer = styled.div`
             rgba(115, 59, 21, 0.2) 100%
           );
         background-blend-mode: color-dodge, normal, normal;
-        box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+        box-shadow:
+          0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
           0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
         outline-offset: 0.125rem;
       }

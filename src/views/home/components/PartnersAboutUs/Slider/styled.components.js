@@ -119,7 +119,8 @@ export const SliderContainer = styled.div`
 
   .slick-dots .slick-active button {
     width: 28px;
-    background: linear-gradient(
+    background:
+      linear-gradient(
         129deg,
         rgba(231, 98, 32, 0) 35.85%,
         rgba(231, 98, 32, 0.2) 72.26%
@@ -131,7 +132,8 @@ export const SliderContainer = styled.div`
       ),
       linear-gradient(180deg, rgba(13, 7, 2, 0) 0%, rgba(115, 59, 21, 0.2) 100%);
     background-blend-mode: color-dodge, normal, normal;
-    box-shadow: 0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
+    box-shadow:
+      0 0.5px 1px -1px rgba(255, 255, 255, 0.25) inset,
       0 0 3px -1px rgba(255, 255, 255, 0.54) inset;
   }
 

@@ -1,7 +1,6 @@
 import React from "react"
 import { BorderContainerTop } from "../../../../components/BorderContainer/BorderContainerTop"
 import { BorderContainerSidesTopBottomSmallerMobile } from "../../../../components/BorderContainer/BorderContainerSidesTopBottomSmallerMobile"
-import { BorderContainer4Rows2Sides } from "../../../../components/BorderContainer/BorderContainer4Rows2Sides"
 import { BorderContainer4Rows } from "../../../../components/BorderContainer/BorderContainer4Rows"
 
 const FeaturedMobile = ({ t, consItems, prosItems }) => {
@@ -9,7 +8,7 @@ const FeaturedMobile = ({ t, consItems, prosItems }) => {
     <div className="borders-mobile">
       <BorderContainerTop className={"border-top"} />
       <div className="pros-cons-wrapper">
-        <BorderContainer4Rows className='rows'>
+        <BorderContainer4Rows className="rows">
           <div className="lines-container  cons">
             <p className="title">{t("offer.featured.cons.title")}</p>
             <div className="items">
@@ -43,7 +42,7 @@ const FeaturedMobile = ({ t, consItems, prosItems }) => {
             </div>
           </div>
         </BorderContainer4Rows>
-        <BorderContainer4Rows className='rows'> 
+        <BorderContainer4Rows className="rows">
           <div className="lines-container pros">
             <p className="title">{t("offer.featured.pros.title")}</p>
             <div className="items">
