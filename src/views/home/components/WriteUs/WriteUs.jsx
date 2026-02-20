@@ -2,9 +2,8 @@ import React from "react"
 import { WriteUsComponent } from "./styled.components"
 import { RoundedButtonOrange } from "../../../../styled.components"
 import { StaticImage } from "gatsby-plugin-image"
-import { orderAnalysisButton } from "../../../../config/externalResources"
 
-const WriteUs = ({ t }) => {
+const WriteUs = ({ t, openTypeform }) => {
 
   return (
     <>
@@ -19,7 +18,7 @@ const WriteUs = ({ t }) => {
             placeholder="ros-image"
             loading="lazy"
           />
-          <RoundedButtonOrange as="a" href={orderAnalysisButton} target="_blank" rel="noreferrer">{t('home.WriteUs.button')}</RoundedButtonOrange>
+          <RoundedButtonOrange onClick={openTypeform}>{t('home.WriteUs.button')}</RoundedButtonOrange>
         </div>
       </WriteUsComponent>
     </>

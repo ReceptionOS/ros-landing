@@ -2,7 +2,7 @@
   "home.seo.title": "ReceptionOS | Twoja klinika stomatologiczna na autopilocie",
   "home.seo.description": "Automatyzacja rejestracji, przypomnienia SMS, pobieranie przedpłat - pełna kontrola nad grafikiem i wizytami w swojej klinice. Zyskaj spokój i skup się na pacjentach, nie na telefonach.",
 
-  "home.Menu.order-button": "Zamów Analizę",
+  "home.Menu.order-button": "Zapisz się",
 
   "home.Autopilot.title": "<span>Twoja klinika.</span> Na autopilocie.",
   "home.Autopilot.description": "Zautomatyzuj rutynową administrację, wyeliminuj utracone wizyty i utrzymuj pełny grafik.",
@@ -95,7 +95,7 @@
   "home.CaseStudy.modal.title-solution2": "Brak czasu oczekiwania, brak pytań bez odpowiedzi",
   "home.CaseStudy.modal.description-solution1": "Dodatkowe potwierdzenia wizyt przez pacjentów",
   "home.CaseStudy.modal.description-solution2": "mniej nieobecności",
-  "home.CaseStudy.modal.button": "Zamów Analizę",
+  "home.CaseStudy.modal.button": "Zapisz się",
 
   "home.AboutUs.about-us": "O Nas",
   "home.AboutUs.title": "Dlaczego kliniki ufają ReceptionOS",
@@ -131,7 +131,7 @@
 
   "home.WriteUs.title": "Gotowy dołączyć do top 1% klinik?",
   "home.WriteUs.description": "Umów audyt już dziś — odezwiemy się natychmiast.",
-  "home.WriteUs.button": "Zamów Analizę",
+  "home.WriteUs.button": "Zapisz się",
 
   "home.CookieBanner.message": "Używamy plików cookie, aby ulepszać działanie strony i analizować ruch. Kontynuując korzystanie z serwisu, wyrażasz zgodę na ich użycie.",
   "home.CookieBanner.accept": "Akceptuję",

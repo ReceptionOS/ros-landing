@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useCallback, useEffect, useState } from "react"
 import Seo from "../../components/seo"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 import Menu from "../../components/Menu/Menu"
@@ -67,12 +67,27 @@ const Home = () => {
     })
 
     Promise.all([waitForMinTime, waitForHero]).then(dismissLoader)
+
+    const link = document.createElement("link")
+    link.rel = "stylesheet"
+    link.href = "//embed.typeform.com/next/css/popup.css"
+    document.head.appendChild(link)
+
+    const script = document.createElement("script")
+    script.src = "//embed.typeform.com/next/embed.js"
+    document.head.appendChild(script)
+  }, [])
+
+  const openTypeform = useCallback(() => {
+    if (window.tf) {
+      window.tf.createPopup('01KHXM1R21R2EQ8GP6SZJFM230').open()
+    }
   }, [])
 
   return (
     <>
       <Seo title={t`home.seo.title`} description={t`home.seo.description`} />
-      <Menu t={t} />
+      <Menu t={t} openTypeform={openTypeform} />
       <Autopilot t={t} handleClick={setAgentId} />
       <OurPartners t={t} />
       <AIWave t={t} />
@@ -80,11 +95,11 @@ const Home = () => {
       <EliminateProblems t={t} />
       <Compare t={t} />
       <PartnersAboutUs t={t} />
-      <Analysis t={t} />
-      <CaseStudy t={t} />
+      <Analysis t={t} openTypeform={openTypeform} />
+      <CaseStudy t={t} openTypeform={openTypeform} />
       <AboutUs t={t} />
       <PriceList t={t} />
-      <WriteUs t={t} />
+      <WriteUs t={t} openTypeform={openTypeform} />
       <Footer t={t} />
       <CookieBanner />
       <ElevenWidget agentId={agent} />

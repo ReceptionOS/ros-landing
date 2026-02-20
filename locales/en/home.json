@@ -2,7 +2,7 @@
   "home.seo.title": "ReceptionOS | Your Clinic on Autopilot",
   "home.seo.description": "Handle patient communication 24/7, schedule appointments, take prepayments and manage cancellations — fewer no-shows and smoother front-desk.",
 
-  "home.Menu.order-button": "Order audit",
+  "home.Menu.order-button": "Sign up",
 
   "home.Autopilot.title": "<span>Your Clinic.</span> On Autopilot.",
   "home.Autopilot.description": "Automate routine admin, eliminate lost appointments, and keep your chairs full — so your team can focus on what really matters: patient care.",
@@ -95,7 +95,7 @@
   "home.CaseStudy.modal.title-solution2": "No waiting time, no unanswered questions",
   "home.CaseStudy.modal.description-solution1": "Extra patient confirmations for visits",
   "home.CaseStudy.modal.description-solution2": "fewer no-shows",
-  "home.CaseStudy.modal.button": "Order Analysis",
+  "home.CaseStudy.modal.button": "Sign up",
 
   "home.AboutUs.about-us": "About us",
   "home.AboutUs.title": "Why clinics trust ReceptionOS",
@@ -131,7 +131,7 @@
 
   "home.WriteUs.title": "Ready to join the top 1% of clinics?",
   "home.WriteUs.description": "Book Your Audit Today — we’ll get back to you immediately.",
-  "home.WriteUs.button": "Book an audit",
+  "home.WriteUs.button": "Sign up",
 
   "home.CookieBanner.message": "We use cookies to enhance your browsing experience and analyze our traffic. By continuing to use this site, you agree to our use of cookies.",
   "home.CookieBanner.accept": "Accept",

@@ -1,32 +1,10 @@
-import React, { useEffect, useCallback } from "react"
+import React from "react"
 import { AnalysisComponent } from "./styled.components";
 import { BorderContainerTopRowsSides } from "../../../../components/BorderContainer/BorderContainerTopRowsSides";
 import { RoundedButtonOrange, RoundedInfoTile } from "../../../../styled.components";
 import { StaticImage } from "gatsby-plugin-image";
 
-const Analysis = ({ t }) => {
-
-  useEffect(() => {
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = "//embed.typeform.com/next/css/popup.css";
-    document.head.appendChild(link);
-
-    const script = document.createElement("script");
-    script.src = "//embed.typeform.com/next/embed.js";
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(link);
-      document.head.removeChild(script);
-    };
-  }, []);
-
-  const openTypeform = useCallback(() => {
-    if (window.tf) {
-      window.tf.createPopup('01KHXM1R21R2EQ8GP6SZJFM230').open();
-    }
-  }, []);
+const Analysis = ({ t, openTypeform }) => {
 
   return (
     <>
