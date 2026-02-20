@@ -10,7 +10,6 @@
     "babel-plugin-styled-components": "^2.1.4",
     "dotenv": "^16.4.4",
     "gatsby": "^5.13.2",
-    "gatsby-plugin-google-analytics": "^5.15.0",
     "gatsby-plugin-google-tagmanager": "^5.15.0",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-manifest": "^5.13.1",

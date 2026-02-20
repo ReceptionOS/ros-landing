@@ -9,6 +9,17 @@ exports.onRenderBody = ({
 
   setHeadComponents([
     React.createElement("script", {
+      key: "gtag-js",
+      async: true,
+      src: "https://www.googletagmanager.com/gtag/js?id=G-7H7Y2ZRQZW",
+    }),
+    React.createElement("script", {
+      key: "gtag-config",
+      dangerouslySetInnerHTML: {
+        __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-7H7Y2ZRQZW');`,
+      },
+    }),
+    React.createElement("script", {
       key: "ros-loader-timestamp",
       dangerouslySetInnerHTML: {
         __html: `window.__rosLoaderStart=Date.now();`,
