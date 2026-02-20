@@ -68,21 +68,22 @@ const Home = () => {
 
     Promise.all([waitForMinTime, waitForHero]).then(dismissLoader)
 
-    const link = document.createElement("link")
-    link.rel = "stylesheet"
-    link.href = "//embed.typeform.com/next/css/popup.css"
-    document.head.appendChild(link)
-
     const script = document.createElement("script")
     script.src = "//embed.typeform.com/next/embed.js"
     document.head.appendChild(script)
   }, [])
 
-  const openTypeform = useCallback(() => {
-    if (window.tf) {
-      window.tf.createPopup('01KHXM1R21R2EQ8GP6SZJFM230').open()
+  const [typeformOpen, setTypeformOpen] = useState(false)
+
+  const openTypeform = useCallback(() => setTypeformOpen(true), [])
+
+  useEffect(() => {
+    if (typeformOpen && window.tf) {
+      window.tf.load()
     }
-  }, [])
+    document.body.style.overflow = typeformOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [typeformOpen])
 
   return (
     <>
@@ -103,6 +104,42 @@ const Home = () => {
       <Footer t={t} />
       <CookieBanner />
       <ElevenWidget agentId={agent} />
+      {typeformOpen && (
+        <div
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 10000,
+            background: 'rgba(10, 10, 10, 0.95)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <button
+            onClick={() => setTypeformOpen(false)}
+            aria-label="Close"
+            style={{
+              position: 'absolute',
+              top: '16px',
+              right: '16px',
+              background: 'none',
+              border: 'none',
+              color: '#ffe8d9',
+              fontSize: '28px',
+              cursor: 'pointer',
+              zIndex: 1,
+              lineHeight: 1,
+            }}
+          >
+            &#x2715;
+          </button>
+          <div
+            data-tf-live="01KHXM1R21R2EQ8GP6SZJFM230"
+            style={{ width: '100%', height: '100%' }}
+          />
+        </div>
+      )}
     </>
   )
 }
