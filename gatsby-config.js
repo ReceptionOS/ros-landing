@@ -18,13 +18,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
-        head: false,
-      },
-    },
-    {
       resolve: `gatsby-plugin-posthog`,
       options: {
         apiKey: process.env.POSTHOG_API_KEY,
