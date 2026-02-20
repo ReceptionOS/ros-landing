@@ -31,7 +31,7 @@ export const AnalysisComponent = styled.div`
 
     .middle-text {
       display: flex;
-      max-width: 261px;
+      max-width: 380px;
       margin: auto;
       flex-direction: column;
       align-items: center;

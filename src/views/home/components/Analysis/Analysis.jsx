@@ -1,12 +1,32 @@
-import React from "react"
+import React, { useEffect, useCallback } from "react"
 import { AnalysisComponent } from "./styled.components";
 import { BorderContainerTopRowsSides } from "../../../../components/BorderContainer/BorderContainerTopRowsSides";
 import { RoundedButtonOrange, RoundedInfoTile } from "../../../../styled.components";
 import { StaticImage } from "gatsby-plugin-image";
-import { analysisPrice } from "../../../../config/pricing";
-import { orderAnalysisButton } from "../../../../config/externalResources";
 
 const Analysis = ({ t }) => {
+
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "//embed.typeform.com/next/css/popup.css";
+    document.head.appendChild(link);
+
+    const script = document.createElement("script");
+    script.src = "//embed.typeform.com/next/embed.js";
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(link);
+      document.head.removeChild(script);
+    };
+  }, []);
+
+  const openTypeform = useCallback(() => {
+    if (window.tf) {
+      window.tf.createPopup('01KHXM1R21R2EQ8GP6SZJFM230').open();
+    }
+  }, []);
 
   return (
     <>
@@ -34,8 +54,6 @@ const Analysis = ({ t }) => {
               <h4>{t('home.Analysis.title')}</h4>
             </div>
             <div className="middle-text">
-              <h1>{analysisPrice} PLN</h1>
-              <p className="p-new-model-14">{t('home.Analysis.in-it')}</p>
               <div className="inner-text">
                 <p className="p-new-model-16">{t('home.Analysis.inner-text1')}</p>
                 <svg className="desktop" xmlns="http://www.w3.org/2000/svg" width="25" height="2" viewBox="0 0 25 2" fill="none">
@@ -53,7 +71,7 @@ const Analysis = ({ t }) => {
                 </svg>
                 <p className="p-new-model-16">{t('home.Analysis.inner-text3')}</p>
               </div>
-              <RoundedButtonOrange as="a" href={orderAnalysisButton} target="_blank" rel="noreferrer" >{t(`home.CaseStudy.modal.button`)}</RoundedButtonOrange>
+              <RoundedButtonOrange onClick={openTypeform}>{t('home.Analysis.button')}</RoundedButtonOrange>
             </div>
           </BorderContainerTopRowsSides>
         </AnalysisComponent>
