@@ -3,10 +3,8 @@ import { AnalysisComponent } from "./styled.components";
 import { BorderContainerTopRowsSides } from "../../../../components/BorderContainer/BorderContainerTopRowsSides";
 import { RoundedButtonOrange, RoundedInfoTile } from "../../../../styled.components";
 import { StaticImage } from "gatsby-plugin-image";
-import { analysisPrice } from "../../../../config/pricing";
-import { orderAnalysisButton } from "../../../../config/externalResources";
 
-const Analysis = ({ t }) => {
+const Analysis = ({ t, openTypeform }) => {
 
   return (
     <>
@@ -34,8 +32,6 @@ const Analysis = ({ t }) => {
               <h4>{t('home.Analysis.title')}</h4>
             </div>
             <div className="middle-text">
-              <h1>{analysisPrice} PLN</h1>
-              <p className="p-new-model-14">{t('home.Analysis.in-it')}</p>
               <div className="inner-text">
                 <p className="p-new-model-16">{t('home.Analysis.inner-text1')}</p>
                 <svg className="desktop" xmlns="http://www.w3.org/2000/svg" width="25" height="2" viewBox="0 0 25 2" fill="none">
@@ -53,7 +49,7 @@ const Analysis = ({ t }) => {
                 </svg>
                 <p className="p-new-model-16">{t('home.Analysis.inner-text3')}</p>
               </div>
-              <RoundedButtonOrange as="a" href={orderAnalysisButton} target="_blank" rel="noreferrer" >{t(`home.CaseStudy.modal.button`)}</RoundedButtonOrange>
+              <RoundedButtonOrange onClick={openTypeform}>{t('home.Analysis.button')}</RoundedButtonOrange>
             </div>
           </BorderContainerTopRowsSides>
         </AnalysisComponent>

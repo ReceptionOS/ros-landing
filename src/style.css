@@ -17,6 +17,10 @@ body {
   overflow: hidden;
 }
 
+.tf-v1-popup {
+  background: rgba(0, 0, 0, 1) !important;
+}
+
 .container {
   margin: 0 auto;
 }

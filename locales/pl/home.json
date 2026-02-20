@@ -2,7 +2,7 @@
   "home.seo.title": "ReceptionOS | Twoja klinika stomatologiczna na autopilocie",
   "home.seo.description": "Automatyzacja rejestracji, przypomnienia SMS, pobieranie przedpłat - pełna kontrola nad grafikiem i wizytami w swojej klinice. Zyskaj spokój i skup się na pacjentach, nie na telefonach.",
 
-  "home.Menu.order-button": "Zamów Analizę",
+  "home.Menu.order-button": "Zapisz się",
 
   "home.Autopilot.title": "<span>Twoja klinika.</span> Na autopilocie.",
   "home.Autopilot.description": "Zautomatyzuj rutynową administrację, wyeliminuj utracone wizyty i utrzymuj pełny grafik.",
@@ -71,12 +71,12 @@
   "home.PartnersAboutUs.partner5-position1": "CEO",
   "home.PartnersAboutUs.partner5-company": "Dentalway.pl",
 
-  "home.Analysis.case-study": "Zamów Analizę",
-  "home.Analysis.title": "Odkryj dokładnie, gdzie Twoja klinika traci pacjentów.",
-  "home.Analysis.in-it": "W cenie:",
-  "home.Analysis.inner-text1": "Audyt Mystery Patient — testujemy proces rejestracji w realistycznych scenariuszach.",
-  "home.Analysis.inner-text2": "Pełny test obciążeniowy rejestracji — mierzymy szybkość, dokładność i jakość obsługi.",
-  "home.Analysis.inner-text3": "Plan działań — priorytetowe poprawki zwiększające konwersję.",
+  "home.Analysis.case-study": "Program Top 1% Cyfrowych Klinik",
+  "home.Analysis.title": "Dołącz do Programu Top 1% Cyfrowych Klinik by receptionOS.",
+  "home.Analysis.inner-text1": "Tylko jedna klinika na region — sprawdź, czy Twoje miasto jest jeszcze wolne.",
+  "home.Analysis.inner-text2": "Pełna automatyzacja recepcji AI — Twoja klinika działa 24/7 bez dodatkowego personelu.",
+  "home.Analysis.inner-text3": "Priorytetowe wdrożenie i dedykowane wsparcie od pierwszego dnia.",
+  "home.Analysis.button": "Zapisz się",
 
   "home.CaseStudy.case-study": "Case Study",
   "home.CaseStudy.title": "Wzrost o 20% kliniki Apolonii Dental",
@@ -95,7 +95,7 @@
   "home.CaseStudy.modal.title-solution2": "Brak czasu oczekiwania, brak pytań bez odpowiedzi",
   "home.CaseStudy.modal.description-solution1": "Dodatkowe potwierdzenia wizyt przez pacjentów",
   "home.CaseStudy.modal.description-solution2": "mniej nieobecności",
-  "home.CaseStudy.modal.button": "Zamów Analizę",
+  "home.CaseStudy.modal.button": "Zapisz się",
 
   "home.AboutUs.about-us": "O Nas",
   "home.AboutUs.title": "Dlaczego kliniki ufają ReceptionOS",
@@ -131,7 +131,7 @@
 
   "home.WriteUs.title": "Gotowy dołączyć do top 1% klinik?",
   "home.WriteUs.description": "Umów audyt już dziś — odezwiemy się natychmiast.",
-  "home.WriteUs.button": "Zamów Analizę",
+  "home.WriteUs.button": "Zapisz się",
 
   "home.CookieBanner.message": "Używamy plików cookie, aby ulepszać działanie strony i analizować ruch. Kontynuując korzystanie z serwisu, wyrażasz zgodę na ich użycie.",
   "home.CookieBanner.accept": "Akceptuję",
